@@ -241,7 +241,7 @@ const HomeHeader = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.svg" alt="HOSTSAILOR" className="h-10 w-auto" />
+              <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-10 w-auto" />
             </Link>
 
             {/* Navigation Menu */}

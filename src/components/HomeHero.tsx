@@ -30,7 +30,7 @@ const HomeHero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/src/assets/hosting-bg.jpg')",
+          backgroundImage: "url('/hostsailor/src/assets/hosting-bg.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/80"></div>
