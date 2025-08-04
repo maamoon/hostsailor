@@ -18,6 +18,7 @@ import SSLCertificates from "./pages/SSLCertificates";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import AffiliateProgram from "./pages/AffiliateProgram";
+import SupermicroRomaniaServers from "./pages/SupermicroRomaniaServers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/our-company" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/affiliate-program" element={<AffiliateProgram />} />
+          <Route path="/dedicated-servers/supermicro-romania-dedicated-servers" element={<SupermicroRomaniaServers />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
