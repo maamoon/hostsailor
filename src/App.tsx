@@ -13,6 +13,10 @@ import Services from "./pages/Services";
 import SSDSharedHosting from "./pages/SSDSharedHosting";
 import ResellerHosting from "./pages/ResellerHosting";
 import DedicatedServers from "./pages/DedicatedServers";
+import VPSHosting from "./pages/VPSHosting";
+import SSLCertificates from "./pages/SSLCertificates";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +38,10 @@ const App = () => (
           <Route path="/ssd-shared-hosting" element={<SSDSharedHosting />} />
           <Route path="/reseller-hosting" element={<ResellerHosting />} />
           <Route path="/dedicated-servers" element={<DedicatedServers />} />
+          <Route path="/vps-hosting" element={<VPSHosting />} />
+          <Route path="/ssl-certificates" element={<SSLCertificates />} />
+          <Route path="/our-company" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
