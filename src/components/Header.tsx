@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export const Header = () => {
+const Header = () => {
   const { t } = useTranslation();
 
   return (
@@ -42,3 +42,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
