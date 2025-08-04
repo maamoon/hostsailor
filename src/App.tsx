@@ -17,6 +17,7 @@ import VPSHosting from "./pages/VPSHosting";
 import SSLCertificates from "./pages/SSLCertificates";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import AffiliateProgram from "./pages/AffiliateProgram";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/ssl-certificates" element={<SSLCertificates />} />
           <Route path="/our-company" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/affiliate-program" element={<AffiliateProgram />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
