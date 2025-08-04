@@ -346,7 +346,9 @@ const Services = () => {
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <Link to="/" className="text-xl font-bold text-primary">HostSailor</Link>
+            <Link to="/" className="flex items-center">
+              <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+            </Link>
             <Badge variant="secondary">الخدمات</Badge>
           </div>
           <div className="flex items-center space-x-4">

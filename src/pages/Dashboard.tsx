@@ -57,7 +57,9 @@ const Dashboard = () => {
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <div className="text-xl font-bold text-primary">HostSailor</div>
+            <div className="flex items-center">
+              <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+            </div>
             <Badge variant="secondary">لوحة التحكم</Badge>
           </div>
           <div className="flex items-center space-x-4">

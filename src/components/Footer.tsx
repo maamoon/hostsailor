@@ -4,7 +4,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">HostSailor</h3>
+            <div className="flex items-center mb-4">
+          <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+        </div>
             <p className="text-white/80 mb-4">
               Premium web hosting solutions for businesses of all sizes.
             </p>
