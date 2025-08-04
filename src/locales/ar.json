@@ -36,7 +36,16 @@
 
   "auth": {
     "loginTitle": "تسجيل الدخول",
-    "loginSubtitle": "أدخل بياناتك للوصول إلى لوحة التحكم",
+    "loginSubtitle": "سجل دخولك إلى حسابك للمتابعة.",
+    "emailAddress": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "name@example.com",
+    "passwordPlaceholder": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "notRegistered": "غير مسجل؟",
+    "createAccount": "إنشاء حساب",
+    "signInAs": "تسجيل الدخول كـ Maamoon",
+    "signInAsEmail": "maamoonmomani@gmail.com",
     "registerTitle": "إنشاء حساب جديد",
     "registerSubtitle": "انضم إلى HostSailor واحصل على أفضل خدمات الاستضافة",
     "forgotPasswordTitle": "نسيت كلمة المرور؟",

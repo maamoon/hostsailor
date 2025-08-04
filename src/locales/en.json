@@ -36,7 +36,16 @@
 
   "auth": {
     "loginTitle": "Login",
-    "loginSubtitle": "Enter your credentials to access your dashboard",
+    "loginSubtitle": "Sign in to your account to continue.",
+    "emailAddress": "Email Address",
+    "emailPlaceholder": "name@example.com",
+    "passwordPlaceholder": "Password",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password?",
+    "notRegistered": "Not registered?",
+    "createAccount": "Create account",
+    "signInAs": "Sign in as Maamoon",
+    "signInAsEmail": "maamoonmomani@gmail.com",
     "registerTitle": "Create New Account",
     "registerSubtitle": "Join HostSailor and get the best hosting services",
     "forgotPasswordTitle": "Forgot Password?",
