@@ -20,6 +20,7 @@ import Contact from "./pages/Contact";
 import AffiliateProgram from "./pages/AffiliateProgram";
 import SupermicroRomaniaServers from "./pages/SupermicroRomaniaServers";
 import HPNetherlandsServers from "./pages/HPNetherlandsServers";
+import KVMVPSHosting from "./pages/KVMVPSHosting";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/affiliate-program" element={<AffiliateProgram />} />
           <Route path="/dedicated-servers/supermicro-romania-dedicated-servers" element={<SupermicroRomaniaServers />} />
           <Route path="/dedicated-servers/hp-netherlands-dedicated-servers" element={<HPNetherlandsServers />} />
+          <Route path="/vps-hosting/kvm-vps" element={<KVMVPSHosting />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
