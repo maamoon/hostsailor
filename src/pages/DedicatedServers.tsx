@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Star, Server, Shield, Zap, Globe, Cpu, HardDrive, Wifi, Clock, Award, Users } from "lucide-react";
-import Header from "@/components/Header";
+import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 
 const DedicatedServers = () => {
@@ -190,7 +190,7 @@ const DedicatedServers = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50">
-      <Header />
+      <HomeHeader />
       
       {/* Hero Section */}
       <section className="relative py-20 px-4">

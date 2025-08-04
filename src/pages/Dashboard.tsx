@@ -16,6 +16,8 @@ import {
   FileText,
   HelpCircle
 } from "lucide-react";
+import HomeHeader from "@/components/HomeHeader";
+import Footer from "@/components/Footer";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -54,30 +56,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center">
-              <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
-            </div>
-            <Badge variant="secondary">لوحة التحكم</Badge>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              <Settings className="h-4 w-4 mr-2" />
-              الإعدادات
-            </Button>
-            <Button variant="ghost" size="sm">
-              <HelpCircle className="h-4 w-4 mr-2" />
-              المساعدة
-            </Button>
-            <Button variant="outline" size="sm">
-              <LogOut className="h-4 w-4 mr-2" />
-              تسجيل الخروج
-            </Button>
-          </div>
-        </div>
-      </header>
+      <HomeHeader />
 
       <div className="container mx-auto px-4 py-8">
         {/* Welcome Section */}
@@ -327,6 +306,7 @@ const Dashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
+      <Footer />
     </div>
   );
 };

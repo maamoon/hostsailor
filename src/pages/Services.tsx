@@ -17,6 +17,8 @@ import {
   Cpu,
   Wifi
 } from "lucide-react";
+import HomeHeader from "@/components/HomeHeader";
+import Footer from "@/components/Footer";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("shared");
@@ -343,24 +345,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <Link to="/" className="flex items-center">
-              <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
-            </Link>
-            <Badge variant="secondary">الخدمات</Badge>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link to="/login">
-              <Button variant="ghost" size="sm">تسجيل الدخول</Button>
-            </Link>
-            <Link to="/register">
-              <Button size="sm">إنشاء حساب</Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <HomeHeader />
 
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
@@ -454,6 +439,8 @@ const Services = () => {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

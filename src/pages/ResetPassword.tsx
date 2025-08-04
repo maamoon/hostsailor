@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -7,6 +7,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Eye, EyeOff, Lock, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
+import { Eye, EyeOff, Lock, ArrowLeft, ArrowRight, Shield, Zap, Globe } from "lucide-react";
+import HomeHeader from "@/components/HomeHeader";
+import Footer from "@/components/Footer";
 
 const ResetPassword = () => {
   const [searchParams] = useSearchParams();

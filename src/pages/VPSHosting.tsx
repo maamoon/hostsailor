@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Star, Zap, Shield, Globe, Server, Cpu, HardDrive, Wifi, Clock, Award, Users, Database } from "lucide-react";
-import Header from "@/components/Header";
+import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 
 const VPSHosting = () => {
@@ -112,7 +112,7 @@ const VPSHosting = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50">
-      <Header />
+      <HomeHeader />
       
       {/* Hero Section */}
       <section className="relative py-20 px-4">

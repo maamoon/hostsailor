@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Star, Users, Globe, Award, Clock, Shield, Zap, Building, MapPin, Phone, Mail } from "lucide-react";
-import Header from "@/components/Header";
+import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 
 const AboutUs = () => {
@@ -93,7 +93,7 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
-      <Header />
+      <HomeHeader />
       
       {/* Hero Section */}
       <section className="relative py-20 px-4">

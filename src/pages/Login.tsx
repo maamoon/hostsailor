@@ -9,6 +9,8 @@ import { Eye, EyeOff, Mail, Lock, User, Search, ChevronDown } from "lucide-react
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import HomeHeader from "@/components/HomeHeader";
+import Footer from "@/components/Footer";
 
 const Login = () => {
   const { t } = useTranslation();
@@ -91,54 +93,7 @@ const Login = () => {
       </div>
 
       {/* Main Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
-            </Link>
-
-            {/* Navigation Menu */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Home
-              </Link>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors font-medium cursor-pointer">
-                <span>Store</span>
-                <ChevronDown className="h-4 w-4" />
-              </div>
-              <Link to="/announcements" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Announcements
-              </Link>
-              <Link to="/knowledgebase" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Knowledgebase
-              </Link>
-              <Link to="/network-status" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Network Status
-              </Link>
-              <Link to="/affiliates" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Affiliates
-              </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Contact Us
-              </Link>
-            </nav>
-
-            {/* Right Side Actions */}
-            <div className="flex items-center space-x-4">
-              <button className="p-2 text-gray-600 hover:text-blue-600 transition-colors">
-                <Search className="h-5 w-5" />
-              </button>
-              <LanguageSwitcher />
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors font-medium cursor-pointer">
-                <span>Account</span>
-                <ChevronDown className="h-4 w-4" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomeHeader />
 
       {/* Login Form */}
       <div className="flex items-center justify-center py-16 px-4">
@@ -266,6 +221,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -7,6 +7,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Eye, EyeOff, Mail, Lock, User, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import HomeHeader from "@/components/HomeHeader";
+import Footer from "@/components/Footer";
 
 const Register = () => {
   const [formData, setFormData] = useState({
