@@ -5,7 +5,7 @@ import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Newsletter } from "@/components/Newsletter";
-import { Footer } from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
