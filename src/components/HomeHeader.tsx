@@ -327,16 +327,16 @@ const HomeHeader = () => {
                 <Search className="h-5 w-5" />
               </button>
               <LanguageSwitcher />
-              <Link to="/login">
+              <a href="https://clients.hostsailor.com/index.php?rp=/login" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" className="text-blue-600 hover:text-blue-700">
                   {t('common.login')}
                 </Button>
-              </Link>
-              <Link to="/register">
+              </a>
+              <a href="https://clients.hostsailor.com/register.php" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                   {t('common.register')}
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

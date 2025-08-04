@@ -278,12 +278,12 @@ const Header = () => {
         
         <div className="flex items-center space-x-4">
           <LanguageSwitcher />
-          <Link to="/login">
+          <a href="https://clients.hostsailor.com/index.php?rp=/login" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost">{t('common.login')}</Button>
-          </Link>
-          <Link to="/register">
+          </a>
+          <a href="https://clients.hostsailor.com/register.php" target="_blank" rel="noopener noreferrer">
             <Button>{t('common.register')}</Button>
-          </Link>
+          </a>
         </div>
       </div>
     </header>
