@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+# HostSailor Website
 
-## Project info
+موقع HostSailor الإلكتروني مع دعم اللغتين العربية والإنجليزية.
 
-**URL**: https://lovable.dev/projects/e2c8e251-54c1-4f09-825a-4eda06579cdb
+## المميزات
 
-## How can I edit this code?
+- 🌐 دعم اللغتين العربية والإنجليزية
+- 📱 تصميم متجاوب
+- 🎨 واجهة مستخدم حديثة
+- 📋 قوائم منسدلة متعددة المستويات
+- 🔐 نظام تسجيل دخول وتسجيل حساب
+- 📊 لوحة تحكم للمستخدمين
 
-There are several ways of editing your application.
+## التقنيات المستخدمة
 
-**Use Lovable**
+- React 18
+- TypeScript
+- Tailwind CSS
+- Shadcn/ui
+- React Router
+- i18next
+- Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e2c8e251-54c1-4f09-825a-4eda06579cdb) and start prompting.
+## التثبيت والتشغيل
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# تثبيت التبعيات
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# تشغيل في وضع التطوير
 npm run dev
+
+# بناء المشروع
+npm run build
+
+# معاينة البناء
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## هيكل المشروع
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── components/     # مكونات React
+├── pages/         # صفحات التطبيق
+├── locales/       # ملفات الترجمة
+├── hooks/         # React Hooks
+└── lib/           # مكتبات مساعدة
+```
 
-**Use GitHub Codespaces**
+## النشر
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+يتم النشر تلقائياً على GitHub Pages عند دفع التغييرات إلى الفرع الرئيسي.
 
-## What technologies are used for this project?
+## الرابط
 
-This project is built with:
+https://maamoon.github.io/hostsailor/
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## الترخيص
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e2c8e251-54c1-4f09-825a-4eda06579cdb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT License
