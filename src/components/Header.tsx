@@ -113,9 +113,9 @@ const Header = () => {
           label: t('navigation.products.vps.title'),
           href: '/hostsailor/vps-hosting',
           items: [
-            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/hostsailor/kvm-vps' },
-            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/hostsailor/kvm-vps-ssd' },
-            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/hostsailor/storage-vps' }
+            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/hostsailor/vps-hosting/kvm-vps' },
+            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/hostsailor/vps-hosting/kvm-vps' },
+            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/hostsailor/vps-hosting/storage-kvm-vps' }
           ]
         }
       ]
