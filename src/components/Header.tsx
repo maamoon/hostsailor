@@ -13,6 +13,7 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // إغلاق القوائم عند النقر خارجها
   useEffect(() => {
@@ -28,6 +29,61 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  // تنظيف timeout عند إزالة المكون
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  const clearTimeoutRef = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+  };
+
+  const handleDropdownEnter = (key: string) => {
+    clearTimeoutRef();
+    setOpenDropdown(key);
+    setOpenSubMenu(null);
+  };
+
+  const handleDropdownLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      if (!openSubMenu) {
+        setOpenDropdown(null);
+      }
+    }, 200);
+  };
+
+  const handleSubMenuEnter = (key: string) => {
+    clearTimeoutRef();
+    setOpenSubMenu(key);
+  };
+
+  const handleSubMenuLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenSubMenu(null);
+      setOpenDropdown(null);
+    }, 200);
+  };
+
+  const handleDropdownMenuEnter = (key: string) => {
+    clearTimeoutRef();
+    setOpenDropdown(key);
+  };
+
+  const handleDropdownMenuLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      if (!openSubMenu) {
+        setOpenDropdown(null);
+      }
+    }, 200);
+  };
 
   const navigationItems = [
     {
@@ -125,31 +181,6 @@ const Header = () => {
     }
   ];
 
-  const handleDropdownHover = (key: string) => {
-    setOpenDropdown(key);
-    setOpenSubMenu(null); // إغلاق أي قائمة فرعية مفتوحة
-  };
-
-  const handleDropdownLeave = () => {
-    // لا نغلق القائمة المنسدلة إذا كان هناك قائمة فرعية مفتوحة
-    setTimeout(() => {
-      if (!openSubMenu) {
-        setOpenDropdown(null);
-      }
-    }, 150);
-  };
-
-  const handleSubMenuHover = (key: string) => {
-    setOpenSubMenu(key);
-  };
-
-  const handleSubMenuLeave = () => {
-    setTimeout(() => {
-      setOpenSubMenu(null);
-      setOpenDropdown(null);
-    }, 150);
-  };
-
   const renderMenuItem = (item: any, level: number = 0) => {
     const hasSubItems = item.items && item.items.length > 0;
     const isOpen = openSubMenu === item.key;
@@ -159,10 +190,7 @@ const Header = () => {
       <li key={item.key} className="relative group">
         {hasSubItems ? (
           <div
-            onMouseEnter={() => {
-              // فتح القائمة الفرعية عند دخول الماوس للعنصر
-              setOpenSubMenu(item.key);
-            }}
+            onMouseEnter={() => handleSubMenuEnter(item.key)}
             className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors cursor-pointer"
           >
             <span>{item.label}</span>
@@ -184,17 +212,8 @@ const Header = () => {
             className={`absolute top-0 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
               document.documentElement.dir === 'rtl' ? 'right-full' : 'left-full'
             }`}
-            onMouseEnter={() => {
-              // إبقاء القائمة الفرعية مفتوحة عند دخول الماوس إليها
-              setOpenSubMenu(item.key);
-            }}
-            onMouseLeave={() => {
-              // إغلاق القائمة الفرعية عند مغادرة الماوس منها
-              setTimeout(() => {
-                setOpenSubMenu(null);
-                setOpenDropdown(null);
-              }, 150);
-            }}
+            onMouseEnter={() => handleSubMenuEnter(item.key)}
+            onMouseLeave={handleSubMenuLeave}
           >
             {item.items.map((subItem: any) => renderMenuItem(subItem, level + 1))}
           </ul>
@@ -221,19 +240,8 @@ const Header = () => {
                 <div 
                   key={item.key} 
                   className="relative group"
-                  onMouseEnter={() => {
-                    // فتح القائمة المنسدلة عند دخول الماوس للعنصر
-                    setOpenDropdown(item.key);
-                    setOpenSubMenu(null); // إغلاق أي قائمة فرعية مفتوحة
-                  }}
-                  onMouseLeave={() => {
-                    // لا نغلق القائمة المنسدلة إذا كان هناك قائمة فرعية مفتوحة
-                    setTimeout(() => {
-                      if (!openSubMenu) {
-                        setOpenDropdown(null);
-                      }
-                    }, 150);
-                  }}
+                  onMouseEnter={() => handleDropdownEnter(item.key)}
+                  onMouseLeave={handleDropdownLeave}
                 >
                   {hasSubItems ? (
                     <div className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors font-medium cursor-pointer">
@@ -249,29 +257,19 @@ const Header = () => {
                     </Link>
                   )}
                   
-                  {hasSubItems && isOpen && (
-                    <div 
-                      className={`absolute top-full mt-2 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
-                        document.documentElement.dir === 'rtl' ? 'right-0' : 'left-0'
-                      }`}
-                      onMouseEnter={() => {
-                        // إبقاء القائمة المنسدلة مفتوحة عند دخول الماوس إليها
-                        setOpenDropdown(item.key);
-                      }}
-                      onMouseLeave={() => {
-                        // إغلاق القائمة المنسدلة عند مغادرة الماوس منها
-                        setTimeout(() => {
-                          if (!openSubMenu) {
-                            setOpenDropdown(null);
-                          }
-                        }, 150);
-                      }}
-                    >
-                      <ul className="py-2">
-                        {item.items.map((subItem: any) => renderMenuItem(subItem))}
-                      </ul>
-                    </div>
-                  )}
+                                     {hasSubItems && isOpen && (
+                     <div 
+                       className={`absolute top-full mt-2 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
+                         document.documentElement.dir === 'rtl' ? 'right-0' : 'left-0'
+                       }`}
+                       onMouseEnter={() => handleDropdownMenuEnter(item.key)}
+                       onMouseLeave={handleDropdownMenuLeave}
+                     >
+                       <ul className="py-2">
+                         {item.items.map((subItem: any) => renderMenuItem(subItem))}
+                       </ul>
+                     </div>
+                   )}
                 </div>
               );
             })}
