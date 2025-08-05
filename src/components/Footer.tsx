@@ -11,9 +11,10 @@ const Footer = () => {
               Premium web hosting solutions for businesses of all sizes.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white/60 hover:text-white transition-colors">Twitter</a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors">Facebook</a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://x.com/hostsailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Twitter</a>
+              <a href="https://www.facebook.com/HostSailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Facebook</a>
+              <a href="https://www.instagram.com/hostsailor/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Instagram</a>
+              <a href="https://www.linkedin.com/company/hostsailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
             </div>
           </div>
           

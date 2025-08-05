@@ -247,16 +247,16 @@ const HomeHeader = () => {
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3">
-              <a href="#" className="hover:text-blue-300 transition-colors">
+              <a href="https://www.facebook.com/HostSailor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="hover:text-blue-300 transition-colors">
+              <a href="https://x.com/hostsailor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Twitter className="h-4 w-4" />
               </a>
-              <a href="#" className="hover:text-blue-300 transition-colors">
+              <a href="https://www.instagram.com/hostsailor/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="hover:text-blue-300 transition-colors">
+              <a href="https://www.linkedin.com/company/hostsailor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Linkedin className="h-4 w-4" />
               </a>
               <a href="#" className="hover:text-blue-300 transition-colors">
