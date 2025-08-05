@@ -6,10 +6,10 @@
     <script type="text/javascript">
       // Simple redirect for HashRouter - extract path and redirect with hash
       var l = window.location;
-      var baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/hostsailor/';
+      var baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/';
       
-      // Extract the path after /hostsailor/
-      var path = l.pathname.replace('/hostsailor', '').replace(/^\/+/, '');
+      // Extract the path
+      var path = l.pathname.replace(/^\/+/, '');
       
       if (path) {
         // Redirect to main page with hash for HashRouter
@@ -24,7 +24,7 @@
     <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
       <div style="text-align: center;">
         <h1>Redirecting to HostSailor...</h1>
-        <p>If you are not redirected automatically, <a href="/hostsailor/">click here</a>.</p>
+        <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
       </div>
     </div>
   </body>

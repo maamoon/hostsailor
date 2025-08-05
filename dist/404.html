@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>HostSailor - Page Not Found</title>
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment.
-      var pathSegmentsToKeep = 1;
-
+      // Simple redirect for HashRouter - extract path and redirect with hash
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      var baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/';
+      
+      // Extract the path
+      var path = l.pathname.replace(/^\/+/, '');
+      
+      if (path) {
+        // Redirect to main page with hash for HashRouter
+        window.location.replace(baseUrl + '#' + path);
+      } else {
+        // Just redirect to main page
+        window.location.replace(baseUrl);
+      }
     </script>
   </head>
   <body>
-    Redirecting to HostSailor...
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+      <div style="text-align: center;">
+        <h1>Redirecting to HostSailor...</h1>
+        <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+      </div>
+    </div>
   </body>
 </html> 
