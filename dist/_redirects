@@ -1,1 +1,11 @@
-/*    /index.html   200 
+# Redirect all routes to index.html for SPA routing
+/*    /index.html   200
+
+# Specific redirects for better SEO
+/ssd-shared-hosting    /#/ssd-shared-hosting   301
+/reseller-hosting    /#/reseller-hosting   301
+/dedicated-servers    /#/dedicated-servers   301
+/vps-hosting    /#/vps-hosting   301
+/services    /#/services   301
+/contact    /#/contact   301
+/about-us    /#/our-company   301 
