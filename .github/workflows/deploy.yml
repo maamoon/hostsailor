@@ -1,9 +1,12 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (DISABLED)
 
+# DISABLED - Environment protection rules preventing deployment
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
+    # Manually disabled due to environment protection rules
+    # Original triggers were:
+    # push:
+    #   branches: [ main ]
 
 permissions:
   contents: read

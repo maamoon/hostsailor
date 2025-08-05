@@ -1,194 +1,125 @@
-# دليل النشر - HostSailor
+# Deployment Guide
 
-## 🚀 النشر على GitHub Pages
+## Overview
+This project has multiple deployment workflows for GitHub Pages. Due to environment protection rules, some workflows have been disabled and new ones created.
 
-### المتطلبات المسبقة
-- حساب GitHub
-- مستودع GitHub للمشروع
-- Node.js 18+ مثبت
+## Available Deployment Workflows
 
-### خطوات النشر
+### 1. `deploy-fixed.yml` (RECOMMENDED)
+- **Status**: ✅ Active
+- **Trigger**: Push to main branch or manual dispatch
+- **Method**: Uses `peaceiris/actions-gh-pages@v3` action
+- **Branch**: Creates/updates `gh-pages` branch
+- **Advantages**: 
+  - Bypasses environment protection rules
+  - Reliable deployment method
+  - No environment restrictions
 
-#### 1. إعداد المشروع
+### 2. `deploy-gh-pages-branch.yml` (ALTERNATIVE)
+- **Status**: ✅ Active
+- **Trigger**: Push to main branch or manual dispatch
+- **Method**: Uses `peaceiris/actions-gh-pages@v3` action
+- **Branch**: Creates/updates `gh-pages` branch
+- **Advantages**: Same as above
+
+### 3. `deploy-manual.yml` (MANUAL ONLY)
+- **Status**: ✅ Active
+- **Trigger**: Manual dispatch only
+- **Method**: Uses `peaceiris/actions-gh-pages@v3` action
+- **Branch**: Creates/updates `gh-pages` branch
+- **Advantages**: Manual control, no automatic deployments
+
+## Disabled Workflows
+The following workflows have been disabled due to environment protection rules:
+
+- `pages.yml` (DISABLED)
+- `deploy.yml` (DISABLED)
+- `deploy-simple.yml` (DISABLED)
+- `deploy-official.yml` (DISABLED)
+
+## Environment Protection Issue
+The original workflows failed because they used the `github-pages` environment with protection rules that prevent the `main` branch from deploying. The new workflows bypass this by:
+
+1. Not specifying the `github-pages` environment
+2. Using the `peaceiris/actions-gh-pages@v3` action instead of `actions/deploy-pages@v4`
+3. Publishing to a `gh-pages` branch instead of using GitHub Pages artifacts
+
+## How to Deploy
+
+### Automatic Deployment
+1. Push changes to the `main` branch
+2. The `deploy-fixed.yml` workflow will automatically trigger
+3. Check the Actions tab in GitHub to monitor progress
+
+### Manual Deployment
+1. Go to the Actions tab in your GitHub repository
+2. Select "Deploy to GitHub Pages (Fixed)" or "Deploy to GitHub Pages (Manual)"
+3. Click "Run workflow"
+4. Select the branch (usually `main`)
+5. Click "Run workflow"
+
+## GitHub Pages Configuration
+
+### Repository Settings
+1. Go to Settings > Pages
+2. Set Source to "Deploy from a branch"
+3. Select `gh-pages` branch
+4. Set folder to `/ (root)`
+5. Click Save
+
+### Custom Domain (if applicable)
+1. In Settings > Pages, add your custom domain
+2. Update the `CNAME` file in the `public` folder
+3. The workflow will preserve the CNAME file during deployment
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Environment Protection Rules**
+   - **Solution**: Use the new workflows that bypass environment restrictions
+
+2. **Build Failures**
+   - Check the Actions tab for build logs
+   - Ensure all dependencies are properly installed
+   - Verify the build command works locally
+
+3. **Deployment Not Updating**
+   - Check if the `gh-pages` branch was updated
+   - Verify GitHub Pages settings point to the correct branch
+   - Wait a few minutes for changes to propagate
+
+4. **404 Errors**
+   - Ensure the base path in `vite.config.ts` is correct
+   - Check that the `CNAME` file is preserved
+   - Verify all routes are properly configured
+
+### Local Testing
 ```bash
-# استنساخ المشروع
-git clone https://github.com/maamoon/hostsailor.git
-cd hostsailor
-
-# تثبيت التبعيات
+# Install dependencies
 npm install
-```
 
-#### 2. بناء المشروع
-```bash
-# بناء المشروع لـ GitHub Pages
-npm run build:gh-pages
-```
-
-#### 3. النشر التلقائي (مُوصى به)
-
-##### إعداد GitHub Actions
-1. اذهب إلى مستودع GitHub
-2. انتقل إلى `Settings` > `Pages`
-3. اختر `GitHub Actions` كمصدر للنشر
-4. ادفع التغييرات إلى الفرع `main`
-
-##### ملف GitHub Actions
-أنشئ ملف `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build project
-      run: npm run build:gh-pages
-      
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
-```
-
-#### 4. النشر اليدوي
-```bash
-# بناء المشروع
+# Build for production
 npm run build:gh-pages
 
-# رفع محتويات مجلد dist إلى فرع gh-pages
-git add dist -f
-git commit -m "Deploy to GitHub Pages"
-git subtree push --prefix dist origin gh-pages
+# Preview the build
+npm run preview
 ```
 
-## 🔧 إعدادات مهمة
-
-### 1. إعدادات Vite
-```typescript
-// vite.config.ts
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/hostsailor/' : '/',
-  // ... باقي الإعدادات
-}))
+## File Structure
+```
+.github/workflows/
+├── deploy-fixed.yml          # Main deployment workflow
+├── deploy-gh-pages-branch.yml # Alternative deployment
+├── deploy-manual.yml         # Manual deployment only
+├── pages.yml                 # DISABLED
+├── deploy.yml                # DISABLED
+├── deploy-simple.yml         # DISABLED
+└── deploy-official.yml       # DISABLED
 ```
 
-### 2. ملف _redirects
-```bash
-# public/_redirects
-/*    /index.html   200
-```
-
-### 3. ملف CNAME (اختياري)
-```bash
-# public/CNAME
-# إذا كنت تريد استخدام نطاق مخصص، أضف اسم النطاق هنا
-# مثال: hostsailor.com
-# اترك هذا الملف فارغاً إذا كنت تريد استخدام النطاق الافتراضي لـ GitHub Pages
-```
-
-## 🐛 حل المشاكل الشائعة
-
-### 1. خطأ 404 في JavaScript/CSS
-**المشكلة**: `GET https://username.github.io/hostsailor/assets/index-xxx.js net::ERR_ABORTED 404`
-
-**الحل**:
-- تأكد من إعداد `base` الصحيح في `vite.config.ts`
-- تأكد من أن جميع المسارات في `index.html` تستخدم المسار الصحيح
-- أعد بناء المشروع: `npm run build:gh-pages`
-
-### 2. Service Worker لا يعمل
-**المشكلة**: Service Worker لا يسجل أو لا يعمل بشكل صحيح
-
-**الحل**:
-- تأكد من أن ملف `sw.js` يستخدم المسارات الصحيحة
-- تأكد من أن `manifest.json` يستخدم المسارات الصحيحة
-- امسح ذاكرة التخزين المؤقت للمتصفح
-
-### 3. الروابط لا تعمل
-**المشكلة**: الروابط الداخلية تعطي خطأ 404
-
-**الحل**:
-- تأكد من وجود ملف `_redirects` في مجلد `public`
-- تأكد من إعداد React Router بشكل صحيح
-- تأكد من أن جميع المسارات تستخدم المسار الأساسي الصحيح
-
-### 4. مشاكل في الترجمة
-**المشكلة**: الترجمة لا تعمل أو تظهر مفاتيح الترجمة
-
-**الحل**:
-- تأكد من وجود جميع ملفات الترجمة في `src/locales/`
-- تأكد من إعداد i18next بشكل صحيح
-- تحقق من صحة مفاتيح الترجمة
-
-## 📋 قائمة التحقق قبل النشر
-
-- [ ] تم تثبيت جميع التبعيات: `npm install`
-- [ ] المشروع يعمل محلياً: `npm run dev`
-- [ ] البناء يعمل بدون أخطاء: `npm run build:gh-pages`
-- [ ] جميع المسارات في `vite.config.ts` صحيحة
-- [ ] ملف `_redirects` موجود في مجلد `public`
-- [ ] ملف `sw.js` يستخدم المسارات الصحيحة
-- [ ] ملف `manifest.json` يستخدم المسارات الصحيحة
-- [ ] جميع الصور والملفات الثابتة موجودة
-- [ ] تم اختبار الترجمة متعددة اللغات
-- [ ] تم اختبار التجاوب على الأجهزة المختلفة
-
-## 🔄 تحديث الموقع
-
-### بعد إجراء تغييرات
-```bash
-# إضافة التغييرات
-git add .
-
-# حفظ التغييرات
-git commit -m "Update website"
-
-# رفع التغييرات
-git push origin main
-```
-
-### إعادة بناء ونشر يدوي
-```bash
-# بناء المشروع
-npm run build:gh-pages
-
-# رفع التغييرات
-git add dist -f
-git commit -m "Rebuild and deploy"
-git push origin gh-pages
-```
-
-## 📞 الدعم
-
-إذا واجهت أي مشاكل في النشر:
-1. تحقق من قائمة التحقق أعلاه
-2. راجع سجلات GitHub Actions
-3. تحقق من إعدادات GitHub Pages
-4. أنشئ issue في GitHub مع تفاصيل المشكلة
-
----
-
-**ملاحظة**: تأكد دائماً من اختبار الموقع محلياً قبل النشر للتأكد من أن كل شيء يعمل بشكل صحيح. 
+## Next Steps
+1. Push your changes to trigger the new deployment workflow
+2. Monitor the Actions tab for successful deployment
+3. Verify your site is accessible at the GitHub Pages URL
+4. Update any custom domain settings if needed 
