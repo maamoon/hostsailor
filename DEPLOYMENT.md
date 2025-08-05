@@ -12,8 +12,8 @@
 #### 1. إعداد المشروع
 ```bash
 # استنساخ المشروع
-git clone https://github.com/maamoon/sail-web-launch.git
-cd sail-web-launch
+git clone https://github.com/maamoon/hostsailor.git
+cd hostsailor
 
 # تثبيت التبعيات
 npm install
@@ -90,7 +90,7 @@ git subtree push --prefix dist origin gh-pages
 ```typescript
 // vite.config.ts
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/sail-web-launch/' : '/',
+  base: mode === 'production' ? '/hostsailor/' : '/',
   // ... باقي الإعدادات
 }))
 ```
@@ -112,7 +112,7 @@ export default defineConfig(({ mode }) => ({
 ## 🐛 حل المشاكل الشائعة
 
 ### 1. خطأ 404 في JavaScript/CSS
-**المشكلة**: `GET https://username.github.io/repo/assets/index-xxx.js net::ERR_ABORTED 404`
+**المشكلة**: `GET https://username.github.io/hostsailor/assets/index-xxx.js net::ERR_ABORTED 404`
 
 **الحل**:
 - تأكد من إعداد `base` الصحيح في `vite.config.ts`
