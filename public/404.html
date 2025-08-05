@@ -10,19 +10,25 @@
       // This script takes the current url and converts the path and query
       // string into just a query string, and then redirects the browser
       // to the new url with only a query string and hash fragment.
-      var pathSegmentsToKeep = 1;
+      var pathSegmentsToKeep = 1; // Keep the hostsailor segment
 
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
         l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+        l.hash;
+      
+      // Redirect to the main page with the route as a query parameter
+      window.location.replace(redirectUrl);
     </script>
   </head>
   <body>
-    Redirecting to HostSailor...
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+      <div style="text-align: center;">
+        <h1>Redirecting to HostSailor...</h1>
+        <p>If you are not redirected automatically, <a href="/hostsailor/">click here</a>.</p>
+      </div>
+    </div>
   </body>
 </html> 
