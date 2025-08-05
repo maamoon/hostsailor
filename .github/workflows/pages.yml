@@ -1,0 +1,2 @@
+# This workflow has been replaced by deploy-simple.yml
+# Using simpler deployment method to avoid environment protection issues 
