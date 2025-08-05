@@ -31,10 +31,10 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install --legacy-peer-deps
           
-      - name: Fix rollup dependencies
+      - name: Fix native bindings
         run: |
-          npm rebuild
-          npm install @rollup/rollup-linux-x64-gnu --platform=linux --arch=x64 --force
+          npm rebuild @swc/core
+          npm install @swc/core@latest --force
           
       - name: Build
         run: npm run build
