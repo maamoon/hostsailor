@@ -94,28 +94,40 @@ const Header = () => {
           key: 'sharedHosting',
           label: t('navigation.products.sharedHosting.title'),
           items: [
-            { key: 'ssdHosting', label: t('navigation.products.sharedHosting.ssdHosting'), href: '/hostsailor/ssd-shared-hosting' },
-            { key: 'resellerHosting', label: t('navigation.products.sharedHosting.resellerHosting'), href: '/hostsailor/reseller-hosting' }
+            { key: 'ssdHosting', label: t('navigation.products.sharedHosting.ssdHosting'), href: '/ssd-shared-hosting' },
+            { key: 'resellerHosting', label: t('navigation.products.sharedHosting.resellerHosting'), href: '/reseller-hosting' }
           ]
         },
         {
           key: 'dedicatedServers',
           label: t('navigation.products.dedicatedServers.title'),
-          href: '/hostsailor/dedicated-servers',
+          href: '/dedicated-servers',
           items: [
-            { key: 'supermicroRo', label: t('navigation.products.dedicatedServers.supermicroRo'), href: '/hostsailor/dedicated-servers/supermicro-romania-dedicated-servers' },
-            { key: 'hpNl', label: t('navigation.products.dedicatedServers.hpNl'), href: '/hostsailor/dedicated-servers/hp-netherlands-dedicated-servers' },
-            { key: 'fujitsuNl', label: t('navigation.products.dedicatedServers.fujitsuNl'), href: '/hostsailor/nl-dedicated-servers' }
+            { key: 'supermicroRo', label: t('navigation.products.dedicatedServers.supermicroRo'), href: '/dedicated-servers/supermicro-romania-dedicated-servers' },
+            { key: 'hpNl', label: t('navigation.products.dedicatedServers.hpNl'), href: '/dedicated-servers/hp-netherlands-dedicated-servers' },
+            { key: 'fujitsuNl', label: t('navigation.products.dedicatedServers.fujitsuNl'), href: '/nl-dedicated-servers' }
           ]
+        },
+        {
+          key: 'colocation',
+          label: 'Colocation',
+          href: '/colocation'
+        },
+        {
+          key: 'hotDeals',
+          label: 'Hot Deals',
+          href: '/hot-deals'
         },
         {
           key: 'vps',
           label: t('navigation.products.vps.title'),
-          href: '/hostsailor/vps-hosting',
+          href: '/vps-hosting',
           items: [
-            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/hostsailor/vps-hosting/kvm-vps' },
-            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/hostsailor/vps-hosting/kvm-vps' },
-            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/hostsailor/vps-hosting/storage-kvm-vps' }
+            { key: 'openvzHdd', label: 'OpenVZ VPS HDD', href: '/openvz-vps-hdd' },
+            { key: 'openvzSsd', label: 'OpenVZ VPS SSD', href: '/openvz-vps-ssd' },
+            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/kvm-vps-nvme' },
+            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/vps-hosting/kvm-vps' },
+            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/vps-hosting/storage-kvm-vps' }
           ]
         }
       ]
@@ -127,23 +139,24 @@ const Header = () => {
         {
           key: 'domainRegistration',
           label: t('navigation.services.domainRegistration.title'),
+          href: '/domain-registration',
           items: [
-            { key: 'register', label: t('navigation.services.domainRegistration.register'), href: 'https://clients.hostsailor.com/cart.php?a=add&domain=register', external: true },
-            { key: 'transfer', label: t('navigation.services.domainRegistration.transfer'), href: 'https://clients.hostsailor.com/cart.php?a=add&domain=transfer', external: true }
+            { key: 'register', label: t('navigation.services.domainRegistration.register'), href: '/domain-registration' },
+            { key: 'transfer', label: t('navigation.services.domainRegistration.transfer'), href: '/domain-registration' }
           ]
         },
-        { key: 'sslCertificates', label: t('navigation.services.sslCertificates'), href: '/hostsailor/ssl-certificates' },
-        { key: 'vlanNetwork', label: t('navigation.services.vlanNetwork'), href: '/hostsailor/vlan-network' },
-        { key: 'ipAnnouncement', label: t('navigation.services.ipAnnouncement'), href: '/hostsailor/ip-announcement' }
+        { key: 'sslCertificates', label: t('navigation.services.sslCertificates'), href: '/ssl-certificates' },
+        { key: 'vlanNetwork', label: t('navigation.services.vlanNetwork'), href: '/vlan-network' },
+        { key: 'ipAnnouncement', label: t('navigation.services.ipAnnouncement'), href: '/ip-announcement' }
       ]
     },
     {
       key: 'partners',
       label: t('navigation.partners.title'),
       items: [
-        { key: 'affiliateProgram', label: t('navigation.partners.affiliateProgram'), href: '/hostsailor/affiliate-program' },
-        { key: 'resellerProgram', label: t('navigation.partners.resellerProgram'), href: '/hostsailor/reseller-program' },
-        { key: 'bugBountyProgram', label: t('navigation.partners.bugBountyProgram'), href: '/hostsailor/bug-bounty-programme' }
+        { key: 'affiliateProgram', label: t('navigation.partners.affiliateProgram'), href: '/affiliate-program' },
+        { key: 'resellerProgram', label: t('navigation.partners.resellerProgram'), href: '/reseller-program' },
+        { key: 'bugBountyProgram', label: t('navigation.partners.bugBountyProgram'), href: '/bug-bounty-programme' }
       ]
     },
     {
@@ -151,32 +164,32 @@ const Header = () => {
       label: t('navigation.tools.title'),
       items: [
         { key: 'networkStatus', label: t('navigation.tools.networkStatus'), href: 'https://stats.hostsailor.com/', external: true },
-        { key: 'lookingGlass', label: t('navigation.tools.lookingGlass'), href: '/hostsailor/lookingglass' },
+        { key: 'lookingGlass', label: t('navigation.tools.lookingGlass'), href: '/looking-glass' },
         { key: 'knowledgeBase', label: t('navigation.tools.knowledgeBase'), href: 'https://clients.hostsailor.com/index.php?rp=/knowledgebase', external: true },
         { key: 'tools', label: t('navigation.tools.tools'), href: 'http://web.hostsailor.com/tools', external: true },
-        { key: 'faqs', label: t('navigation.tools.faqs'), href: '/hostsailor/faqs' }
+        { key: 'faqs', label: t('navigation.tools.faqs'), href: '/faqs' }
       ]
     },
     {
       key: 'aboutUs',
       label: t('navigation.aboutUs.title'),
       items: [
-        { key: 'ourCompany', label: t('navigation.aboutUs.ourCompany'), href: '/hostsailor/our-company' },
+        { key: 'ourCompany', label: t('navigation.aboutUs.ourCompany'), href: '/our-company' },
         { key: 'blog', label: t('navigation.aboutUs.blog'), href: 'https://web.hostsailor.com/blog', external: true },
         {
           key: 'dataCenters',
           label: t('navigation.aboutUs.dataCenters.title'),
           items: [
-            { key: 'usLa', label: t('navigation.aboutUs.dataCenters.usLa'), href: '/hostsailor/data-centers-in-lax-los-angeles' },
-            { key: 'netherlandsAms', label: t('navigation.aboutUs.dataCenters.netherlandsAms'), href: '/hostsailor/data-center/netherlands' },
-            { key: 'romaniaBucharest', label: t('navigation.aboutUs.dataCenters.romaniaBucharest'), href: '/hostsailor/data-center/romania' }
+            { key: 'usLa', label: t('navigation.aboutUs.dataCenters.usLa'), href: '/data-centers-in-lax-los-angeles' },
+            { key: 'netherlandsAms', label: t('navigation.aboutUs.dataCenters.netherlandsAms'), href: '/data-center/netherlands' },
+            { key: 'romaniaBucharest', label: t('navigation.aboutUs.dataCenters.romaniaBucharest'), href: '/data-center/romania' }
           ]
         },
-        { key: 'privacyPolicy', label: t('navigation.aboutUs.privacyPolicy'), href: '/hostsailor/privacy-policy' },
-        { key: 'termsOfService', label: t('navigation.aboutUs.termsOfService'), href: '/hostsailor/terms-of-service' },
-        { key: 'acceptableUsePolicy', label: t('navigation.aboutUs.acceptableUsePolicy'), href: '/hostsailor/acceptable-use-policy' },
-        { key: 'serviceLevelAgreement', label: t('navigation.aboutUs.serviceLevelAgreement'), href: '/hostsailor/service-level-agreement' },
-        { key: 'contactUs', label: t('navigation.aboutUs.contactUs'), href: '/hostsailor/contact' }
+        { key: 'privacyPolicy', label: t('navigation.aboutUs.privacyPolicy'), href: '/privacy-policy' },
+        { key: 'termsOfService', label: t('navigation.aboutUs.termsOfService'), href: '/terms-of-service' },
+        { key: 'acceptableUsePolicy', label: t('navigation.aboutUs.acceptableUsePolicy'), href: '/acceptable-use-policy' },
+        { key: 'serviceLevelAgreement', label: t('navigation.aboutUs.serviceLevelAgreement'), href: '/service-level-agreement' },
+        { key: 'contactUs', label: t('navigation.aboutUs.contactUs'), href: '/contact' }
       ]
     }
   ];
@@ -227,7 +240,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-8">
           <Link to="/" className="flex items-center">
-            <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+            <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
           </Link>
           
           {/* Navigation Menu */}

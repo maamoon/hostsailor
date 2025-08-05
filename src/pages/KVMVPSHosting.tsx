@@ -246,7 +246,7 @@ const KVMVPSHosting = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/kvm-vps-bg.svg')",
+            backgroundImage: "url('/kvm-vps-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-5"></div>

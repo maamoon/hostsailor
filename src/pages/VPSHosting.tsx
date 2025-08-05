@@ -22,7 +22,7 @@ const VPSHosting = () => {
         "DDoS Protection",
         "24/7 Support"
       ],
-      href: "/hostsailor/kvm-vps"
+      href: "/kvm-vps"
     },
     {
       name: "KVM VPS SSD",
@@ -36,7 +36,7 @@ const VPSHosting = () => {
         "Security Features",
         "Technical Support"
       ],
-      href: "/hostsailor/kvm-vps-ssd"
+      href: "/kvm-vps-ssd"
     },
     {
       name: "KVM VPS Storage",
@@ -50,7 +50,7 @@ const VPSHosting = () => {
         "Network Optimization",
         "24/7 Monitoring"
       ],
-      href: "/hostsailor/storage-vps"
+      href: "/storage-vps"
     }
   ];
 
@@ -119,7 +119,7 @@ const VPSHosting = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/vps-hosting-bg.svg')",
+            backgroundImage: "url('/vps-hosting-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
@@ -153,7 +153,7 @@ const VPSHosting = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/hostsailor/service-images/vps-hosting.svg" 
+                src="/service-images/vps-hosting.svg" 
                 alt="VPS Hosting" 
                 className="w-80 h-60 object-contain"
               />

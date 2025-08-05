@@ -1,0 +1,102 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#hot-deals-bg)" rx="12"/>
+  
+  <!-- Price Tags -->
+  <g transform="translate(60, 80)">
+    <!-- Main Tag -->
+    <rect x="0" y="0" width="80" height="40" fill="#EF4444" rx="4"/>
+    <text x="40" y="15" text-anchor="middle" fill="white" font-family="monospace" font-size="12" font-weight="bold">$12.99</text>
+    <text x="40" y="30" text-anchor="middle" fill="white" font-family="monospace" font-size="8">was $24.99</text>
+    
+    <!-- Tag Hole -->
+    <circle cx="40" cy="5" r="3" fill="white"/>
+    
+    <!-- Discount Badge -->
+    <rect x="60" y="-5" width="25" height="15" fill="#F59E0B" rx="3"/>
+    <text x="72.5" y="4" text-anchor="middle" fill="white" font-family="monospace" font-size="8" font-weight="bold">50%</text>
+  </g>
+  
+  <g transform="translate(180, 60)">
+    <!-- Second Tag -->
+    <rect x="0" y="0" width="70" height="35" fill="#8B5CF6" rx="4"/>
+    <text x="35" y="13" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">$9.99</text>
+    <text x="35" y="26" text-anchor="middle" fill="white" font-family="monospace" font-size="7">was $19.99</text>
+    
+    <!-- Tag Hole -->
+    <circle cx="35" cy="4" r="2.5" fill="white"/>
+    
+    <!-- Discount Badge -->
+    <rect x="50" y="-4" width="22" height="12" fill="#F59E0B" rx="2"/>
+    <text x="61" y="3" text-anchor="middle" fill="white" font-family="monospace" font-size="7" font-weight="bold">OFF</text>
+  </g>
+  
+  <g transform="translate(40, 140)">
+    <!-- Third Tag -->
+    <rect x="0" y="0" width="90" height="45" fill="#10B981" rx="4"/>
+    <text x="45" y="16" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">$149.99</text>
+    <text x="45" y="32" text-anchor="middle" fill="white" font-family="monospace" font-size="8">was $199.99</text>
+    
+    <!-- Tag Hole -->
+    <circle cx="45" cy="6" r="3" fill="white"/>
+    
+    <!-- Discount Badge -->
+    <rect x="65" y="-6" width="28" height="16" fill="#F59E0B" rx="3"/>
+    <text x="79" y="3" text-anchor="middle" fill="white" font-family="monospace" font-size="8" font-weight="bold">25%</text>
+  </g>
+  
+  <!-- Fire Icons -->
+  <g transform="translate(20, 40)">
+    <path d="M0 20 L5 10 L10 20 L15 5 L20 15 L25 0 L30 10 L35 20 L40 5 L45 15 L50 20" 
+          stroke="#F97316" stroke-width="2" fill="none" opacity="0.8"/>
+    <circle cx="25" cy="10" r="3" fill="#F97316"/>
+  </g>
+  
+  <g transform="translate(250, 30)">
+    <path d="M0 15 L3 8 L6 15 L9 4 L12 10 L15 0 L18 6 L21 12 L24 4 L27 10 L30 15" 
+          stroke="#F97316" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <circle cx="15" cy="7" r="2" fill="#F97316"/>
+  </g>
+  
+  <!-- Clock Icons -->
+  <circle cx="280" cy="80" r="12" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="280" cy="80" r="8" fill="white"/>
+  <line x1="280" y1="80" x2="280" y2="74" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="280" y1="80" x2="285" y2="80" stroke="#F59E0B" stroke-width="2"/>
+  
+  <circle cx="30" cy="200" r="10" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="30" cy="200" r="6" fill="white"/>
+  <line x1="30" y1="200" x2="30" y2="196" stroke="#F59E0B" stroke-width="1.5"/>
+  <line x1="30" y1="200" x2="33" y2="200" stroke="#F59E0B" stroke-width="1.5"/>
+  
+  <!-- Sparkles -->
+  <g transform="translate(120, 20)">
+    <path d="M0 0 L2 2 L4 0 L2 -2 Z" fill="#F59E0B"/>
+    <path d="M8 0 L10 2 L12 0 L10 -2 Z" fill="#F59E0B"/>
+    <path d="M16 0 L18 2 L20 0 L18 -2 Z" fill="#F59E0B"/>
+  </g>
+  
+  <g transform="translate(200, 180)">
+    <path d="M0 0 L2 2 L4 0 L2 -2 Z" fill="#F59E0B"/>
+    <path d="M8 0 L10 2 L12 0 L10 -2 Z" fill="#F59E0B"/>
+    <path d="M16 0 L18 2 L20 0 L18 -2 Z" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Service Icons -->
+  <rect x="140" y="100" width="20" height="15" fill="#3B82F6" rx="2"/>
+  <text x="150" y="110" text-anchor="middle" fill="white" font-family="monospace" font-size="8" font-weight="bold">VPS</text>
+  
+  <rect x="170" y="100" width="20" height="15" fill="#8B5CF6" rx="2"/>
+  <text x="180" y="110" text-anchor="middle" fill="white" font-family="monospace" font-size="8" font-weight="bold">SSL</text>
+  
+  <rect x="200" y="100" width="20" height="15" fill="#10B981" rx="2"/>
+  <text x="210" y="110" text-anchor="middle" fill="white" font-family="monospace" font-size="8" font-weight="bold">WEB</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="hot-deals-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF2F2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FED7AA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg> 

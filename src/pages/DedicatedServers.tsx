@@ -197,7 +197,7 @@ const DedicatedServers = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/dedicated-servers-bg.svg')",
+            backgroundImage: "url('/dedicated-servers-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
@@ -226,7 +226,7 @@ const DedicatedServers = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/hostsailor/service-images/dedicated-servers.svg" 
+                src="/service-images/dedicated-servers.svg" 
                 alt="Dedicated Servers" 
                 className="w-80 h-60 object-contain"
               />

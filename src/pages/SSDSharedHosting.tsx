@@ -114,7 +114,7 @@ const SSDSharedHosting = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/ssd-hosting-bg.svg')",
+            backgroundImage: "url('/ssd-hosting-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-5"></div>
@@ -144,7 +144,7 @@ const SSDSharedHosting = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/hostsailor/service-images/shared-hosting.svg" 
+                src="/service-images/shared-hosting.svg" 
                 alt="SSD Shared Hosting" 
                 className="w-80 h-60 object-contain"
               />

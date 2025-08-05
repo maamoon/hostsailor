@@ -14,31 +14,31 @@ const Contact = () => {
   const contactMethods = [
     {
       icon: <Phone className="h-6 w-6" />,
-      title: "Phone Support",
-      description: "Call us anytime for immediate assistance",
+      title: t('contact.phoneSupport'),
+      description: t('contact.phoneSupportDesc'),
       contact: "+164 6 518 9099",
-      availability: "24/7 Available"
+      availability: t('contact.support247')
     },
     {
       icon: <Mail className="h-6 w-6" />,
-      title: "Email Support",
-      description: "Send us an email and we'll respond quickly",
+      title: t('contact.emailSupport'),
+      description: t('contact.emailSupportDesc'),
       contact: "sales@hostsailor.com",
       availability: "Response within 2 hours"
     },
     {
       icon: <MessageSquare className="h-6 w-6" />,
-      title: "Live Chat",
-      description: "Chat with our support team in real-time",
-      contact: "Start Chat",
-      availability: "Available 24/7"
+      title: t('contact.liveChat'),
+      description: t('contact.liveChatDesc'),
+      contact: t('contact.startChat'),
+      availability: t('contact.support247')
     }
   ];
 
   const officeInfo = [
     {
       icon: <Building className="h-6 w-6" />,
-      title: "Head Office",
+      title: t('contact.headOffice'),
       address: "Suite No: 1605, Churchill Executive Tower, Burj Khalifa Area, Dubai P.O. Box 98362, United Arab Emirates",
       phone: "+164 6 518 9099",
       email: "sales@hostsailor.com"
@@ -47,16 +47,16 @@ const Contact = () => {
 
   const supportHours = [
     {
-      day: "Monday - Friday",
-      hours: "24/7 Support"
+      day: t('contact.mondayFriday'),
+      hours: t('contact.support247')
     },
     {
-      day: "Saturday - Sunday",
-      hours: "24/7 Support"
+      day: t('contact.saturdaySunday'),
+      hours: t('contact.support247')
     },
     {
-      day: "Holidays",
-      hours: "24/7 Support"
+      day: t('contact.holidays'),
+      hours: t('contact.support247')
     }
   ];
 
@@ -69,7 +69,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/contact-bg.svg')",
+            backgroundImage: "url('/contact-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-gray-600 opacity-5"></div>
@@ -77,16 +77,15 @@ const Contact = () => {
         <div className="relative max-w-6xl mx-auto text-center">
           <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
             <MessageSquare className="h-4 w-4 mr-2" />
-            Contact Us
+            {t('contact.title')}
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Get in Touch
+            {t('contact.heroTitle')}
           </h1>
           
           <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
-            Have questions about our hosting services? Our expert team is here to help. 
-            Contact us through any of the methods below and we'll get back to you promptly.
+            {t('contact.heroSubtitle')}
           </p>
         </div>
       </section>
@@ -96,10 +95,10 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              How Can We Help You?
+              {t('contact.howCanWeHelp')}
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose the most convenient way to reach our support team
+              {t('contact.howCanWeHelpSubtitle')}
             </p>
           </div>
           
@@ -123,7 +122,7 @@ const Contact = () => {
                     {method.availability}
                   </div>
                   <Button className="w-full">
-                    {method.title === "Live Chat" ? "Start Chat" : "Contact Now"}
+                    {method.title === t('contact.liveChat') ? t('contact.startChat') : t('contact.contactNow')}
                   </Button>
                 </CardContent>
               </Card>
@@ -140,61 +139,61 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Send Us a Message
+                {t('contact.sendMessage')}
               </h2>
               <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get back to you as soon as possible.
+                {t('contact.sendMessageSubtitle')}
               </p>
               
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      First Name
+                      {t('contact.firstName')}
                     </label>
-                    <Input placeholder="Enter your first name" />
+                    <Input placeholder={t('contact.firstNamePlaceholder')} />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Last Name
+                      {t('contact.lastName')}
                     </label>
-                    <Input placeholder="Enter your last name" />
+                    <Input placeholder={t('contact.lastNamePlaceholder')} />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address
+                    {t('contact.emailAddress')}
                   </label>
-                  <Input type="email" placeholder="Enter your email address" />
+                  <Input type="email" placeholder={t('contact.emailAddressPlaceholder')} />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number
+                    {t('contact.phoneNumber')}
                   </label>
-                  <Input placeholder="Enter your phone number" />
+                  <Input placeholder={t('contact.phoneNumberPlaceholder')} />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject
+                    {t('contact.subject')}
                   </label>
-                  <Input placeholder="What is this regarding?" />
+                  <Input placeholder={t('contact.subjectPlaceholder')} />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
+                    {t('contact.message')}
                   </label>
                   <Textarea 
-                    placeholder="Tell us how we can help you..."
+                    placeholder={t('contact.messagePlaceholder')}
                     rows={5}
                   />
                 </div>
                 
                 <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                  Send Message
+                  {t('contact.sendMessageButton')}
                 </Button>
               </form>
             </div>
@@ -202,7 +201,7 @@ const Contact = () => {
             {/* Office Info */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Office Information
+                {t('contact.officeInformation')}
               </h2>
               
               {officeInfo.map((office, index) => (
@@ -219,7 +218,7 @@ const Contact = () => {
                     <div className="flex items-start">
                       <MapPin className="h-5 w-5 text-gray-400 mr-3 mt-0.5" />
                       <div>
-                        <p className="font-medium text-gray-900">Address</p>
+                        <p className="font-medium text-gray-900">{t('contact.address')}</p>
                         <p className="text-gray-600 text-sm">{office.address}</p>
                       </div>
                     </div>
@@ -227,7 +226,7 @@ const Contact = () => {
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 text-gray-400 mr-3" />
                       <div>
-                        <p className="font-medium text-gray-900">Phone</p>
+                        <p className="font-medium text-gray-900">{t('contact.phone')}</p>
                         <p className="text-gray-600 text-sm">{office.phone}</p>
                       </div>
                     </div>
@@ -235,7 +234,7 @@ const Contact = () => {
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-gray-400 mr-3" />
                       <div>
-                        <p className="font-medium text-gray-900">Email</p>
+                        <p className="font-medium text-gray-900">{t('contact.email')}</p>
                         <p className="text-gray-600 text-sm">{office.email}</p>
                       </div>
                     </div>
@@ -250,7 +249,7 @@ const Contact = () => {
                     <div className="p-2 bg-green-100 rounded-full mr-3">
                       <Clock className="h-5 w-5 text-green-600" />
                     </div>
-                    <CardTitle>Support Hours</CardTitle>
+                    <CardTitle>{t('contact.supportHours')}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -276,54 +275,54 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              {t('contact.faqTitle')}
             </h2>
             <p className="text-gray-600">
-              Quick answers to common questions
+              {t('contact.faqSubtitle')}
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">How quickly do you respond?</CardTitle>
+                <CardTitle className="text-lg">{t('contact.responseTime')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  We typically respond to emails within 2 hours and provide instant support via phone and live chat 24/7.
+                  {t('contact.responseTimeAnswer')}
                 </p>
               </CardContent>
             </Card>
             
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">What information should I provide?</CardTitle>
+                <CardTitle className="text-lg">{t('contact.whatInformation')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Please include your name, contact details, and a detailed description of your inquiry or issue.
+                  {t('contact.whatInformationAnswer')}
                 </p>
               </CardContent>
             </Card>
             
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Do you offer technical support?</CardTitle>
+                <CardTitle className="text-lg">{t('contact.technicalSupport')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Yes, we provide comprehensive technical support for all our hosting services 24/7.
+                  {t('contact.technicalSupportAnswer')}
                 </p>
               </CardContent>
             </Card>
             
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Can I schedule a call?</CardTitle>
+                <CardTitle className="text-lg">{t('contact.scheduleCall')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Absolutely! You can schedule a consultation call with our sales team at your convenience.
+                  {t('contact.scheduleCallAnswer')}
                 </p>
               </CardContent>
             </Card>

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Star, Users, Building, DollarSign, Shield, Globe, Server, Zap, Award, Clock, Headphones, Rocket, Database, Cpu, HardDrive, Network, Lock, Mail, Phone, Wifi, Zap, Settings, Activity, Wrench, Monitor, Gamepad2, ShoppingCart, Code, HardDriveIcon, Database, Layers, HardDrive as Storage } from "lucide-react";
+import { Check, Star, Users, Building, DollarSign, Shield, Globe, Server, Zap, Award, Clock, Headphones, Rocket, Database, Cpu, HardDrive, Network, Lock, Mail, Phone, Wifi, Settings, Activity, Wrench, Monitor, Gamepad2, ShoppingCart, Code, HardDriveIcon, Layers, HardDrive as Storage } from "lucide-react";
 import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 
@@ -239,7 +239,7 @@ const StorageKVMVPS = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/storage-vps-bg.svg')",
+            backgroundImage: "url('/storage-vps-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>
@@ -283,7 +283,7 @@ const StorageKVMVPS = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/hostsailor/service-images/storage-vps.svg" 
+                src="/service-images/storage-vps.svg" 
                 alt="Storage KVM VPS" 
                 className="w-80 h-60 object-contain"
               />

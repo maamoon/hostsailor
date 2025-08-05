@@ -1,0 +1,485 @@
+{
+  "common": {
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "dashboard": "Панель управления",
+    "services": "Услуги",
+    "domains": "Домены",
+    "support": "Поддержка",
+    "settings": "Настройки",
+    "help": "Помощь",
+    "loading": "Загрузка...",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "view": "Просмотр",
+    "back": "Назад",
+    "next": "Далее",
+    "previous": "Предыдущий",
+    "submit": "Отправить",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "refresh": "Обновить",
+    "close": "Закрыть",
+    "open": "Открыть",
+    "yes": "Да",
+    "no": "Нет",
+    "ok": "ОК",
+    "error": "Ошибка",
+    "success": "Успех",
+    "warning": "Предупреждение",
+    "info": "Информация"
+  },
+
+  "auth": {
+    "loginTitle": "Вход",
+    "loginSubtitle": "Войдите в свой аккаунт, чтобы продолжить.",
+    "emailAddress": "Адрес электронной почты",
+    "emailPlaceholder": "name@example.com",
+    "passwordPlaceholder": "Пароль",
+    "rememberMe": "Запомнить меня",
+    "forgotPassword": "Забыли пароль?",
+    "notRegistered": "Не зарегистрированы?",
+    "createAccount": "Создать аккаунт",
+    "signInAs": "Войти как Maamoon",
+    "signInAsEmail": "maamoonmomani@gmail.com",
+    "registerTitle": "Создать новый аккаунт",
+    "registerSubtitle": "Присоединяйтесь к HostSailor и получите лучшие услуги хостинга",
+    "forgotPasswordTitle": "Забыли пароль?",
+    "forgotPasswordSubtitle": "Введите ваш email, и мы отправим ссылку для сброса пароля",
+    "resetPasswordTitle": "Сброс пароля",
+    "resetPasswordSubtitle": "Введите новый пароль",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "phone": "Номер телефона",
+    "rememberMe": "Запомнить меня",
+    "forgotPassword": "Забыли пароль?",
+    "dontHaveAccount": "Нет аккаунта?",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "createAccount": "Создать новый аккаунт",
+    "loginToAccount": "Войти в аккаунт",
+    "backToLogin": "Вернуться к входу",
+    "sendResetLink": "Отправить ссылку для сброса",
+    "updatePassword": "Обновить пароль",
+    "newPassword": "Новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль",
+    "passwordResetSuccess": "Пароль успешно изменен",
+    "passwordResetSuccessSubtitle": "Ваш пароль был успешно изменен. Теперь вы можете войти с новым паролем.",
+    "linkSent": "Ссылка отправлена",
+    "linkSentSubtitle": "Проверьте вашу почту для получения ссылки сброса пароля",
+    "checkSpam": "Если вы не видите письмо, проверьте папку спама",
+    "invalidLink": "Недействительная ссылка",
+    "invalidLinkSubtitle": "Ссылка для сброса пароля недействительна или истекла.",
+    "requestNewLink": "Запросить новую ссылку",
+    "termsAgreement": "Я согласен с Условиями использования и Политикой конфиденциальности",
+    "loginSuccess": "Вход выполнен успешно",
+    "loginSuccessSubtitle": "Добро пожаловать в HostSailor",
+    "registerSuccess": "Аккаунт успешно создан",
+    "registerSuccessSubtitle": "Теперь вы можете войти, используя свои учетные данные",
+    "resetLinkSent": "Ссылка для сброса отправлена",
+    "resetLinkSentSubtitle": "Проверьте вашу почту для получения инструкций",
+    "passwordChanged": "Пароль успешно изменен",
+    "passwordChangedSubtitle": "Теперь вы можете войти с новым паролем"
+  },
+  "dashboard": {
+    "welcome": "Добро пожаловать в панель управления",
+    "subtitle": "Управляйте вашими хостинг-услугами и доменами",
+    "activeServices": "Активные услуги",
+    "domains": "Домены",
+    "uptime": "Время работы",
+    "status": "Статус",
+    "excellent": "Отлично",
+    "overview": "Обзор",
+    "services": "Услуги",
+    "billing": "Биллинг",
+    "activeServicesTitle": "Активные услуги",
+    "activeServicesSubtitle": "Последние обновления ваших услуг",
+    "recentActivity": "Недавняя активность",
+    "recentActivitySubtitle": "Последние обновления и действия",
+    "vpsUpdated": "VPS успешно обновлен",
+    "backupCreated": "Резервная копия создана",
+    "memoryAlert": "Предупреждение: Высокое использование памяти",
+    "hoursAgo": "2 часа назад",
+    "fiveHoursAgo": "5 часов назад",
+    "oneDayAgo": "1 день назад",
+    "addNewService": "Добавить новую услугу",
+    "registerNewDomain": "Зарегистрировать новый домен",
+    "addPaymentMethod": "Добавить способ оплаты",
+    "manage": "Управление",
+    "monitor": "Мониторинг",
+    "viewInvoice": "Просмотр",
+    "active": "Активный",
+    "inactive": "Неактивный",
+    "paid": "Оплачен",
+    "pending": "В ожидании"
+  },
+  "services": {
+    "title": "Доступные хостинг-услуги",
+    "subtitle": "Выберите из широкого спектра хостинг-услуг, разработанных для удовлетворения ваших потребностей",
+    "sharedHosting": "Общий хостинг",
+    "sharedHostingSubtitle": "Экономичные решения общего хостинга, подходящие для небольших и средних сайтов",
+    "vpsHosting": "VPS хостинг",
+    "vpsHostingSubtitle": "Приватные виртуальные серверы с высокой производительностью и гибкостью управления",
+    "dedicatedHosting": "Выделенные серверы",
+    "dedicatedHostingSubtitle": "Полностью выделенные серверы для максимальной производительности и полного контроля",
+    "whyChooseUs": "Почему выбирают HostSailor?",
+    "whyChooseUsSubtitle": "Мы предоставляем лучшие услуги с гарантией качества и производительности",
+    "highPerformance": "Высокая производительность",
+    "highPerformanceDesc": "Быстрые серверы с SSD и постоянным мониторингом производительности",
+    "advancedSecurity": "Продвинутая безопасность",
+    "advancedSecurityDesc": "Защита от DDoS и бесплатные SSL-сертификаты",
+    "support247": "Поддержка 24/7",
+    "support247Desc": "Специализированная команда поддержки доступна круглосуточно",
+    "qualityGuarantee": "Гарантия качества",
+    "qualityGuaranteeDesc": "99.9% гарантия времени работы и возврат денег",
+    "choosePlan": "Выбрать план",
+    "mostPopular": "Самый популярный",
+    "monthly": "Ежемесячно",
+    "yearly": "Ежегодно",
+    "ssdStorage": "SSD хранилище",
+    "freeDomain": "Бесплатный домен",
+    "databases": "Базы данных",
+    "unlimitedDomains": "Неограниченные домены",
+    "unlimitedDatabases": "Неограниченные базы данных",
+    "sslCertificate": "Бесплатный SSL-сертификат",
+    "dailyBackup": "Ежедневное резервное копирование",
+    "freeCdn": "Бесплатный CDN",
+    "ddosProtection": "Защита от DDoS",
+    "fullManagement": "Полное управление",
+    "freeBackup": "Бесплатное резервное копирование",
+    "ipv4Ipv6": "IPv4/IPv6",
+    "performanceMonitoring": "Мониторинг производительности",
+    "customSupport": "Персональная поддержка",
+    "monitoring247": "Мониторинг 24/7"
+  },
+  "home": {
+    "heroTitle": "Индивидуальные решения для всех потребностей вашего веб-сайта",
+    "heroSubtitle": "В HostSailor мы обеспечиваем персональное внимание и выдающийся сервис, устанавливая высокий стандарт в индустрии VPS хостинга. Наша приверженность совершенству гарантирует, что каждый клиент получает поддержку, которую он заслуживает.",
+    "dedicatedServerTitle": "Веб-хостинг выделенных серверов",
+    "dedicatedServerDesc": "Экономичный, надежный и полностью настраиваемый под ваши потребности.",
+    "vpsHostingTitle": "VPS хостинг",
+    "vpsHostingDesc": "Услуги VPS хостинга с выделенными виртуальными серверами дают вам свободу и уверенность для запуска успешного веб-сайта.",
+    "ssdSharedTitle": "SSD общий хостинг",
+    "ssdSharedDesc": "Мы предоставляем услуги общего хостинга с рядом дополнительных функций для улучшения вашего опыта.",
+    "learnMore": "Узнать больше",
+    "topBarEmail": "sales@hostsailor.com",
+    "search": "Поиск",
+    "products": "Продукты",
+    "services": "Услуги",
+    "partners": "Партнеры",
+    "tools": "Инструменты",
+    "aboutUs": "О нас",
+    "bitcoinAltcoins": "Биткоин/Альткоины"
+  },
+  "navigation": {
+    "products": {
+      "title": "Продукты",
+      "sharedHosting": {
+        "title": "Общий хостинг",
+        "ssdHosting": "SSD хостинг",
+        "resellerHosting": "SSD реселлер хостинг"
+      },
+      "dedicatedServers": {
+        "title": "Выделенные серверы",
+        "supermicroRo": "Supermicro (Румыния)",
+        "hpNl": "HP (Нидерланды)",
+        "fujitsuNl": "Fujitsu (Нидерланды)"
+      },
+      "vps": {
+        "title": "VPS",
+        "kvmNvme": "KVM VPS NVMe",
+        "kvmSsd": "KVM VPS SSD",
+        "storageVps": "KVM VPS Storage"
+      }
+    },
+    "services": {
+      "title": "Услуги",
+      "domainRegistration": {
+        "title": "Регистрация доменов",
+        "register": "Регистрация домена",
+        "transfer": "Перевод домена"
+      },
+      "sslCertificates": "SSL-сертификаты",
+      "vlanNetwork": "VLAN сеть",
+      "ipAnnouncement": "IP анонсирование"
+    },
+    "partners": {
+      "title": "Партнеры",
+      "affiliateProgram": "Партнерская программа",
+      "resellerProgram": "Реселлерская программа",
+      "bugBountyProgram": "Программа баг-баунти"
+    },
+    "tools": {
+      "title": "Инструменты",
+      "networkStatus": "Статус сети",
+      "lookingGlass": "Looking Glass",
+      "knowledgeBase": "База знаний",
+      "tools": "Инструменты",
+      "faqs": "FAQ"
+    },
+    "aboutUs": {
+      "title": "О нас",
+      "ourCompany": "Наша компания",
+      "blog": "Блог",
+      "dataCenters": {
+        "title": "Наши дата-центры",
+        "usLa": "США, Лос-Анджелес",
+        "netherlandsAms": "Нидерланды, Амстердам",
+        "romaniaBucharest": "Румыния, Бухарест"
+      },
+      "privacyPolicy": "Политика конфиденциальности",
+      "termsOfService": "Условия использования",
+      "acceptableUsePolicy": "Политика допустимого использования",
+      "serviceLevelAgreement": "Соглашение об уровне обслуживания",
+      "contactUs": "Связаться с нами"
+    }
+  },
+  "contact": {
+    "title": "Связаться с нами",
+    "heroTitle": "Свяжитесь с нами",
+    "heroSubtitle": "Есть вопросы о наших услугах хостинга? Наша команда экспертов готова помочь. Свяжитесь с нами любым из способов ниже, и мы ответим вам в ближайшее время.",
+    "howCanWeHelp": "Как мы можем вам помочь?",
+    "howCanWeHelpSubtitle": "Выберите наиболее удобный способ связаться с нашей командой поддержки",
+    "phoneSupport": "Телефонная поддержка",
+    "phoneSupportDesc": "Позвоните нам в любое время для немедленной помощи",
+    "emailSupport": "Поддержка по email",
+    "emailSupportDesc": "Отправьте нам email, и мы быстро ответим",
+    "liveChat": "Живой чат",
+    "liveChatDesc": "Общайтесь с нашей командой поддержки в реальном времени",
+    "contactNow": "Связаться сейчас",
+    "startChat": "Начать чат",
+    "sendMessage": "Отправить сообщение",
+    "sendMessageSubtitle": "Заполните форму ниже, и мы свяжемся с вами как можно скорее.",
+    "firstName": "Имя",
+    "firstNamePlaceholder": "Введите ваше имя",
+    "lastName": "Фамилия",
+    "lastNamePlaceholder": "Введите вашу фамилию",
+    "emailAddress": "Адрес электронной почты",
+    "emailAddressPlaceholder": "Введите ваш адрес электронной почты",
+    "phoneNumber": "Номер телефона",
+    "phoneNumberPlaceholder": "Введите ваш номер телефона",
+    "subject": "Тема",
+    "subjectPlaceholder": "О чем это?",
+    "message": "Сообщение",
+    "messagePlaceholder": "Расскажите нам, как мы можем вам помочь...",
+    "sendMessageButton": "Отправить сообщение",
+    "officeInformation": "Информация об офисе",
+    "headOffice": "Главный офис",
+    "address": "Адрес",
+    "phone": "Телефон",
+    "email": "Email",
+    "supportHours": "Часы поддержки",
+    "mondayFriday": "Понедельник - Пятница",
+    "saturdaySunday": "Суббота - Воскресенье",
+    "holidays": "Праздники",
+    "support247": "Поддержка 24/7",
+    "faqTitle": "Часто задаваемые вопросы",
+    "faqSubtitle": "Быстрые ответы на общие вопросы",
+    "responseTime": "Как быстро вы отвечаете?",
+    "responseTimeAnswer": "Мы обычно отвечаем на emails в течение 2 часов и предоставляем мгновенную поддержку по телефону и живому чату 24/7.",
+    "whatInformation": "Какую информацию я должен предоставить?",
+    "whatInformationAnswer": "Пожалуйста, включите ваше имя, контактные данные и подробное описание вашего запроса или проблемы.",
+    "technicalSupport": "Предоставляете ли вы техническую поддержку?",
+    "technicalSupportAnswer": "Да, мы предоставляем комплексную техническую поддержку для всех наших услуг хостинга 24/7.",
+    "scheduleCall": "Могу ли я запланировать звонок?",
+    "scheduleCallAnswer": "Конечно! Вы можете запланировать консультационный звонок с нашей командой продаж в удобное для вас время."
+  },
+  "storageKVMVPS": {
+    "heroTitle": "Оптимизированный для хранения KVM VPS — Поддерживается стабильностью и избыточностью RAID10",
+    "heroSubtitle": "Разработанный с корпоративным RAID10 хранилищем для высокой производительности и надежности, этот уровень VPS идеально подходит для приложений, интенсивно использующих диск. Идеально, если вам нужно надежное хранилище, а не скорость NVMe.",
+    "badge": "Storage KVM VPS",
+    "stats": {
+      "raid10": "RAID10",
+      "storage": "Хранилище",
+      "trueKVM": "True KVM",
+      "virtualization": "Виртуализация",
+      "instant": "Мгновенное",
+      "deployment": "Развертывание",
+      "support": "Поддержка"
+    },
+    "buttons": {
+      "orderNow": "Заказать сейчас",
+      "viewAllPlans": "Посмотреть все планы",
+      "learnMore": "Узнать больше"
+    },
+    "plans": {
+      "title": "Планы и цены Storage VPS",
+      "subtitle": "Выберите из нашего ассортимента оптимизированных для хранения планов KVM VPS с надежностью RAID10 и корпоративными функциями",
+      "miniSailor": "Mini Sailor",
+      "sailor": "Sailor",
+      "seaman": "Seaman",
+      "lieutenant": "Lieutenant",
+      "captain": "Captain",
+      "mostPopular": "Самый популярный",
+      "storage": "Хранилище",
+      "ram": "RAM",
+      "cpuCores": "Ядра CPU",
+      "bandwidth": "Пропускная способность",
+      "features": "Функции",
+      "raid10Storage": "RAID10 хранилище",
+      "trueKVMVirtualization": "True KVM виртуализация",
+      "fullRootAccess": "Полный root доступ",
+      "ddosProtection": "Защита от DDoS",
+      "support247": "Поддержка 24/7",
+      "instantDeployment": "Мгновенное развертывание"
+    },
+    "note": "Примечание: Эти уровни подходят пользователям, которые сосредоточены на стабильном хранилище, а не на средах с интенсивным трафиком. В отличие от VPS на базе NVMe, резервные копии не включаются автоматически для уровней Storage VPS.",
+    "benefits": {
+      "title": "Что отличает Storage KVM VPS",
+      "subtitle": "Все необходимое для оптимизированных для хранения виртуальных приватных серверов с максимальной надежностью",
+      "raid10Architecture": {
+        "title": "Архитектура хранилища RAID10",
+        "description": "Обеспечивает сильную избыточность и стабильную производительность, балансируя безопасность и доступность."
+      },
+      "trueKVMVirtualization": {
+        "title": "True KVM виртуализация",
+        "description": "Каждый VPS работает со своим ядром и зарезервированной RAM, обеспечивая изоляцию от соседних узлов."
+      },
+      "multipleOSSupport": {
+        "title": "Поддержка множественных ОС",
+        "description": "Установите Linux, Windows, BSD, Solaris или пользовательские ISO с полной гибкостью."
+      },
+      "highUpgradeFlexibility": {
+        "title": "Высокая гибкость обновления",
+        "description": "Масштабируемые опции ресурсов по мере роста ваших требований с простыми обновлениями."
+      },
+      "instantAvailability": {
+        "title": "Мгновенная доступность",
+        "description": "Ваш сервер становится доступным сразу после подтверждения платежа без задержек."
+      },
+      "enterpriseReliability": {
+        "title": "Корпоративная надежность",
+        "description": "Разработан для стабильного долгосрочного хостинга с корпоративной инфраструктурой."
+      }
+    },
+    "useCases": {
+      "title": "Идеальные случаи использования",
+      "subtitle": "Идеально для приложений, интенсивно использующих хранилище, и долгосрочных решений хостинга",
+      "dataIntensive": {
+        "title": "Приложения, интенсивно использующие данные",
+        "description": "Идеально для хостинга резервных копий, медиа или сервисов, поддерживаемых хранилищем."
+      },
+      "virtualization": {
+        "title": "Виртуализация и недорогие узлы",
+        "description": "Отлично подходит для настройки множественных легковесных виртуальных машин."
+      },
+      "stableHosting": {
+        "title": "Стабильный долгосрочный хостинг",
+        "description": "Для клиентов, которые предпочитают надежность сырой скорости."
+      },
+      "storageHeavy": {
+        "title": "Рабочие нагрузки, интенсивно использующие хранилище",
+        "description": "Идеально для приложений, требующих большой емкости хранилища."
+      }
+    },
+    "comparison": {
+      "title": "Storage VPS vs NVMe VPS",
+      "subtitle": "Выберите правильный тип VPS для ваших конкретных потребностей",
+      "feature": "Функция",
+      "storageVPS": "Storage VPS",
+      "nvmeVPS": "NVMe VPS",
+      "description": "Описание",
+      "storageType": {
+        "feature": "Тип хранилища",
+        "storage": "HDD RAID10",
+        "nvme": "NVMe SSD",
+        "description": "Storage VPS использует HDD с RAID10 для надежности, в то время как NVMe VPS использует высокоскоростные SSD"
+      },
+      "performance": {
+        "feature": "Производительность",
+        "storage": "Стабильная",
+        "nvme": "Высокая скорость",
+        "description": "Storage VPS обеспечивает стабильную производительность, NVMe VPS обеспечивает максимальную скорость"
+      },
+      "cost": {
+        "feature": "Стоимость",
+        "storage": "Доступная",
+        "nvme": "Премиум",
+        "description": "Storage VPS более рентабелен для больших потребностей в хранилище"
+      },
+      "useCase": {
+        "feature": "Случай использования",
+        "storage": "Хранение данных",
+        "nvme": "Высокая производительность",
+        "description": "Storage VPS для приложений, интенсивно использующих данные, NVMe VPS для приложений, критичных к скорости"
+      }
+    },
+    "addons": {
+      "title": "Дополнения и лицензии",
+      "subtitle": "Улучшите ваш Storage VPS с дополнительными сервисами и панелями управления",
+      "controlPanels": "Панели управления",
+      "automationExtras": "Автоматизация и дополнения",
+      "backupSolutions": "Решения резервного копирования",
+      "cpanelWHM": "cPanel/WHM",
+      "webuzo": "Webuzo",
+      "ispmanagerLite": "ISPmanager Lite",
+      "ispmanagerBusiness": "ISPmanager Business",
+      "vmmanager": "VMmanager",
+      "softaculous": "Softaculous",
+      "cloudLinux": "CloudLinux",
+      "whmcsLicense": "Лицензия WHMCS",
+      "additionalIPv4": "Дополнительный IPv4",
+      "extraBandwidth512GB": "Дополнительная пропускная способность (512GB)",
+      "extraBandwidth1TB": "Дополнительная пропускная способность (1TB)",
+      "manualBackup": "Ручное резервное копирование",
+      "automatedBackup": "Автоматическое резервное копирование",
+      "backupPlugin": "Плагин резервного копирования",
+      "cloudBackup": "Облачное резервное копирование"
+    },
+    "faq": {
+      "title": "Часто задаваемые вопросы",
+      "subtitle": "Общие вопросы о хостинге Storage KVM VPS",
+      "backupsIncluded": {
+        "question": "Включены ли резервные копии с Storage VPS?",
+        "answer": "В отличие от VPS на базе NVMe, резервные копии не включаются автоматически для уровней Storage VPS. Мы предлагаем опции ручного резервного копирования и автоматические решения резервного копирования как дополнения."
+      },
+      "operatingSystems": {
+        "question": "Какие операционные системы поддерживаются?",
+        "description": "Storage VPS поддерживает Linux, Windows, BSD, Solaris и пользовательские ISO установки. У вас есть полная гибкость выбора предпочитаемой операционной системы."
+      },
+      "upgradeResources": {
+        "question": "Могу ли я обновить ресурсы моего Storage VPS?",
+        "description": "Да, Storage VPS обеспечивает высокую гибкость обновления. Вы можете легко масштабировать ваши ресурсы по мере роста ваших требований с нашими опциями обновления."
+      },
+      "raid10Storage": {
+        "question": "Как работает RAID10 хранилище?",
+        "description": "RAID10 объединяет зеркалирование и чередование для обеспечения как избыточности, так и производительности. Ваши данные зеркалируются на нескольких дисках для безопасности, сохраняя при этом хорошие скорости чтения/записи."
+      }
+    },
+    "contact": {
+      "title": "Нужна помощь в выборе?",
+      "subtitle": "Свяжитесь с нашей командой продаж для пользовательских конфигураций или технической поддержки",
+      "callUs": "Позвоните нам",
+      "phoneNumber": "+1-646-518-9099",
+      "technicalSupport": "24/7 Техническая поддержка",
+      "liveChat": "Живой чат",
+      "getInstantSupport": "Получить мгновенную поддержку",
+      "startChat": "Начать чат"
+    },
+    "cta": {
+      "title": "Готовы развернуть ваш Storage VPS?",
+      "subtitle": "Получите мгновенное развертывание после подтверждения платежа. Выберите ваш план и начните строить вашу инфраструктуру хранения с корпоративной надежностью RAID10 и поддержкой 24/7.",
+      "orderNow": "Заказать сейчас",
+      "viewNVMePlans": "Посмотреть планы NVMe VPS"
+    }
+  },
+  "errors": {
+    "invalidCredentials": "Неверный email или пароль",
+    "loginError": "Произошла ошибка при входе",
+    "registerError": "Произошла ошибка при создании аккаунта",
+    "resetError": "Произошла ошибка при отправке ссылки сброса",
+    "passwordResetError": "Произошла ошибка при сбросе пароля",
+    "passwordsNotMatch": "Пароли не совпадают",
+    "passwordTooShort": "Пароль должен содержать не менее 8 символов",
+    "invalidResetLink": "Недействительная ссылка сброса пароля",
+    "networkError": "Произошла сетевая ошибка",
+    "serverError": "Произошла ошибка сервера",
+    "validationError": "Ошибка валидации"
+  }
+} 

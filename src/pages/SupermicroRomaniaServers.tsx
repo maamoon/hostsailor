@@ -160,7 +160,7 @@ const SupermicroRomaniaServers = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/supermicro-bg.svg')",
+            backgroundImage: "url('/supermicro-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>

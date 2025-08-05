@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -20,6 +21,7 @@ import HomeHeader from "@/components/HomeHeader";
 import Footer from "@/components/Footer";
 
 const Dashboard = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("overview");
 
   const mockData = {
@@ -61,8 +63,8 @@ const Dashboard = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Welcome Section */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">مرحباً بك في لوحة التحكم</h1>
-          <p className="text-gray-600">إدارة خدمات الاستضافة والنطاقات الخاصة بك</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('dashboard.welcome')}</h1>
+          <p className="text-gray-600">{t('dashboard.subtitle')}</p>
         </div>
 
         {/* Stats Cards */}
@@ -72,7 +74,7 @@ const Dashboard = () => {
               <div className="flex items-center">
                 <Server className="h-8 w-8 text-blue-600" />
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">الخدمات النشطة</p>
+                  <p className="text-sm font-medium text-gray-600">{t('dashboard.activeServices')}</p>
                   <p className="text-2xl font-bold text-gray-900">{mockData.services.length}</p>
                 </div>
               </div>
@@ -84,7 +86,7 @@ const Dashboard = () => {
               <div className="flex items-center">
                 <Globe className="h-8 w-8 text-green-600" />
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">النطاقات</p>
+                  <p className="text-sm font-medium text-gray-600">{t('dashboard.domains')}</p>
                   <p className="text-2xl font-bold text-gray-900">{mockData.domains.length}</p>
                 </div>
               </div>
@@ -96,7 +98,7 @@ const Dashboard = () => {
               <div className="flex items-center">
                 <Activity className="h-8 w-8 text-purple-600" />
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">متوسط الوقت</p>
+                  <p className="text-sm font-medium text-gray-600">{t('dashboard.uptime')}</p>
                   <p className="text-2xl font-bold text-gray-900">99.9%</p>
                 </div>
               </div>
@@ -108,8 +110,8 @@ const Dashboard = () => {
               <div className="flex items-center">
                 <Shield className="h-8 w-8 text-orange-600" />
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">الحالة</p>
-                  <p className="text-2xl font-bold text-gray-900">ممتازة</p>
+                  <p className="text-sm font-medium text-gray-600">{t('dashboard.status')}</p>
+                  <p className="text-2xl font-bold text-gray-900">{t('dashboard.excellent')}</p>
                 </div>
               </div>
             </CardContent>
@@ -119,10 +121,10 @@ const Dashboard = () => {
         {/* Main Content Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="overview">نظرة عامة</TabsTrigger>
-            <TabsTrigger value="services">الخدمات</TabsTrigger>
-            <TabsTrigger value="domains">النطاقات</TabsTrigger>
-            <TabsTrigger value="billing">الفواتير</TabsTrigger>
+            <TabsTrigger value="overview">{t('dashboard.overview')}</TabsTrigger>
+            <TabsTrigger value="services">{t('dashboard.services')}</TabsTrigger>
+            <TabsTrigger value="domains">{t('dashboard.domains')}</TabsTrigger>
+            <TabsTrigger value="billing">{t('dashboard.billing')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-6">
@@ -132,9 +134,9 @@ const Dashboard = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Server className="h-5 w-5 mr-2" />
-                    الخدمات النشطة
+                    {t('dashboard.activeServicesTitle')}
                   </CardTitle>
-                  <CardDescription>آخر تحديث للخدمات الخاصة بك</CardDescription>
+                  <CardDescription>{t('dashboard.activeServicesSubtitle')}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -145,7 +147,7 @@ const Dashboard = () => {
                           <p className="text-sm text-gray-600">{service.plan} - {service.location}</p>
                         </div>
                         <Badge variant={service.status === "active" ? "default" : "secondary"}>
-                          {service.status === "active" ? "نشط" : "غير نشط"}
+                          {service.status === "active" ? t('dashboard.active') : t('dashboard.inactive')}
                         </Badge>
                       </div>
                     ))}
@@ -158,31 +160,31 @@ const Dashboard = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Activity className="h-5 w-5 mr-2" />
-                    النشاط الأخير
+                    {t('dashboard.recentActivity')}
                   </CardTitle>
-                  <CardDescription>آخر التحديثات والإجراءات</CardDescription>
+                  <CardDescription>{t('dashboard.recentActivitySubtitle')}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                       <div>
-                        <p className="text-sm font-medium">تم تحديث VPS بنجاح</p>
-                        <p className="text-xs text-gray-600">منذ ساعتين</p>
+                        <p className="text-sm font-medium">{t('dashboard.vpsUpdated')}</p>
+                        <p className="text-xs text-gray-600">{t('dashboard.hoursAgo')}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                       <div>
-                        <p className="text-sm font-medium">تم إنشاء نسخة احتياطية</p>
-                        <p className="text-xs text-gray-600">منذ 5 ساعات</p>
+                        <p className="text-sm font-medium">{t('dashboard.backupCreated')}</p>
+                        <p className="text-xs text-gray-600">{t('dashboard.fiveHoursAgo')}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <div>
-                        <p className="text-sm font-medium">تنبيه: استخدام عالي للذاكرة</p>
-                        <p className="text-xs text-gray-600">منذ يوم واحد</p>
+                        <p className="text-sm font-medium">{t('dashboard.memoryAlert')}</p>
+                        <p className="text-xs text-gray-600">{t('dashboard.oneDayAgo')}</p>
                       </div>
                     </div>
                   </div>
@@ -193,10 +195,10 @@ const Dashboard = () => {
 
           <TabsContent value="services" className="space-y-6">
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-bold">الخدمات</h2>
+              <h2 className="text-2xl font-bold">{t('dashboard.services')}</h2>
               <Button>
                 <Plus className="h-4 w-4 mr-2" />
-                إضافة خدمة جديدة
+                {t('dashboard.addNewService')}
               </Button>
             </div>
             
@@ -210,28 +212,28 @@ const Dashboard = () => {
                         <CardDescription>{service.plan}</CardDescription>
                       </div>
                       <Badge variant={service.status === "active" ? "default" : "secondary"}>
-                        {service.status === "active" ? "نشط" : "غير نشط"}
+                        {service.status === "active" ? t('dashboard.active') : t('dashboard.inactive')}
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-sm text-gray-600">الموقع:</span>
+                        <span className="text-sm text-gray-600">{t('dashboard.location')}:</span>
                         <span className="text-sm font-medium">{service.location}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-gray-600">عنوان IP:</span>
+                        <span className="text-sm text-gray-600">IP:</span>
                         <span className="text-sm font-medium">{service.ip}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-gray-600">متوسط الوقت:</span>
+                        <span className="text-sm text-gray-600">{t('dashboard.uptime')}:</span>
                         <span className="text-sm font-medium">{service.uptime}</span>
                       </div>
                     </div>
                     <div className="mt-4 flex space-x-2">
-                      <Button variant="outline" size="sm">إدارة</Button>
-                      <Button variant="outline" size="sm">مراقبة</Button>
+                      <Button variant="outline" size="sm">{t('dashboard.manage')}</Button>
+                      <Button variant="outline" size="sm">{t('dashboard.monitor')}</Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -241,10 +243,10 @@ const Dashboard = () => {
 
           <TabsContent value="domains" className="space-y-6">
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-bold">النطاقات</h2>
+              <h2 className="text-2xl font-bold">{t('dashboard.domains')}</h2>
               <Button>
                 <Plus className="h-4 w-4 mr-2" />
-                تسجيل نطاق جديد
+                {t('dashboard.registerNewDomain')}
               </Button>
             </div>
             
@@ -255,13 +257,13 @@ const Dashboard = () => {
                     <div key={domain.id} className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <h4 className="font-medium">{domain.name}</h4>
-                        <p className="text-sm text-gray-600">ينتهي في: {domain.expires}</p>
+                        <p className="text-sm text-gray-600">Expires: {domain.expires}</p>
                       </div>
                       <div className="flex items-center space-x-2">
                         <Badge variant={domain.status === "active" ? "default" : "secondary"}>
-                          {domain.status === "active" ? "نشط" : "غير نشط"}
+                          {domain.status === "active" ? t('dashboard.active') : t('dashboard.inactive')}
                         </Badge>
-                        <Button variant="outline" size="sm">إدارة</Button>
+                        <Button variant="outline" size="sm">{t('dashboard.manage')}</Button>
                       </div>
                     </div>
                   ))}
@@ -272,10 +274,10 @@ const Dashboard = () => {
 
           <TabsContent value="billing" className="space-y-6">
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-bold">الفواتير والمدفوعات</h2>
+              <h2 className="text-2xl font-bold">{t('dashboard.billing')}</h2>
               <Button>
                 <CreditCard className="h-4 w-4 mr-2" />
-                إضافة طريقة دفع
+                {t('dashboard.addPaymentMethod')}
               </Button>
             </div>
             
@@ -291,11 +293,11 @@ const Dashboard = () => {
                       <div className="flex items-center space-x-2">
                         <span className="font-medium">{invoice.amount}</span>
                         <Badge variant={invoice.status === "paid" ? "default" : "secondary"}>
-                          {invoice.status === "paid" ? "مدفوع" : "معلق"}
+                          {invoice.status === "paid" ? t('dashboard.paid') : t('dashboard.pending')}
                         </Badge>
                         <Button variant="outline" size="sm">
                           <FileText className="h-4 w-4 mr-2" />
-                          عرض
+                          {t('dashboard.viewInvoice')}
                         </Button>
                       </div>
                     </div>

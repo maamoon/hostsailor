@@ -140,7 +140,7 @@ const SSLCertificates = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/ssl-certificates-bg.svg')",
+            backgroundImage: "url('/ssl-certificates-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-5"></div>
@@ -173,7 +173,7 @@ const SSLCertificates = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/hostsailor/service-images/ssl-certificates.svg" 
+                src="/service-images/ssl-certificates.svg" 
                 alt="SSL Certificates" 
                 className="w-80 h-60 object-contain"
               />

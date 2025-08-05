@@ -179,7 +179,7 @@ const HPNetherlandsServers = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/hostsailor/hp-netherlands-bg.svg')",
+            backgroundImage: "url('/hp-netherlands-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-5"></div>

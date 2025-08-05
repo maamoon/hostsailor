@@ -101,28 +101,45 @@ const HomeHeader = () => {
           key: 'sharedHosting',
           label: t('navigation.products.sharedHosting.title'),
           items: [
-            { key: 'ssdHosting', label: t('navigation.products.sharedHosting.ssdHosting'), href: '/hostsailor/ssd-shared-hosting' },
-            { key: 'resellerHosting', label: t('navigation.products.sharedHosting.resellerHosting'), href: '/hostsailor/reseller-hosting' }
+            { key: 'ssdHosting', label: t('navigation.products.sharedHosting.ssdHosting'), href: '/ssd-shared-hosting' },
+            { key: 'resellerHosting', label: t('navigation.products.sharedHosting.resellerHosting'), href: '/reseller-hosting' },
+            {
+              key: 'vpsResellerProgram',
+              label: 'VPS Reseller Program',
+              href: '/vps-reseller-program'
+            }
           ]
         },
         {
           key: 'dedicatedServers',
           label: t('navigation.products.dedicatedServers.title'),
-          href: '/hostsailor/dedicated-servers',
+          href: '/dedicated-servers',
           items: [
-            { key: 'supermicroRo', label: t('navigation.products.dedicatedServers.supermicroRo'), href: '/hostsailor/dedicated-servers/supermicro-romania-dedicated-servers' },
-            { key: 'hpNl', label: t('navigation.products.dedicatedServers.hpNl'), href: '/hostsailor/dedicated-servers/hp-netherlands-dedicated-servers' },
-            { key: 'fujitsuNl', label: t('navigation.products.dedicatedServers.fujitsuNl'), href: '/hostsailor/nl-dedicated-servers' }
+            { key: 'supermicroRo', label: t('navigation.products.dedicatedServers.supermicroRo'), href: '/dedicated-servers/supermicro-romania-dedicated-servers' },
+            { key: 'hpNl', label: t('navigation.products.dedicatedServers.hpNl'), href: '/dedicated-servers/hp-netherlands-dedicated-servers' },
+            { key: 'fujitsuNl', label: t('navigation.products.dedicatedServers.fujitsuNl'), href: '/nl-dedicated-servers' }
           ]
+        },
+        {
+          key: 'colocation',
+          label: 'Colocation',
+          href: '/colocation'
+        },
+        {
+          key: 'hotDeals',
+          label: 'Hot Deals',
+          href: '/hot-deals'
         },
         {
           key: 'vps',
           label: t('navigation.products.vps.title'),
-          href: '/hostsailor/vps-hosting',
+          href: '/vps-hosting',
           items: [
-            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/hostsailor/vps-hosting/kvm-vps' },
-            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/hostsailor/vps-hosting/kvm-vps' },
-            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/hostsailor/vps-hosting/storage-kvm-vps' }
+            { key: 'openvzHdd', label: 'OpenVZ VPS HDD', href: '/openvz-vps-hdd' },
+            { key: 'openvzSsd', label: 'OpenVZ VPS SSD', href: '/openvz-vps-ssd' },
+            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/kvm-vps-nvme' },
+            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/vps-hosting/kvm-vps' },
+            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/vps-hosting/storage-kvm-vps' }
           ]
         }
       ]
@@ -134,62 +151,63 @@ const HomeHeader = () => {
         {
           key: 'domainRegistration',
           label: t('navigation.services.domainRegistration.title'),
+          href: '/domain-registration',
           items: [
-            { key: 'register', label: t('navigation.services.domainRegistration.register'), href: 'https://clients.hostsailor.com/cart.php?a=add&domain=register', external: true },
-            { key: 'transfer', label: t('navigation.services.domainRegistration.transfer'), href: 'https://clients.hostsailor.com/cart.php?a=add&domain=transfer', external: true }
+            { key: 'register', label: t('navigation.services.domainRegistration.register'), href: '/domain-registration' },
+            { key: 'transfer', label: t('navigation.services.domainRegistration.transfer'), href: '/domain-registration' }
           ]
         },
-        { key: 'sslCertificates', label: t('navigation.services.sslCertificates'), href: '/hostsailor/ssl-certificates' },
-        { key: 'vlanNetwork', label: t('navigation.services.vlanNetwork'), href: '/hostsailor/vlan-network' },
-        { key: 'ipAnnouncement', label: t('navigation.services.ipAnnouncement'), href: '/hostsailor/ip-announcement' }
+        { key: 'sslCertificates', label: t('navigation.services.sslCertificates'), href: '/ssl-certificates' },
+        { key: 'vlanNetwork', label: t('navigation.services.vlanNetwork'), href: '/vlan-network' },
+        { key: 'ipAnnouncement', label: t('navigation.services.ipAnnouncement'), href: '/ip-announcement' }
       ]
     },
     {
       key: 'partners',
       label: t('navigation.partners.title'),
       items: [
-        { key: 'affiliateProgram', label: t('navigation.partners.affiliateProgram'), href: '/hostsailor/affiliate-program' },
-        { key: 'resellerProgram', label: t('navigation.partners.resellerProgram'), href: '/hostsailor/reseller-program' },
-        { key: 'bugBountyProgram', label: t('navigation.partners.bugBountyProgram'), href: '/hostsailor/bug-bounty-programme' }
+        { key: 'affiliateProgram', label: t('navigation.partners.affiliateProgram'), href: '/affiliate-program' },
+        { key: 'resellerProgram', label: t('navigation.partners.resellerProgram'), href: '/reseller-program' },
+        { key: 'bugBountyProgram', label: t('navigation.partners.bugBountyProgram'), href: '/bug-bounty-programme' }
       ]
     },
     {
       key: 'tools',
       label: t('navigation.tools.title'),
       items: [
-        { key: 'networkStatus', label: t('navigation.tools.networkStatus'), href: 'https://stats.hostsailor.com/', external: true },
-        { key: 'lookingGlass', label: t('navigation.tools.lookingGlass'), href: '/hostsailor/lookingglass' },
+        { key: 'networkStatus', label: t('navigation.tools.networkStatus'), href: '/network-status' },
+        { key: 'lookingGlass', label: t('navigation.tools.lookingGlass'), href: '/looking-glass' },
         { key: 'knowledgeBase', label: t('navigation.tools.knowledgeBase'), href: 'https://clients.hostsailor.com/index.php?rp=/knowledgebase', external: true },
         { key: 'tools', label: t('navigation.tools.tools'), href: 'http://web.hostsailor.com/tools', external: true },
-        { key: 'faqs', label: t('navigation.tools.faqs'), href: '/hostsailor/faqs' }
+        { key: 'faqs', label: t('navigation.tools.faqs'), href: '/faqs' }
       ]
     },
     {
       key: 'aboutUs',
       label: t('navigation.aboutUs.title'),
       items: [
-        { key: 'ourCompany', label: t('navigation.aboutUs.ourCompany'), href: '/hostsailor/our-company' },
+        { key: 'ourCompany', label: t('navigation.aboutUs.ourCompany'), href: '/our-company' },
         { key: 'blog', label: t('navigation.aboutUs.blog'), href: 'https://web.hostsailor.com/blog', external: true },
         {
           key: 'dataCenters',
           label: t('navigation.aboutUs.dataCenters.title'),
           items: [
-            { key: 'usLa', label: t('navigation.aboutUs.dataCenters.usLa'), href: '/hostsailor/data-centers-in-lax-los-angeles' },
-            { key: 'netherlandsAms', label: t('navigation.aboutUs.dataCenters.netherlandsAms'), href: '/hostsailor/data-center/netherlands' },
-            { key: 'romaniaBucharest', label: t('navigation.aboutUs.dataCenters.romaniaBucharest'), href: '/hostsailor/data-center/romania' }
+            { key: 'usLa', label: t('navigation.aboutUs.dataCenters.usLa'), href: '/data-centers-in-lax-los-angeles' },
+            { key: 'netherlandsAms', label: t('navigation.aboutUs.dataCenters.netherlandsAms'), href: '/data-center/netherlands' },
+            { key: 'romaniaBucharest', label: t('navigation.aboutUs.dataCenters.romaniaBucharest'), href: '/data-center/romania' }
           ]
         },
-        { key: 'privacyPolicy', label: t('navigation.aboutUs.privacyPolicy'), href: '/hostsailor/privacy-policy' },
-        { key: 'termsOfService', label: t('navigation.aboutUs.termsOfService'), href: '/hostsailor/terms-of-service' },
-        { key: 'acceptableUsePolicy', label: t('navigation.aboutUs.acceptableUsePolicy'), href: '/hostsailor/acceptable-use-policy' },
-        { key: 'serviceLevelAgreement', label: t('navigation.aboutUs.serviceLevelAgreement'), href: '/hostsailor/service-level-agreement' },
-        { key: 'contactUs', label: t('navigation.aboutUs.contactUs'), href: '/hostsailor/contact' }
+        { key: 'privacyPolicy', label: t('navigation.aboutUs.privacyPolicy'), href: '/privacy-policy' },
+        { key: 'termsOfService', label: t('navigation.aboutUs.termsOfService'), href: '/terms-of-service' },
+        { key: 'acceptableUsePolicy', label: t('navigation.aboutUs.acceptableUsePolicy'), href: '/acceptable-use-policy' },
+        { key: 'serviceLevelAgreement', label: t('navigation.aboutUs.serviceLevelAgreement'), href: '/service-level-agreement' },
+        { key: 'contactUs', label: t('navigation.aboutUs.contactUs'), href: '/contact' }
       ]
     },
     {
       key: 'bitcoinAltcoins',
       label: t('home.bitcoinAltcoins'),
-      href: '/hostsailor/how-to-pay-with-cryptocurrencies'
+      href: '/how-to-pay-with-cryptocurrencies'
     }
   ];
 
@@ -200,15 +218,15 @@ const HomeHeader = () => {
 
     return (
       <li key={item.key} className="relative group">
-                 {hasSubItems ? (
-           <div
-             onMouseEnter={() => handleSubMenuEnter(item.key)}
-             className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors cursor-pointer"
-           >
-             <span>{item.label}</span>
-             <ChevronRight className={`h-4 w-4 ${document.documentElement.dir === 'rtl' ? 'rotate-180' : ''}`} />
-           </div>
-         ) : (
+        {hasSubItems ? (
+          <div
+            onMouseEnter={() => handleSubMenuEnter(item.key)}
+            className="flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors cursor-pointer"
+          >
+            <span>{item.label}</span>
+            <ChevronRight className={`h-4 w-4 ${document.documentElement.dir === 'rtl' ? 'rotate-180' : ''}`} />
+          </div>
+        ) : (
           <a
             href={item.href || '#'}
             target={isExternal ? '_blank' : undefined}
@@ -219,17 +237,17 @@ const HomeHeader = () => {
           </a>
         )}
         
-                 {hasSubItems && isOpen && (
-           <ul 
-             className={`absolute top-0 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
-               document.documentElement.dir === 'rtl' ? 'right-full' : 'left-full'
-             }`}
-             onMouseEnter={() => handleSubMenuEnter(item.key)}
-             onMouseLeave={handleSubMenuLeave}
-           >
-             {item.items.map((subItem: any) => renderMenuItem(subItem, level + 1))}
-           </ul>
-         )}
+        {hasSubItems && isOpen && (
+          <ul 
+            className={`absolute top-0 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
+              document.documentElement.dir === 'rtl' ? 'right-full' : 'left-full'
+            }`}
+            onMouseEnter={() => handleSubMenuEnter(item.key)}
+            onMouseLeave={handleSubMenuLeave}
+          >
+            {item.items.map((subItem: any) => renderMenuItem(subItem, level + 1))}
+          </ul>
+        )}
       </li>
     );
   };
@@ -253,7 +271,7 @@ const HomeHeader = () => {
               <a href="https://x.com/hostsailor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Twitter className="h-4 w-4" />
               </a>
-              <a href="https://www.instagram.com/hostsailor/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
               <a href="https://www.linkedin.com/company/hostsailor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">
@@ -273,7 +291,7 @@ const HomeHeader = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-10 w-auto" />
+              <img src="/logo.svg" alt="HOSTSAILOR" className="h-10 w-auto" />
             </Link>
 
             {/* Navigation Menu */}
@@ -282,61 +300,61 @@ const HomeHeader = () => {
                 const hasSubItems = item.items && item.items.length > 0;
                 const isOpen = openDropdown === item.key;
 
-                                 return (
-                   <div 
-                     key={item.key} 
-                     className="relative group"
-                     onMouseEnter={() => handleDropdownEnter(item.key)}
-                     onMouseLeave={handleDropdownLeave}
-                   >
-                                           {hasSubItems ? (
-                        <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors font-medium cursor-pointer">
-                          <span>{item.label}</span>
-                          <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''} ${document.documentElement.dir === 'rtl' ? 'rotate-180' : ''}`} />
-                        </div>
-                      ) : (
-                       <Link
-                         to={item.href || '#'}
-                         className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors font-medium"
-                       >
-                         <span>{item.label}</span>
-                       </Link>
-                     )}
-                     
-                                           {hasSubItems && isOpen && (
-                        <div 
-                          className={`absolute top-full mt-2 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50 ${
-                            document.documentElement.dir === 'rtl' ? 'right-0' : 'left-0'
-                          }`}
-                          onMouseEnter={() => handleDropdownMenuEnter(item.key)}
-                          onMouseLeave={handleDropdownMenuLeave}
-                        >
-                          <ul className="py-2">
-                            {item.items.map((subItem: any) => renderMenuItem(subItem))}
-                          </ul>
-                        </div>
-                      )}
-                   </div>
-                 );
+                return (
+                  <div 
+                    key={item.key} 
+                    className="relative group"
+                    onMouseEnter={() => handleDropdownEnter(item.key)}
+                    onMouseLeave={handleDropdownLeave}
+                  >
+                    {hasSubItems ? (
+                      <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors font-medium cursor-pointer">
+                        <span>{item.label}</span>
+                        <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                      </div>
+                    ) : (
+                      <Link 
+                        to={item.href || '#'} 
+                        className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
+                    
+                    {hasSubItems && isOpen && (
+                      <div 
+                        className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg min-w-48 z-50"
+                        onMouseEnter={() => handleDropdownMenuEnter(item.key)}
+                        onMouseLeave={handleDropdownMenuLeave}
+                      >
+                        <ul className="py-2">
+                          {item.items.map((subItem: any) => renderMenuItem(subItem))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                );
               })}
             </nav>
 
-            {/* Right Side Actions */}
+            {/* Right Side */}
             <div className="flex items-center space-x-4">
-              <button className="p-2 text-gray-600 hover:text-blue-600 transition-colors">
-                <Search className="h-5 w-5" />
-              </button>
+              {/* Language Switcher */}
               <LanguageSwitcher />
-              <a href="https://clients.hostsailor.com/index.php?rp=/login" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" className="text-blue-600 hover:text-blue-700">
-                  {t('common.login')}
+              
+              {/* Login/Register Buttons */}
+              <div className="hidden md:flex items-center space-x-2">
+                <Button variant="ghost" size="sm" asChild>
+                  <a href="https://clients.hostsailor.com/login.php" target="_blank" rel="noopener noreferrer">
+                    {t('common.login')}
+                  </a>
                 </Button>
-              </a>
-              <a href="https://clients.hostsailor.com/register.php" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                  {t('common.register')}
+                <Button size="sm" asChild>
+                  <a href="https://clients.hostsailor.com/register.php" target="_blank" rel="noopener noreferrer">
+                    {t('common.register')}
+                  </a>
                 </Button>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -345,4 +363,4 @@ const HomeHeader = () => {
   );
 };
 
-export default HomeHeader; 
+export default HomeHeader;

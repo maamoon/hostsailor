@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-          <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+          <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
         </div>
             <p className="text-white/80 mb-4">
               Premium web hosting solutions for businesses of all sizes.
@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://x.com/hostsailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Twitter</a>
               <a href="https://www.facebook.com/HostSailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Facebook</a>
-              <a href="https://www.instagram.com/hostsailor/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Instagram</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Instagram</a>
               <a href="https://www.linkedin.com/company/hostsailor" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">LinkedIn</a>
             </div>
           </div>

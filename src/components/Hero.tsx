@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-hero"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url('/hostsailor/src/assets/hosting-bg.jpg')` }}
+        style={{ backgroundImage: `url('/src/assets/hosting-bg.jpg')` }}
       ></div>
       
       {/* Content */}
