@@ -1,0 +1,54 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Server Racks -->
+  <rect x="50" y="80" width="80" height="160" fill="#1e293b" rx="4"/>
+  <rect x="60" y="90" width="60" height="8" fill="#3b82f6" rx="2"/>
+  <rect x="60" y="110" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="60" y="130" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="60" y="150" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="60" y="170" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="60" y="190" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="60" y="210" width="60" height="8" fill="#64748b" rx="2"/>
+  
+  <!-- Second Server Rack -->
+  <rect x="150" y="80" width="80" height="160" fill="#1e293b" rx="4"/>
+  <rect x="160" y="90" width="60" height="8" fill="#3b82f6" rx="2"/>
+  <rect x="160" y="110" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="160" y="130" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="160" y="150" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="160" y="170" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="160" y="190" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="160" y="210" width="60" height="8" fill="#64748b" rx="2"/>
+  
+  <!-- Third Server Rack -->
+  <rect x="250" y="80" width="80" height="160" fill="#1e293b" rx="4"/>
+  <rect x="260" y="90" width="60" height="8" fill="#3b82f6" rx="2"/>
+  <rect x="260" y="110" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="260" y="130" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="260" y="150" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="260" y="170" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="260" y="190" width="60" height="8" fill="#64748b" rx="2"/>
+  <rect x="260" y="210" width="60" height="8" fill="#64748b" rx="2"/>
+  
+  <!-- Status Lights -->
+  <circle cx="75" cy="95" r="2" fill="#10b981"/>
+  <circle cx="175" cy="95" r="2" fill="#10b981"/>
+  <circle cx="275" cy="95" r="2" fill="#10b981"/>
+  
+  <!-- Network Connections -->
+  <path d="M130 160 L150 160" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M230 160 L250 160" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Performance Graph -->
+  <rect x="50" y="260" width="280" height="20" fill="#e2e8f0" rx="2"/>
+  <path d="M60 270 L80 265 L100 268 L120 262 L140 265 L160 260 L180 263 L200 258 L220 261 L240 256 L260 259 L280 254 L300 257 L320 252" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  
+  <!-- Icons -->
+  <circle cx="320" cy="40" r="15" fill="#3b82f6"/>
+  <path d="M315 40 L318 43 L325 36" stroke="white" stroke-width="2" fill="none"/>
+  
+  <circle cx="350" cy="40" r="15" fill="#10b981"/>
+  <path d="M345 40 L348 43 L355 36" stroke="white" stroke-width="2" fill="none"/>
+</svg> 

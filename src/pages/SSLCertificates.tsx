@@ -145,28 +145,39 @@ const SSLCertificates = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-5"></div>
         
-        <div className="relative max-w-6xl mx-auto text-center">
-          <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">
-            <Shield className="h-4 w-4 mr-2" />
-            SSL Security
-          </Badge>
-          
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            SSL Certificates
-          </h1>
-          
-          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
-            Protect your website and build customer trust with industry-leading SSL certificates. 
-            Secure your data transmission and improve your search engine rankings.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
-              View SSL Plans
-            </Button>
-            <Button size="lg" variant="outline">
-              Learn More
-            </Button>
+        <div className="relative max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-200">
+                <Shield className="h-4 w-4 mr-2" />
+                SSL Security
+              </Badge>
+              
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                SSL Certificates
+              </h1>
+              
+              <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
+                Protect your website and build customer trust with industry-leading SSL certificates. 
+                Secure your data transmission and improve your search engine rankings.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                  View SSL Plans
+                </Button>
+                <Button size="lg" variant="outline">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img 
+                src="/hostsailor/service-images/ssl-certificates.svg" 
+                alt="SSL Certificates" 
+                className="w-80 h-60 object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>

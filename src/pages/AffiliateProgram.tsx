@@ -120,42 +120,51 @@ const AffiliateProgram = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
         <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 text-purple-600 bg-purple-100">
-              <Users className="h-4 w-4 mr-2" />
-              Affiliate Program
-            </Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Join Our Affiliate Program & Earn Recurring Commissions
-            </h1>
-            <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
-              As a HostSailor affiliate, you'll promote our services using shareable banners and trackable links. 
-              Each visitor referred who makes a purchase earns you a commission—and you get paid every 30 days 
-              when your balance reaches at least $10.
-            </p>
-            
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-2">
-                    <div className="p-2 bg-purple-100 rounded-lg">
-                      {stat.icon}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <Badge variant="secondary" className="mb-4 text-purple-600 bg-purple-100">
+                <Users className="h-4 w-4 mr-2" />
+                Affiliate Program
+              </Badge>
+              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+                Join Our Affiliate Program & Earn Recurring Commissions
+              </h1>
+              <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
+                As a HostSailor affiliate, you'll promote our services using shareable banners and trackable links. 
+                Each visitor referred who makes a purchase earns you a commission—and you get paid every 30 days 
+                when your balance reaches at least $10.
+              </p>
+              
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-2">
+                      <div className="p-2 bg-purple-100 rounded-lg">
+                        {stat.icon}
+                      </div>
                     </div>
+                    <div className="text-2xl font-bold text-purple-600">{stat.number}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
-                  <div className="text-2xl font-bold text-purple-600">{stat.number}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3">
-                Sign Up Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3">
-                Learn More
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3">
+                  Sign Up Now
+                </Button>
+                <Button size="lg" variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img 
+                src="/hostsailor/service-images/affiliate-program.svg" 
+                alt="Affiliate Program" 
+                className="w-80 h-60 object-contain"
+              />
             </div>
           </div>
         </div>

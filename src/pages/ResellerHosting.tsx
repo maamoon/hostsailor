@@ -216,42 +216,51 @@ const ResellerHosting = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-5"></div>
         <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 text-green-600 bg-green-100">
-              <Building className="h-4 w-4 mr-2" />
-              Reseller Hosting Program
-            </Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Start Your Own Hosting Business Today
-            </h1>
-            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
-              Turn your hosting knowledge into a profitable business with our premium reseller hosting plans. 
-              Create multiple hosting accounts, brand them as your own, and earn significant profits 
-              while we handle the infrastructure, security, and support.
-            </p>
-            
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-2">
-                    <div className="p-2 bg-green-100 rounded-lg">
-                      {stat.icon}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <Badge variant="secondary" className="mb-4 text-green-600 bg-green-100">
+                <Building className="h-4 w-4 mr-2" />
+                Reseller Hosting Program
+              </Badge>
+              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+                Start Your Own Hosting Business Today
+              </h1>
+              <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
+                Turn your hosting knowledge into a profitable business with our premium reseller hosting plans. 
+                Create multiple hosting accounts, brand them as your own, and earn significant profits 
+                while we handle the infrastructure, security, and support.
+              </p>
+              
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-2">
+                      <div className="p-2 bg-green-100 rounded-lg">
+                        {stat.icon}
+                      </div>
                     </div>
+                    <div className="text-2xl font-bold text-green-600">{stat.number}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
-                  <div className="text-2xl font-bold text-green-600">{stat.number}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-                View Reseller Plans
-              </Button>
-              <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3">
-                Learn More
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
+                  View Reseller Plans
+                </Button>
+                <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img 
+                src="/hostsailor/service-images/reseller-hosting.svg" 
+                alt="Reseller Hosting" 
+                className="w-80 h-60 object-contain"
+              />
             </div>
           </div>
         </div>

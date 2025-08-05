@@ -124,29 +124,40 @@ const VPSHosting = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
         
-        <div className="relative max-w-6xl mx-auto text-center">
-          <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-200">
-            <Zap className="h-4 w-4 mr-2" />
-            VPS Technology
-          </Badge>
-          
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            VPS Hosting Solutions
-          </h1>
-          
-          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
-            Experience the freedom and flexibility of Virtual Private Servers. 
-            Get dedicated resources, full control, and enterprise-grade performance 
-            at affordable prices.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
-              View All Plans
-            </Button>
-            <Button size="lg" variant="outline">
-              Learn More
-            </Button>
+        <div className="relative max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-200">
+                <Zap className="h-4 w-4 mr-2" />
+                VPS Technology
+              </Badge>
+              
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                VPS Hosting Solutions
+              </h1>
+              
+              <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
+                Experience the freedom and flexibility of Virtual Private Servers. 
+                Get dedicated resources, full control, and enterprise-grade performance 
+                at affordable prices.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                  View All Plans
+                </Button>
+                <Button size="lg" variant="outline">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img 
+                src="/hostsailor/service-images/vps-hosting.svg" 
+                alt="VPS Hosting" 
+                className="w-80 h-60 object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>

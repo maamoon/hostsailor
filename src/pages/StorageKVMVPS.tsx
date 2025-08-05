@@ -244,40 +244,49 @@ const StorageKVMVPS = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>
         <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 text-blue-600 bg-blue-100">
-              <Storage className="h-4 w-4 mr-2" />
-              {t('storageKVMVPS.badge')}
-            </Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              {t('storageKVMVPS.heroTitle')}
-            </h1>
-            <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
-              {t('storageKVMVPS.heroSubtitle')}
-            </p>
-            
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-2">
-                    <div className="p-2 bg-blue-100 rounded-lg">
-                      {stat.icon}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <Badge variant="secondary" className="mb-4 text-blue-600 bg-blue-100">
+                <Storage className="h-4 w-4 mr-2" />
+                {t('storageKVMVPS.badge')}
+              </Badge>
+              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+                {t('storageKVMVPS.heroTitle')}
+              </h1>
+              <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
+                {t('storageKVMVPS.heroSubtitle')}
+              </p>
+              
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-2">
+                      <div className="p-2 bg-blue-100 rounded-lg">
+                        {stat.icon}
+                      </div>
                     </div>
+                    <div className="text-2xl font-bold text-blue-600">{stat.number}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
-                  <div className="text-2xl font-bold text-blue-600">{stat.number}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                {t('storageKVMVPS.buttons.orderNow')}
-              </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3">
-                {t('storageKVMVPS.buttons.viewAllPlans')}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                  {t('storageKVMVPS.buttons.orderNow')}
+                </Button>
+                <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3">
+                  {t('storageKVMVPS.buttons.viewAllPlans')}
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img 
+                src="/hostsailor/service-images/storage-vps.svg" 
+                alt="Storage KVM VPS" 
+                className="w-80 h-60 object-contain"
+              />
             </div>
           </div>
         </div>

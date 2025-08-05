@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Lock Icon -->
+  <rect x="180" y="120" width="40" height="50" fill="#1e293b" rx="4"/>
+  <rect x="185" y="125" width="30" height="40" fill="#10b981" rx="2"/>
+  <circle cx="200" cy="140" r="8" fill="white"/>
+  <rect x="195" y="140" width="10" height="15" fill="white" rx="2"/>
+  
+  <!-- Certificate -->
+  <rect x="100" y="80" width="200" height="120" fill="white" stroke="#1e293b" stroke-width="2" rx="8"/>
+  <rect x="110" y="90" width="180" height="20" fill="#f59e0b" rx="4"/>
+  <text x="200" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">SSL CERTIFICATE</text>
+  
+  <!-- Certificate Details -->
+  <text x="120" y="130" fill="#1e293b" font-size="12" font-weight="bold">Issued To:</text>
+  <text x="120" y="145" fill="#64748b" font-size="10">*.hostsailor.com</text>
+  
+  <text x="120" y="165" fill="#1e293b" font-size="12" font-weight="bold">Issued By:</text>
+  <text x="120" y="180" fill="#64748b" font-size="10">Let's Encrypt Authority X3</text>
+  
+  <text x="120" y="200" fill="#1e293b" font-size="12" font-weight="bold">Valid Until:</text>
+  <text x="120" y="215" fill="#64748b" font-size="10">December 31, 2024</text>
+  
+  <!-- Security Shield -->
+  <path d="M320 100 L340 110 L340 130 L320 140 L300 130 L300 110 Z" fill="#10b981"/>
+  <path d="M320 105 L340 115 L340 125 L320 135 L300 125 L300 115 Z" fill="white"/>
+  <path d="M325 115 L335 115 L335 125 L325 125 Z" fill="#10b981"/>
+  
+  <!-- Encryption Lines -->
+  <path d="M50 200 L350 200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8"/>
+  <path d="M50 210 L350 210" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="8"/>
+  <path d="M50 220 L350 220" stroke="#06b6d4" stroke-width="2" stroke-dasharray="8"/>
+  
+  <!-- Browser Security -->
+  <rect x="80" y="240" width="240" height="40" fill="#e2e8f0" rx="4"/>
+  <rect x="90" y="250" width="220" height="20" fill="white" rx="2"/>
+  <circle cx="100" cy="260" r="4" fill="#ef4444"/>
+  <circle cx="110" cy="260" r="4" fill="#f59e0b"/>
+  <circle cx="120" cy="260" r="4" fill="#10b981"/>
+  <text x="140" y="265" fill="#1e293b" font-size="10">https://hostsailor.com</text>
+  <rect x="300" y="250" width="10" height="20" fill="#10b981" rx="2"/>
+  
+  <!-- Security Badges -->
+  <circle cx="350" cy="40" r="15" fill="#10b981"/>
+  <text x="350" y="45" text-anchor="middle" fill="white" font-size="12">✓</text>
+  
+  <circle cx="320" cy="40" r="15" fill="#3b82f6"/>
+  <text x="320" y="45" text-anchor="middle" fill="white" font-size="12">🔒</text>
+</svg> 
