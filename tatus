@@ -1,0 +1,5 @@
+[33m31b0b91[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m تحديثات الموقع: إضافة Service Worker وتحسينات الترجمة والواجهة
+[33m4069152[m تحديث README بمعلومات النشر التلقائي - Update README with automatic deployment info
+[33m93dc77d[m استبدال workflow بآخر بسيط لتجنب مشاكل البيئة المحمية - Replace workflow with simple one to avoid environment protection issues
+[33mab8aee8[m إصلاح إعدادات البيئة المحمية في GitHub Pages - Fix protected environment settings for GitHub Pages
+[33m28a5864[m إضافة ملف .nojekyll لضمان عمل GitHub Pages - Add .nojekyll file for GitHub Pages
