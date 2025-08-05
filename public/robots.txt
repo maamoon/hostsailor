@@ -15,7 +15,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://maamoon.github.io/sail-web-launch/sitemap.xml
+Sitemap: https://maamoon.github.io/hostsailor/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
