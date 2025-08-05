@@ -62,6 +62,11 @@ http://localhost:5173
 
 **الرابط المباشر**: https://maamoon.github.io/hostsailor/
 
+#### النشر التلقائي
+- يتم تشغيل workflow تلقائياً عند كل push إلى الفرع الرئيسي
+- يستخدم `peaceiris/actions-gh-pages@v3` للنشر
+- يتعامل مع مشاكل Rollup في بيئة Linux تلقائياً
+
 #### النشر اليدوي
 ```bash
 # بناء المشروع
