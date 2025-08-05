@@ -23,7 +23,7 @@ jobs:
           node-version: '18'
           cache: 'npm'
           
-      - name: Clean install dependencies
+      - name: Install dependencies
         run: |
           rm -rf node_modules package-lock.json
           npm install --legacy-peer-deps
@@ -38,4 +38,5 @@ jobs:
           publish_dir: ./dist
           force_orphan: true
           user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com' 
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy to GitHub Pages' 
