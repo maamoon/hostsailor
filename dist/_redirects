@@ -1,11 +1,86 @@
+# Static files - serve directly
+/sw.js    /sw.js   200
+/manifest.json    /manifest.json   200
+/service-worker.js    /service-worker.js   200
+/favicon.ico    /favicon.ico   200
+/logo.svg    /logo.svg   200
+/favicon.svg    /favicon.svg   200
+
 # Redirect all routes to index.html for SPA routing
 /*    /index.html   200
 
-# Specific redirects for better SEO
-/ssd-shared-hosting    /#/ssd-shared-hosting   301
-/reseller-hosting    /#/reseller-hosting   301
-/dedicated-servers    /#/dedicated-servers   301
-/vps-hosting    /#/vps-hosting   301
-/services    /#/services   301
-/contact    /#/contact   301
-/about-us    /#/our-company   301 
+# Specific redirects for better SEO - New organized routes
+/main/home    /#/main/home   301
+/main/services    /#/main/services   301
+/main/dashboard    /#/main/dashboard   301
+
+/auth/login    /#/auth/login   301
+/auth/register    /#/auth/register   301
+/auth/forgot-password    /#/auth/forgot-password   301
+/auth/reset-password    /#/auth/reset-password   301
+
+/hosting/ssd-shared-hosting    /#/hosting/ssd-shared-hosting   301
+/hosting/reseller-hosting    /#/hosting/reseller-hosting   301
+
+/vps/hosting    /#/vps/hosting   301
+/vps/kvm-vps    /#/vps/kvm-vps   301
+/vps/storage-kvm-vps    /#/vps/storage-kvm-vps   301
+/vps/openvz-vps-hdd    /#/vps/openvz-vps-hdd   301
+/vps/openvz-vps-ssd    /#/vps/openvz-vps-ssd   301
+/vps/kvm-vps-nvme    /#/vps/kvm-vps-nvme   301
+/vps/reseller-program    /#/vps/reseller-program   301
+
+/dedicated/servers    /#/dedicated/servers   301
+/dedicated/supermicro-romania    /#/dedicated/supermicro-romania   301
+/dedicated/hp-netherlands    /#/dedicated/hp-netherlands   301
+
+/datacenters/los-angeles    /#/datacenters/los-angeles   301
+/datacenters/netherlands    /#/datacenters/netherlands   301
+/datacenters/romania    /#/datacenters/romania   301
+
+/services/ssl-certificates    /#/services/ssl-certificates   301
+/services/domain-registration    /#/services/domain-registration   301
+/services/colocation    /#/services/colocation   301
+/services/vlan-network    /#/services/vlan-network   301
+
+/tools/hub    /#/tools/hub   301
+/tools/network-status    /#/tools/network-status   301
+/tools/looking-glass    /#/tools/looking-glass   301
+/tools/ip-announcement    /#/tools/ip-announcement   301
+
+/support/knowledge-base    /#/support/knowledge-base   301
+/support/faqs    /#/support/faqs   301
+/support/contact    /#/support/contact   301
+
+/company/about-us    /#/company/about-us   301
+/company/our-company    /#/company/our-company   301
+/company/blog    /#/company/blog   301
+
+/legal/terms-of-service    /#/legal/terms-of-service   301
+/legal/privacy-policy    /#/legal/privacy-policy   301
+/legal/acceptable-use-policy    /#/legal/acceptable-use-policy   301
+/legal/service-level-agreement    /#/legal/service-level-agreement   301
+
+/programs/affiliate    /#/programs/affiliate   301
+/programs/reseller    /#/programs/reseller   301
+/programs/bug-bounty    /#/programs/bug-bounty   301
+
+/deals/hot-deals    /#/deals/hot-deals   301
+/deals/coupons-offers    /#/deals/coupons-offers   301
+
+# Legacy redirects for backward compatibility
+/ssd-shared-hosting    /#/hosting/ssd-shared-hosting   301
+/reseller-hosting    /#/hosting/reseller-hosting   301
+/dedicated-servers    /#/dedicated/servers   301
+/vps-hosting    /#/vps/hosting   301
+/ssl-certificates    /#/services/ssl-certificates   301
+/vlan-network    /#/services/vlan-network   301
+/our-company    /#/company/about-us   301
+/contact    /#/support/contact   301
+/affiliate-program    /#/programs/affiliate   301
+/login    /#/auth/login   301
+/register    /#/auth/register   301
+/services    /#/main/services   301
+/dashboard    /#/main/dashboard   301 
+
+ 

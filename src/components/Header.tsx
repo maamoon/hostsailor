@@ -121,13 +121,13 @@ const Header = () => {
         {
           key: 'vps',
           label: t('navigation.products.vps.title'),
-          href: '/vps-hosting',
+          href: '/vps/hosting',
           items: [
-            { key: 'openvzHdd', label: 'OpenVZ VPS HDD', href: '/openvz-vps-hdd' },
-            { key: 'openvzSsd', label: 'OpenVZ VPS SSD', href: '/openvz-vps-ssd' },
-            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/kvm-vps-nvme' },
-            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/vps-hosting/kvm-vps' },
-            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/vps-hosting/storage-kvm-vps' }
+            { key: 'openvzHdd', label: 'OpenVZ VPS HDD', href: '/vps/openvz-vps-hdd' },
+            { key: 'openvzSsd', label: 'OpenVZ VPS SSD', href: '/vps/openvz-vps-ssd' },
+            { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '/vps/kvm-vps-nvme' },
+            { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '/vps/kvm-vps' },
+            { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '/vps/storage-kvm-vps' }
           ]
         }
       ]

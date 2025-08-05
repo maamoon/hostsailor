@@ -1,11 +1,12 @@
 // Service Worker for HostSailor
-const CACHE_NAME = 'hostsailor-v1.2.0';
+const CACHE_NAME = 'hostsailor-v1.3.1';
 const urlsToCache = [
-  '/hostsailor/',
-  '/hostsailor/index.html',
-  '/hostsailor/favicon.ico',
-  '/hostsailor/logo.svg',
-  '/hostsailor/manifest.json'
+  '/',
+  '/index.html',
+  '/favicon.ico',
+  '/logo.svg',
+  '/manifest.json',
+  '/favicon.svg'
 ];
 
 // Install event
