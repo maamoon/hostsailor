@@ -1,0 +1,116 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="indigoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.05" />
+    </linearGradient>
+    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#blueGradient)"/>
+  
+  <!-- Large circles -->
+  <circle cx="200" cy="150" r="120" fill="url(#circleGradient)" opacity="0.3"/>
+  <circle cx="1000" cy="650" r="150" fill="url(#circleGradient)" opacity="0.2"/>
+  <circle cx="900" cy="200" r="80" fill="url(#circleGradient)" opacity="0.4"/>
+  
+  <!-- Server rack shapes -->
+  <rect x="50" y="300" width="80" height="200" fill="#3B82F6" opacity="0.1" rx="5"/>
+  <rect x="60" y="310" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  <rect x="60" y="340" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  <rect x="60" y="370" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  <rect x="60" y="400" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  <rect x="60" y="430" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  <rect x="60" y="460" width="60" height="20" fill="#6366F1" opacity="0.2"/>
+  
+  <rect x="1050" y="200" width="80" height="200" fill="#6366F1" opacity="0.1" rx="5"/>
+  <rect x="1060" y="210" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1060" y="240" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1060" y="270" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1060" y="300" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1060" y="330" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1060" y="360" width="60" height="20" fill="#3B82F6" opacity="0.2"/>
+  
+  <!-- Circuit board patterns -->
+  <g opacity="0.1">
+    <!-- Horizontal lines -->
+    <line x1="300" y1="100" x2="500" y2="100" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="300" y1="150" x2="500" y2="150" stroke="#6366F1" stroke-width="2"/>
+    <line x1="300" y1="200" x2="500" y2="200" stroke="#3B82F6" stroke-width="2"/>
+    
+    <!-- Vertical lines -->
+    <line x1="350" y1="50" x2="350" y2="250" stroke="#6366F1" stroke-width="2"/>
+    <line x1="400" y1="50" x2="400" y2="250" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="450" y1="50" x2="450" y2="250" stroke="#6366F1" stroke-width="2"/>
+    
+    <!-- Connection points -->
+    <circle cx="350" cy="100" r="3" fill="#3B82F6"/>
+    <circle cx="400" cy="150" r="3" fill="#6366F1"/>
+    <circle cx="450" cy="200" r="3" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Data center elements -->
+  <g opacity="0.15">
+    <!-- Cooling fans -->
+    <circle cx="700" cy="150" r="25" fill="#3B82F6"/>
+    <circle cx="700" cy="150" r="15" fill="#6366F1"/>
+    <circle cx="700" cy="150" r="5" fill="#3B82F6"/>
+    
+    <circle cx="800" cy="250" r="20" fill="#6366F1"/>
+    <circle cx="800" cy="250" r="12" fill="#3B82F6"/>
+    <circle cx="800" cy="250" r="4" fill="#6366F1"/>
+  </g>
+  
+  <!-- Network connections -->
+  <g opacity="0.1">
+    <line x1="200" y1="150" x2="400" y2="300" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="800" y1="200" x2="1000" y2="400" stroke="#6366F1" stroke-width="2"/>
+    <line x1="600" y1="500" x2="800" y2="600" stroke="#3B82F6" stroke-width="2"/>
+    
+    <!-- Network nodes -->
+    <circle cx="400" cy="300" r="8" fill="#3B82F6"/>
+    <circle cx="1000" cy="400" r="8" fill="#6366F1"/>
+    <circle cx="800" cy="600" r="8" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Floating tech elements -->
+  <g opacity="0.2">
+    <!-- CPU icon -->
+    <rect x="950" y="100" width="30" height="30" fill="#3B82F6" rx="3"/>
+    <rect x="955" y="105" width="20" height="20" fill="#6366F1"/>
+    
+    <!-- Memory icon -->
+    <rect x="150" y="600" width="40" height="15" fill="#6366F1" rx="2"/>
+    <rect x="155" y="605" width="30" height="5" fill="#3B82F6"/>
+    
+    <!-- Storage icon -->
+    <rect x="1000" y="550" width="35" height="25" fill="#3B82F6" rx="3"/>
+    <rect x="1005" y="555" width="25" height="15" fill="#6366F1"/>
+  </g>
+  
+  <!-- Small decorative dots -->
+  <circle cx="500" cy="150" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="700" cy="250" r="3" fill="#6366F1" opacity="0.4"/>
+  <circle cx="400" cy="450" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="900" cy="550" r="3" fill="#6366F1" opacity="0.4"/>
+  <circle cx="600" cy="700" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="1100" cy="350" r="3" fill="#6366F1" opacity="0.4"/>
+  
+  <!-- Performance indicators -->
+  <g opacity="0.1">
+    <!-- Activity bars -->
+    <rect x="300" y="650" width="8" height="40" fill="#3B82F6"/>
+    <rect x="315" y="660" width="8" height="30" fill="#6366F1"/>
+    <rect x="330" y="645" width="8" height="45" fill="#3B82F6"/>
+    <rect x="345" y="655" width="8" height="35" fill="#6366F1"/>
+    <rect x="360" y="650" width="8" height="40" fill="#3B82F6"/>
+  </g>
+</svg> 
