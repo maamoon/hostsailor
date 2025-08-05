@@ -1,13 +1,11 @@
 // Service Worker for HostSailor
 const CACHE_NAME = 'hostsailor-v1.2.0';
 const urlsToCache = [
-  '/sail-web-launch/',
-  '/sail-web-launch/index.html',
-  '/sail-web-launch/assets/index-DAF6d2v2.css',
-  '/sail-web-launch/assets/index-BxprknqM.js',
-  '/sail-web-launch/favicon.ico',
-  '/sail-web-launch/logo.svg',
-  '/sail-web-launch/manifest.json'
+  '/',
+  '/index.html',
+  '/favicon.ico',
+  '/logo.svg',
+  '/manifest.json'
 ];
 
 // Install event
