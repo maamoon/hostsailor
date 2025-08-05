@@ -56,6 +56,27 @@ npm run dev
 http://localhost:5173
 ```
 
+### النشر على GitHub Pages
+
+الموقع منشور تلقائياً على GitHub Pages عند كل push إلى الفرع الرئيسي.
+
+**الرابط المباشر**: https://maamoon.github.io/hostsailor/
+
+#### النشر اليدوي
+```bash
+# بناء المشروع
+npm run build
+
+# نشر على GitHub Pages
+git checkout gh-pages
+git rm -rf .
+cp -r dist/* .
+git add .
+git commit -m "Update website"
+git push origin gh-pages
+git checkout main
+```
+
 ## هيكل المشروع
 
 ```
@@ -169,11 +190,14 @@ const languages = [
 - ✅ **إصلاح مفاتيح الترجمة**: تم تصحيح مفاتيح `home.login` و `home.register` إلى `common.login` و `common.register`
 - ✅ **تحسين التوافق**: تم التأكد من توافق جميع مفاتيح الترجمة في جميع اللغات
 - ✅ **بناء المشروع**: تم بناء المشروع بنجاح وإنتاج ملفات الإنتاج
+- ✅ **النشر على GitHub Pages**: تم نشر الموقع بنجاح على GitHub Pages
+- ✅ **إضافة GitHub Actions**: تم إعداد النشر التلقائي
 
 ### التغييرات التقنية
 - تحديث `HomeHeader.tsx` لاستخدام مفاتيح الترجمة الصحيحة
 - إزالة المفاتيح غير الموجودة من ملفات الترجمة
 - تحسين أداء التطبيق
+- إعداد GitHub Actions للنشر التلقائي
 
 ## الدعم
 
