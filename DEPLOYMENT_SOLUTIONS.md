@@ -37,7 +37,7 @@ Manifest: Line: 1, column: 1, Syntax error
       <rules>
         <!-- Static files - serve directly -->
         <rule name="Static Files" stopProcessing="true">
-          <match url="^(sw\.js|manifest\.json|favicon\.ico|logo\.svg|favicon\.svg|.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))$" />
+          <match url="^(hostsailor/sw\.js|hostsailor/manifest\.json|hostsailor/favicon\.ico|hostsailor/logo\.svg|hostsailor/favicon\.svg|hostsailor/.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))$" />
           <conditions>
             <add input="{REQUEST_FILENAME}" matchType="IsFile" />
           </conditions>
@@ -57,7 +57,7 @@ Manifest: Line: 1, column: 1, Syntax error
             <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
             <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
           </conditions>
-          <action type="Rewrite" url="/" />
+          <action type="Rewrite" url="/hostsailor/" />
         </rule>
       </rules>
     </rewrite>
@@ -106,11 +106,11 @@ Header always set X-XSS-Protection "1; mode=block"
 
 # SPA Routing
 RewriteEngine On
-RewriteBase /
+RewriteBase /hostsailor/
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . /hostsailor/index.html [L]
 
 # Cache Control
 <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg)$">
@@ -136,22 +136,22 @@ server {
     add_header Referrer-Policy "strict-origin-when-cross-origin";
 
     # Service Worker - correct MIME type
-    location = /sw.js {
+    location = /hostsailor/sw.js {
         add_header Content-Type "application/javascript";
         add_header Cache-Control "public, max-age=0, must-revalidate";
         try_files $uri =404;
     }
 
     # Manifest - correct MIME type
-    location = /manifest.json {
+    location = /hostsailor/manifest.json {
         add_header Content-Type "application/json";
         add_header Cache-Control "public, max-age=0, must-revalidate";
         try_files $uri =404;
     }
 
     # SPA routing - fallback to index.html
-    location / {
-        try_files $uri $uri/ /index.html;
+    location /hostsailor/ {
+        try_files $uri $uri/ /hostsailor/index.html;
     }
 }
 ```
@@ -166,11 +166,11 @@ server {
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 
-/sw.js
+/hostsailor/sw.js
   Content-Type: application/javascript
   Cache-Control: public, max-age=0, must-revalidate
 
-/manifest.json
+/hostsailor/manifest.json
   Content-Type: application/json
   Cache-Control: public, max-age=0, must-revalidate
 ```
@@ -178,11 +178,11 @@ server {
 #### ملف _redirects
 ```
 # Static files - serve directly
-/sw.js    /sw.js   200
-/manifest.json    /manifest.json   200
+/hostsailor/sw.js    /hostsailor/sw.js   200
+/hostsailor/manifest.json    /hostsailor/manifest.json   200
 
 # Redirect all routes to index.html for SPA routing
-/*    /index.html   200
+/hostsailor/*    /hostsailor/index.html   200
 ```
 
 ### Vercel
@@ -192,7 +192,7 @@ server {
 {
   "headers": [
     {
-      "source": "/sw.js",
+      "source": "/hostsailor/sw.js",
       "headers": [
         {
           "key": "Content-Type",
@@ -201,7 +201,7 @@ server {
       ]
     },
     {
-      "source": "/manifest.json",
+      "source": "/hostsailor/manifest.json",
       "headers": [
         {
           "key": "Content-Type",
@@ -212,16 +212,16 @@ server {
   ],
   "rewrites": [
     {
-      "source": "/sw.js",
-      "destination": "/sw.js"
+      "source": "/hostsailor/sw.js",
+      "destination": "/hostsailor/sw.js"
     },
     {
-      "source": "/manifest.json",
-      "destination": "/manifest.json"
+      "source": "/hostsailor/manifest.json",
+      "destination": "/hostsailor/manifest.json"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/hostsailor/(.*)",
+      "destination": "/hostsailor/index.html"
     }
   ]
 }
@@ -236,7 +236,7 @@ server {
     "public": "dist",
     "headers": [
       {
-        "source": "/sw.js",
+        "source": "/hostsailor/sw.js",
         "headers": [
           {
             "key": "Content-Type",
@@ -245,7 +245,7 @@ server {
         ]
       },
       {
-        "source": "/manifest.json",
+        "source": "/hostsailor/manifest.json",
         "headers": [
           {
             "key": "Content-Type",
@@ -256,16 +256,16 @@ server {
     ],
     "rewrites": [
       {
-        "source": "/sw.js",
-        "destination": "/sw.js"
+        "source": "/hostsailor/sw.js",
+        "destination": "/hostsailor/sw.js"
       },
       {
-        "source": "/manifest.json",
-        "destination": "/manifest.json"
+        "source": "/hostsailor/manifest.json",
+        "destination": "/hostsailor/manifest.json"
       },
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/hostsailor/**",
+        "destination": "/hostsailor/index.html"
       }
     ]
   }
@@ -276,7 +276,7 @@ server {
 
 ### 1. فحص نوع MIME
 ```bash
-curl -I http://your-domain.com/sw.js
+curl -I https://maamoon.github.io/hostsailor/sw.js
 ```
 يجب أن يعطي:
 ```
@@ -285,7 +285,7 @@ Content-Type: application/javascript
 
 ### 2. فحص ملف Manifest
 ```bash
-curl -I http://your-domain.com/manifest.json
+curl -I https://maamoon.github.io/hostsailor/manifest.json
 ```
 يجب أن يعطي:
 ```
@@ -307,13 +307,13 @@ navigator.serviceWorker.getRegistrations().then(registrations => {
 
 ```javascript
 // في index.html
-navigator.serviceWorker.register('/service-worker.js')
+navigator.serviceWorker.register('/hostsailor/service-worker.js')
 ```
 
 ### 2. تعطيل Service Worker مؤقتاً
 ```javascript
 // في index.html - تعليق تسجيل Service Worker
-// navigator.serviceWorker.register('/sw.js')
+// navigator.serviceWorker.register('/hostsailor/sw.js')
 ```
 
 ### 3. فحص إعدادات الخادم

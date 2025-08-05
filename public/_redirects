@@ -1,13 +1,13 @@
 # Static files - serve directly
-/sw.js    /sw.js   200
-/manifest.json    /manifest.json   200
-/service-worker.js    /service-worker.js   200
-/favicon.ico    /favicon.ico   200
-/logo.svg    /logo.svg   200
-/favicon.svg    /favicon.svg   200
+/hostsailor/sw.js    /hostsailor/sw.js   200
+/hostsailor/manifest.json    /hostsailor/manifest.json   200
+/hostsailor/service-worker.js    /hostsailor/service-worker.js   200
+/hostsailor/favicon.ico    /hostsailor/favicon.ico   200
+/hostsailor/logo.svg    /hostsailor/logo.svg   200
+/hostsailor/favicon.svg    /hostsailor/favicon.svg   200
 
 # Redirect all routes to index.html for SPA routing
-/*    /index.html   200
+/hostsailor/*    /hostsailor/index.html   200
 
 # Specific redirects for better SEO - New organized routes
 /main/home    /#/main/home   301

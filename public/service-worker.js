@@ -1,12 +1,13 @@
 // Alternative Service Worker for HostSailor
-const CACHE_NAME = 'hostsailor-v1.3.2';
+const CACHE_NAME = 'hostsailor-v1.3.4';
+const BASE_PATH = '/hostsailor/';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/favicon.ico',
-  '/logo.svg',
-  '/manifest.json',
-  '/favicon.svg'
+  BASE_PATH,
+  BASE_PATH + 'index.html',
+  BASE_PATH + 'favicon.ico',
+  BASE_PATH + 'logo.svg',
+  BASE_PATH + 'manifest.json',
+  BASE_PATH + 'favicon.svg'
 ];
 
 // Install event

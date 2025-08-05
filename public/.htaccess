@@ -11,11 +11,11 @@ Header always set X-XSS-Protection "1; mode=block"
 
 # SPA Routing
 RewriteEngine On
-RewriteBase /
+RewriteBase /hostsailor/
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . /hostsailor/index.html [L]
 
 # Cache Control
 <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg)$">
