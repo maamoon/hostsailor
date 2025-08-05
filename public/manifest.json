@@ -2,19 +2,19 @@
   "name": "HostSailor - Premium Web Hosting Solutions",
   "short_name": "HostSailor",
   "description": "Fast, reliable, and secure web hosting services",
-  "start_url": "/hostsailor/",
+  "start_url": "/sail-web-launch/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#16a34a",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/hostsailor/favicon.ico",
+      "src": "/sail-web-launch/favicon.ico",
       "sizes": "32x32",
       "type": "image/x-icon"
     },
     {
-      "src": "/hostsailor/logo.svg",
+      "src": "/sail-web-launch/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
