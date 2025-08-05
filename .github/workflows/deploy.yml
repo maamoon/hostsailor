@@ -33,7 +33,8 @@ jobs:
           
       - name: Fix rollup dependencies
         run: |
-          npm install @rollup/rollup-linux-x64-gnu --platform=linux --arch=x64
+          npm rebuild
+          npm install @rollup/rollup-linux-x64-gnu --platform=linux --arch=x64 --force
           
       - name: Build
         run: npm run build

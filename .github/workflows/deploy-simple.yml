@@ -17,7 +17,9 @@ jobs:
           
       - name: Install and Build
         run: |
-          npm install
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
+          npm install @rollup/rollup-linux-x64-gnu --platform=linux --arch=x64 --force
           npm run build
           
       - name: Deploy
