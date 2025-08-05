@@ -128,7 +128,7 @@ const AffiliateProgram = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Join Our Affiliate Program & Earn Recurring Commissions
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               As a HostSailor affiliate, you'll promote our services using shareable banners and trackable links. 
               Each visitor referred who makes a purchase earns you a commission—and you get paid every 30 days 
               when your balance reaches at least $10.
@@ -168,7 +168,7 @@ const AffiliateProgram = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               How It Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Simple steps to start earning commissions with our affiliate program
             </p>
           </div>
@@ -199,7 +199,7 @@ const AffiliateProgram = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Commission Structure
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Earn competitive commissions on all our hosting services
             </p>
           </div>
@@ -236,7 +236,7 @@ const AffiliateProgram = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Join HostSailor?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Everything you need to succeed as an affiliate partner
             </p>
           </div>
@@ -262,7 +262,7 @@ const AffiliateProgram = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Brand Ambassador Perks
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Extra incentives for high-performing affiliates and community ambassadors
             </p>
           </div>
@@ -293,7 +293,7 @@ const AffiliateProgram = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Program Summary
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Everything you need to know about our affiliate program
             </p>
           </div>
@@ -376,10 +376,10 @@ const AffiliateProgram = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Start Earning Commissions?
           </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-            Join our affiliate program today and start earning recurring commissions on every sale. 
-            With competitive rates, extended cookie duration, and bonus rewards, there's never been a better time to partner with HostSailor.
-          </p>
+                      <p className="text-base text-purple-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
+              Join our affiliate program today and start earning recurring commissions on every sale. 
+              With competitive rates, extended cookie duration, and bonus rewards, there's never been a better time to partner with HostSailor.
+            </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3">
               Join Affiliate Program

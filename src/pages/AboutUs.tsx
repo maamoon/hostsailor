@@ -115,7 +115,7 @@ const AboutUs = () => {
             Our Company
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
             HostSailor is a leading web hosting provider committed to delivering exceptional 
             hosting solutions with personalized attention and outstanding service. 
             We set high standards in the hosting industry.

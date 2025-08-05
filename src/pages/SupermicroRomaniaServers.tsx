@@ -173,7 +173,7 @@ const SupermicroRomaniaServers = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Premium Dedicated Servers in Romania — Powered by Supermicro
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Instant setup, global technical support, and enterprise-grade features starting at 
               <span className="font-bold text-blue-600"> USD 71.99/month</span>. High-performance, 
               customizable dedicated servers built on Supermicro hardware and backed by robust infrastructure.
@@ -213,7 +213,7 @@ const SupermicroRomaniaServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Featured Server Plans
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose from our range of high-performance dedicated servers with instant setup and enterprise-grade features
             </p>
           </div>
@@ -297,7 +297,7 @@ const SupermicroRomaniaServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Features & Benefits
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Everything you need for enterprise-grade hosting with maximum performance and reliability
             </p>
           </div>
@@ -323,7 +323,7 @@ const SupermicroRomaniaServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Technical Specs & Data Center
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Enterprise-grade infrastructure with global connectivity and maximum reliability
             </p>
           </div>
@@ -351,7 +351,7 @@ const SupermicroRomaniaServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Multiple Payment Options
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose your preferred payment method for instant server activation
             </p>
           </div>
@@ -374,7 +374,7 @@ const SupermicroRomaniaServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Need Custom Configuration?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-sm text-gray-500 mb-8 font-light tracking-wide">
               Contact our sales team for custom server configurations or reseller inquiries
             </p>
             
@@ -405,7 +405,7 @@ const SupermicroRomaniaServers = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Deploy Your Dedicated Server?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-blue-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Get instant activation upon payment confirmation. Choose your plan and start building 
             your infrastructure with enterprise-grade hardware and 24/7 support.
           </p>

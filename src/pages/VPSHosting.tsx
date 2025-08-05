@@ -134,7 +134,7 @@ const VPSHosting = () => {
             VPS Hosting Solutions
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
             Experience the freedom and flexibility of Virtual Private Servers. 
             Get dedicated resources, full control, and enterprise-grade performance 
             at affordable prices.

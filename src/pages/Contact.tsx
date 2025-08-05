@@ -84,7 +84,7 @@ const Contact = () => {
             Get in Touch
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
             Have questions about our hosting services? Our expert team is here to help. 
             Contact us through any of the methods below and we'll get back to you promptly.
           </p>

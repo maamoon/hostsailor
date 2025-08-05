@@ -192,7 +192,7 @@ const HPNetherlandsServers = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Reliable HP Dedicated Servers in the Netherlands — Starting at ~$42/month
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Enterprise setups with instant setup, IPv6, and robust infrastructure from our NL data centers. 
               High-performance HP servers with enterprise-grade reliability and 24/7 support.
             </p>
@@ -231,7 +231,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Featured Server Plans
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose from our range of high-performance HP dedicated servers with instant setup and enterprise-grade features
             </p>
           </div>
@@ -321,7 +321,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Key Benefits
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Everything you need for enterprise-grade hosting with maximum performance and reliability
             </p>
           </div>
@@ -347,7 +347,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Amsterdam Data Center
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Enterprise-grade infrastructure with global connectivity and maximum reliability
             </p>
           </div>
@@ -375,7 +375,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Additional Specifications
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Enhanced features and capabilities for your hosting needs
             </p>
           </div>
@@ -403,7 +403,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Multiple Payment Options
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose your preferred payment method for instant server activation
             </p>
           </div>
@@ -426,7 +426,7 @@ const HPNetherlandsServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Need Custom Configuration?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-sm text-gray-500 mb-8 font-light tracking-wide">
               Contact our sales team for custom server configurations or reseller inquiries
             </p>
             
@@ -474,7 +474,7 @@ const HPNetherlandsServers = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Deploy Your HP Dedicated Server?
           </h2>
-          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-green-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Get instant activation upon payment confirmation. Choose your plan and start building 
             your infrastructure with enterprise-grade HP hardware and 24/7 support.
           </p>

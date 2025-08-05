@@ -252,7 +252,7 @@ const StorageKVMVPS = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               {t('storageKVMVPS.heroTitle')}
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               {t('storageKVMVPS.heroSubtitle')}
             </p>
             
@@ -290,7 +290,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               {t('storageKVMVPS.plans.title')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               {t('storageKVMVPS.plans.subtitle')}
             </p>
           </div>
@@ -373,7 +373,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               What Sets Storage KVM VPS Apart
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Everything you need for storage-optimized virtual private servers with maximum reliability
             </p>
           </div>
@@ -399,7 +399,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Ideal Use Cases
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Perfect for storage-heavy applications and long-term hosting solutions
             </p>
           </div>
@@ -427,7 +427,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Storage VPS vs NVMe VPS
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose the right VPS type for your specific needs
             </p>
           </div>
@@ -459,7 +459,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Add-Ons & Licenses
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Enhance your Storage VPS with additional services and control panels
             </p>
           </div>
@@ -489,7 +489,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Common questions about Storage KVM VPS hosting
             </p>
           </div>
@@ -525,7 +525,7 @@ const StorageKVMVPS = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Need Help Choosing?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-sm text-gray-500 mb-8 font-light tracking-wide">
               Contact our sales team for custom configurations or technical support
             </p>
             
@@ -556,7 +556,7 @@ const StorageKVMVPS = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Deploy Your Storage VPS?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-base text-blue-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Get instant deployment upon payment confirmation. Choose your plan and start building 
             your storage infrastructure with enterprise-grade RAID10 reliability and 24/7 support.
           </p>

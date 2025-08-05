@@ -224,7 +224,7 @@ const ResellerHosting = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Start Your Own Hosting Business Today
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Turn your hosting knowledge into a profitable business with our premium reseller hosting plans. 
               Create multiple hosting accounts, brand them as your own, and earn significant profits 
               while we handle the infrastructure, security, and support.
@@ -264,7 +264,7 @@ const ResellerHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Choose Your Reseller Plan
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Start your hosting business with our flexible reseller plans designed for entrepreneurs and agencies
             </p>
           </div>
@@ -314,7 +314,7 @@ const ResellerHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Reseller Hosting?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Start your own hosting business with minimal investment and maximum potential for growth and profitability
             </p>
           </div>
@@ -340,7 +340,7 @@ const ResellerHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Powerful Features for Your Business
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Everything you need to run a successful and profitable hosting business
             </p>
           </div>
@@ -370,7 +370,7 @@ const ResellerHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Global Data Centers
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose the data center location that best serves your clients' needs
             </p>
           </div>
@@ -402,7 +402,7 @@ const ResellerHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               How Reseller Hosting Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Simple steps to start your profitable hosting business
             </p>
           </div>
@@ -441,7 +441,7 @@ const ResellerHosting = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Start Your Hosting Business?
           </h2>
-          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-green-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Join thousands of successful resellers who've built profitable hosting businesses with HostSailor. 
             Get started today and turn your hosting knowledge into a sustainable income stream.
           </p>

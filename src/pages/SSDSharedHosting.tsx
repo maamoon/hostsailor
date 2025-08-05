@@ -127,7 +127,7 @@ const SSDSharedHosting = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               The Best SSD Shared Hosting Packages
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Looking for a hosting upgrade that's fast, reliable, and easy on your budget? 
               Our shared SSD hosting is a game-changer compared to old-school HDD hosting. 
               With lightning-fast performance and reduced load times, it's perfect for anyone tired of sluggish websites.
@@ -151,7 +151,7 @@ const SSDSharedHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Choose Your Perfect Plan
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Starting at just $0.95/month with all the features you need to succeed online
             </p>
           </div>
@@ -197,7 +197,7 @@ const SSDSharedHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose SSD Hosting?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               SSD hosting isn't just fast—it's the gold standard. Unlike old-school HDDs with clunky spinning discs, 
               SSDs use sleek flash memory with no moving parts.
             </p>
@@ -224,7 +224,7 @@ const SSDSharedHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Global Data Centers
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               All our servers are hosted in top-notch data centers ensuring global accessibility and reliable service
             </p>
           </div>
@@ -272,7 +272,7 @@ const SSDSharedHosting = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Experience Lightning-Fast Hosting?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-blue-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Join thousands of satisfied customers who've upgraded to our SSD hosting. 
             Get started today and see the difference speed makes.
           </p>

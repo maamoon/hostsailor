@@ -259,7 +259,7 @@ const KVMVPSHosting = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               High-Performance KVM VPS — from just $2.99/month
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Powered by industry-leading NVMe/RAID10, AMD EPYC CPUs, and DDR5 RAM—backed by instant provisioning, 
               strong DDoS protection, and 24/7 support.
             </p>
@@ -298,7 +298,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               VPS Plans & Pricing
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Choose from our range of high-performance KVM VPS plans with instant setup and enterprise-grade features
             </p>
           </div>
@@ -375,7 +375,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Our KVM VPS?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Everything you need for high-performance virtual private servers with maximum reliability
             </p>
           </div>
@@ -401,7 +401,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Perfect For
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Ideal for websites, eCommerce stores, SaaS platforms, gaming servers, and development environments
             </p>
           </div>
@@ -429,7 +429,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Optional Add-ons
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Enhance your VPS with additional services and control panels
             </p>
           </div>
@@ -459,7 +459,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Key Features
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Advanced features for optimal performance and reliability
             </p>
           </div>
@@ -493,7 +493,7 @@ const KVMVPSHosting = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Need Help Choosing?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-sm text-gray-500 mb-8">
               Contact our sales team for custom configurations or technical support
             </p>
             
@@ -524,7 +524,7 @@ const KVMVPSHosting = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Deploy Your KVM VPS?
           </h2>
-          <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-indigo-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Get instant deployment upon payment confirmation. Choose your plan and start building 
             your infrastructure with enterprise-grade hardware and 24/7 support.
           </p>

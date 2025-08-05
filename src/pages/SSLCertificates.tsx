@@ -155,7 +155,7 @@ const SSLCertificates = () => {
             SSL Certificates
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-sm text-gray-500 mb-8 max-w-3xl mx-auto font-light tracking-wide">
             Protect your website and build customer trust with industry-leading SSL certificates. 
             Secure your data transmission and improve your search engine rankings.
           </p>

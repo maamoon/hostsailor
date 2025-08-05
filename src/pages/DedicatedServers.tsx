@@ -210,7 +210,7 @@ const DedicatedServers = () => {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               High-Performance Dedicated Servers
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed font-light tracking-wide">
               Get the power and control you need with our enterprise-grade dedicated servers. 
               Full root access, isolated hardware, and maximum performance for your most demanding applications.
             </p>
@@ -233,7 +233,7 @@ const DedicatedServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Choose Your Server Type
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Select from our range of enterprise-grade dedicated servers
             </p>
           </div>
@@ -282,7 +282,7 @@ const DedicatedServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Server Configurations
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Pre-configured server options to get you started quickly
             </p>
           </div>
@@ -341,7 +341,7 @@ const DedicatedServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Dedicated Servers?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-3xl mx-auto font-light tracking-wide">
               Experience the power and control of dedicated hardware with enterprise-grade reliability
             </p>
           </div>
@@ -367,7 +367,7 @@ const DedicatedServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Enterprise Features
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Professional-grade features for your business-critical applications
             </p>
           </div>
@@ -397,7 +397,7 @@ const DedicatedServers = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Global Data Centers
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 max-w-2xl mx-auto font-light tracking-wide">
               Strategically located data centers for optimal performance and reliability
             </p>
           </div>
@@ -445,7 +445,7 @@ const DedicatedServers = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready for Maximum Performance?
           </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-purple-100 mb-8 max-w-2xl mx-auto font-light tracking-wide">
             Get the power and control you need with our dedicated servers. 
             Experience enterprise-grade performance with full root access and 24/7 support.
           </p>
