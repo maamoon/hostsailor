@@ -240,6 +240,185 @@
       "contactUs": "اتصل بنا"
     }
   },
+  "storageKVMVPS": {
+    "heroTitle": "خادم VPS محسن للتخزين — مدعوم بموثوقية RAID10 والاستقرار",
+    "heroSubtitle": "مصمم مع تخزين RAID10 على مستوى المؤسسات للأداء العالي والموثوقية، هذه الطبقة من VPS مثالية للتطبيقات التي تحتاج مساحة تخزين كبيرة. مثالية إذا كنت تحتاج تخزين موثوق بدلاً من سرعة NVMe.",
+    "badge": "Storage KVM VPS",
+    "stats": {
+      "raid10": "RAID10",
+      "storage": "التخزين",
+      "trueKVM": "True KVM",
+      "virtualization": "الافتراضية",
+      "instant": "فوري",
+      "deployment": "النشر",
+      "support": "الدعم"
+    },
+    "buttons": {
+      "orderNow": "اطلب الآن",
+      "viewAllPlans": "عرض جميع الخطط",
+      "learnMore": "اعرف المزيد"
+    },
+    "plans": {
+      "title": "خطط VPS للتخزين والأسعار",
+      "subtitle": "اختر من مجموعة خطط KVM VPS المحسنة للتخزين مع موثوقية RAID10 وميزات على مستوى المؤسسات",
+      "miniSailor": "Mini Sailor",
+      "sailor": "Sailor",
+      "seaman": "Seaman",
+      "lieutenant": "Lieutenant",
+      "captain": "Captain",
+      "mostPopular": "الأكثر شعبية",
+      "storage": "التخزين",
+      "ram": "الذاكرة العشوائية",
+      "cpuCores": "أنوية المعالج",
+      "bandwidth": "النطاق الترددي",
+      "features": "الميزات",
+      "raid10Storage": "تخزين RAID10",
+      "trueKVMVirtualization": "افتراضية KVM حقيقية",
+      "fullRootAccess": "وصول جذر كامل",
+      "ddosProtection": "حماية DDoS",
+      "support247": "دعم 24/7",
+      "instantDeployment": "نشر فوري"
+    },
+    "note": "ملاحظة: هذه الطبقات تناسب المستخدمين الذين يركزون على التخزين المستقر بدلاً من البيئات المكثفة في الإنتاجية. على عكس VPS القائم على NVMe، النسخ الاحتياطية غير مدرجة تلقائياً لطبقات Storage VPS.",
+    "benefits": {
+      "title": "ما يميز Storage KVM VPS",
+      "subtitle": "كل ما تحتاجه للخوادم الافتراضية المحسنة للتخزين مع أقصى موثوقية",
+      "raid10Architecture": {
+        "title": "هندسة تخزين RAID10",
+        "description": "يوفر تكراراً قوياً وأداءً متسقاً، متوازناً بين الأمان والقدرة على تحمل التكاليف."
+      },
+      "trueKVMVirtualization": {
+        "title": "افتراضية KVM حقيقية",
+        "description": "كل VPS يعمل بنواة خاصة وذاكرة محجوزة، مما يضمن العزل عن العقد المجاورة."
+      },
+      "multipleOSSupport": {
+        "title": "دعم أنظمة تشغيل متعددة",
+        "description": "قم بتثبيت Linux أو Windows أو BSD أو Solaris أو ISO مخصصة مع مرونة كاملة."
+      },
+      "highUpgradeFlexibility": {
+        "title": "مرونة ترقية عالية",
+        "description": "خيارات موارد قابلة للتوسع مع نمو متطلباتك مع ترقيات سهلة."
+      },
+      "instantAvailability": {
+        "title": "إتاحة فورية",
+        "description": "خادمك يعمل فوراً بعد تأكيد الدفع بدون أي تأخير."
+      },
+      "enterpriseReliability": {
+        "title": "موثوقية على مستوى المؤسسات",
+        "description": "مصمم للاستضافة طويلة المدى المستقرة مع بنية تحتية على مستوى المؤسسات."
+      }
+    },
+    "useCases": {
+      "title": "حالات الاستخدام المثالية",
+      "subtitle": "مثالية للتطبيقات التي تحتاج مساحة تخزين كبيرة وحلول استضافة طويلة المدى",
+      "dataIntensive": {
+        "title": "تطبيقات مكثفة البيانات",
+        "description": "مثالية لاستضافة النسخ الاحتياطية والوسائط أو الخدمات المدعومة بالتخزين."
+      },
+      "virtualization": {
+        "title": "الافتراضية والعقد منخفضة التكلفة",
+        "description": "ممتازة لإعداد آلات افتراضية خفيفة متعددة."
+      },
+      "stableHosting": {
+        "title": "استضافة مستقرة طويلة المدى",
+        "description": "للعملاء الذين يفضلون الموثوقية على السرعة الخام."
+      },
+      "storageHeavy": {
+        "title": "أعباء عمل ثقيلة التخزين",
+        "description": "مثالية للتطبيقات التي تتطلب سعة تخزين كبيرة."
+      }
+    },
+    "comparison": {
+      "title": "Storage VPS مقابل NVMe VPS",
+      "subtitle": "اختر نوع VPS المناسب لاحتياجاتك المحددة",
+      "feature": "الميزة",
+      "storageVPS": "Storage VPS",
+      "nvmeVPS": "NVMe VPS",
+      "description": "الوصف",
+      "storageType": {
+        "feature": "نوع التخزين",
+        "storage": "HDD RAID10",
+        "nvme": "NVMe SSD",
+        "description": "Storage VPS يستخدم HDD مع RAID10 للموثوقية، بينما NVMe VPS يستخدم SSDs عالية السرعة"
+      },
+      "performance": {
+        "feature": "الأداء",
+        "storage": "متسق",
+        "nvme": "سرعة عالية",
+        "description": "Storage VPS يوفر أداءً متسقاً، NVMe VPS يوفر أقصى سرعة"
+      },
+      "cost": {
+        "feature": "التكلفة",
+        "storage": "ميسور التكلفة",
+        "nvme": "مميز",
+        "description": "Storage VPS أكثر فعالية من حيث التكلفة لاحتياجات التخزين الكبيرة"
+      },
+      "useCase": {
+        "feature": "حالة الاستخدام",
+        "storage": "تخزين البيانات",
+        "nvme": "أداء عالي",
+        "description": "Storage VPS للتطبيقات الثقيلة البيانات، NVMe VPS للتطبيقات الحساسة للسرعة"
+      }
+    },
+    "addons": {
+      "title": "الإضافات والتراخيص",
+      "subtitle": "حسن Storage VPS الخاص بك مع خدمات إضافية ولوحات تحكم",
+      "controlPanels": "لوحات التحكم",
+      "automationExtras": "الأتمتة والإضافات",
+      "backupSolutions": "حلول النسخ الاحتياطي",
+      "cpanelWHM": "cPanel/WHM",
+      "webuzo": "Webuzo",
+      "ispmanagerLite": "ISPmanager Lite",
+      "ispmanagerBusiness": "ISPmanager Business",
+      "vmmanager": "VMmanager",
+      "softaculous": "Softaculous",
+      "cloudLinux": "CloudLinux",
+      "whmcsLicense": "ترخيص WHMCS",
+      "additionalIPv4": "IPv4 إضافي",
+      "extraBandwidth512GB": "نطاق ترددي إضافي (512GB)",
+      "extraBandwidth1TB": "نطاق ترددي إضافي (1TB)",
+      "manualBackup": "نسخ احتياطي يدوي",
+      "automatedBackup": "نسخ احتياطي آلي",
+      "backupPlugin": "إضافة النسخ الاحتياطي",
+      "cloudBackup": "نسخ احتياطي سحابي"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "subtitle": "أسئلة شائعة حول استضافة Storage KVM VPS",
+      "backupsIncluded": {
+        "question": "هل النسخ الاحتياطية مدرجة مع Storage VPS؟",
+        "answer": "على عكس VPS القائم على NVMe، النسخ الاحتياطية غير مدرجة تلقائياً لطبقات Storage VPS. نقدم خيارات نسخ احتياطي يدوية وحلول نسخ احتياطي آلية كإضافات."
+      },
+      "operatingSystems": {
+        "question": "ما أنظمة التشغيل المدعومة؟",
+        "description": "Storage VPS يدعم Linux و Windows و BSD و Solaris وتثبيت ISO مخصصة. لديك مرونة كاملة لاختيار نظام التشغيل المفضل لديك."
+      },
+      "upgradeResources": {
+        "question": "هل يمكنني ترقية موارد Storage VPS؟",
+        "description": "نعم، Storage VPS يوفر مرونة ترقية عالية. يمكنك بسهولة توسيع مواردك مع نمو متطلباتك مع خيارات الترقية لدينا."
+      },
+      "raid10Storage": {
+        "question": "كيف يعمل تخزين RAID10؟",
+        "description": "RAID10 يجمع بين المرآة والتخطيط لتوفير كل من التكرار والأداء. بياناتك معكوسة عبر محركات أقراص متعددة للأمان مع الحفاظ على سرعات قراءة/كتابة جيدة."
+      }
+    },
+    "contact": {
+      "title": "تحتاج مساعدة في الاختيار؟",
+      "subtitle": "اتصل بفريق المبيعات لدينا للتكوينات المخصصة أو الدعم التقني",
+      "callUs": "اتصل بنا",
+      "phoneNumber": "+1-646-518-9099",
+      "technicalSupport": "دعم تقني 24/7",
+      "liveChat": "دردشة مباشرة",
+      "getInstantSupport": "احصل على دعم فوري",
+      "startChat": "ابدأ الدردشة"
+    },
+    "cta": {
+      "title": "مستعد لنشر Storage VPS الخاص بك؟",
+      "subtitle": "احصل على نشر فوري عند تأكيد الدفع. اختر خطتك وابدأ في بناء بنية التخزين الخاصة بك مع موثوقية RAID10 على مستوى المؤسسات ودعم 24/7.",
+      "orderNow": "اطلب الآن",
+      "viewNVMePlans": "عرض خطط NVMe VPS"
+    }
+  },
   "errors": {
     "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
     "loginError": "حدث خطأ أثناء تسجيل الدخول",

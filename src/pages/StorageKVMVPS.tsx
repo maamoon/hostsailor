@@ -11,7 +11,7 @@ const StorageKVMVPS = () => {
 
   const vpsPlans = [
     {
-      name: "Mini Sailor",
+      name: t('storageKVMVPS.plans.miniSailor'),
       storageType: "HDD / RAID10",
       storage: "50 GB",
       ram: "1 GB",
@@ -21,16 +21,16 @@ const StorageKVMVPS = () => {
       period: "/month",
       popular: false,
       features: [
-        "RAID10 Storage",
-        "True KVM Virtualization",
-        "Full Root Access",
-        "DDoS Protection",
-        "24/7 Support",
-        "Instant Deployment"
+        t('storageKVMVPS.plans.raid10Storage'),
+        t('storageKVMVPS.plans.trueKVMVirtualization'),
+        t('storageKVMVPS.plans.fullRootAccess'),
+        t('storageKVMVPS.plans.ddosProtection'),
+        t('storageKVMVPS.plans.support247'),
+        t('storageKVMVPS.plans.instantDeployment')
       ]
     },
     {
-      name: "Sailor",
+      name: t('storageKVMVPS.plans.sailor'),
       storageType: "HDD",
       storage: "100 GB",
       ram: "2 GB",
@@ -40,16 +40,16 @@ const StorageKVMVPS = () => {
       period: "/month",
       popular: true,
       features: [
-        "RAID10 Storage",
-        "True KVM Virtualization",
-        "Full Root Access",
-        "DDoS Protection",
-        "24/7 Support",
-        "Instant Deployment"
+        t('storageKVMVPS.plans.raid10Storage'),
+        t('storageKVMVPS.plans.trueKVMVirtualization'),
+        t('storageKVMVPS.plans.fullRootAccess'),
+        t('storageKVMVPS.plans.ddosProtection'),
+        t('storageKVMVPS.plans.support247'),
+        t('storageKVMVPS.plans.instantDeployment')
       ]
     },
     {
-      name: "Seaman",
+      name: t('storageKVMVPS.plans.seaman'),
       storageType: "HDD",
       storage: "200 GB",
       ram: "4 GB",
@@ -59,16 +59,16 @@ const StorageKVMVPS = () => {
       period: "/month",
       popular: false,
       features: [
-        "RAID10 Storage",
-        "True KVM Virtualization",
-        "Full Root Access",
-        "DDoS Protection",
-        "24/7 Support",
-        "Instant Deployment"
+        t('storageKVMVPS.plans.raid10Storage'),
+        t('storageKVMVPS.plans.trueKVMVirtualization'),
+        t('storageKVMVPS.plans.fullRootAccess'),
+        t('storageKVMVPS.plans.ddosProtection'),
+        t('storageKVMVPS.plans.support247'),
+        t('storageKVMVPS.plans.instantDeployment')
       ]
     },
     {
-      name: "Lieutenant",
+      name: t('storageKVMVPS.plans.lieutenant'),
       storageType: "HDD",
       storage: "400 GB",
       ram: "8 GB",
@@ -78,16 +78,16 @@ const StorageKVMVPS = () => {
       period: "/month",
       popular: false,
       features: [
-        "RAID10 Storage",
-        "True KVM Virtualization",
-        "Full Root Access",
-        "DDoS Protection",
-        "24/7 Support",
-        "Instant Deployment"
+        t('storageKVMVPS.plans.raid10Storage'),
+        t('storageKVMVPS.plans.trueKVMVirtualization'),
+        t('storageKVMVPS.plans.fullRootAccess'),
+        t('storageKVMVPS.plans.ddosProtection'),
+        t('storageKVMVPS.plans.support247'),
+        t('storageKVMVPS.plans.instantDeployment')
       ]
     },
     {
-      name: "Captain",
+      name: t('storageKVMVPS.plans.captain'),
       storageType: "HDD",
       storage: "800 GB",
       ram: "16 GB",
@@ -97,12 +97,12 @@ const StorageKVMVPS = () => {
       period: "/month",
       popular: false,
       features: [
-        "RAID10 Storage",
-        "True KVM Virtualization",
-        "Full Root Access",
-        "DDoS Protection",
-        "24/7 Support",
-        "Instant Deployment"
+        t('storageKVMVPS.plans.raid10Storage'),
+        t('storageKVMVPS.plans.trueKVMVirtualization'),
+        t('storageKVMVPS.plans.fullRootAccess'),
+        t('storageKVMVPS.plans.ddosProtection'),
+        t('storageKVMVPS.plans.support247'),
+        t('storageKVMVPS.plans.instantDeployment')
       ]
     }
   ];
@@ -224,10 +224,10 @@ const StorageKVMVPS = () => {
   ];
 
   const stats = [
-    { number: "RAID10", label: "Storage", icon: <HardDriveIcon className="h-6 w-6" /> },
-    { number: "True KVM", label: "Virtualization", icon: <Server className="h-6 w-6" /> },
-    { number: "Instant", label: "Deployment", icon: <Rocket className="h-6 w-6" /> },
-    { number: "24/7", label: "Support", icon: <Headphones className="h-6 w-6" /> }
+    { number: t('storageKVMVPS.stats.raid10'), label: t('storageKVMVPS.stats.storage'), icon: <HardDriveIcon className="h-6 w-6" /> },
+    { number: t('storageKVMVPS.stats.trueKVM'), label: t('storageKVMVPS.stats.virtualization'), icon: <Server className="h-6 w-6" /> },
+    { number: t('storageKVMVPS.stats.instant'), label: t('storageKVMVPS.stats.deployment'), icon: <Rocket className="h-6 w-6" /> },
+    { number: "24/7", label: t('storageKVMVPS.stats.support'), icon: <Headphones className="h-6 w-6" /> }
   ];
 
   return (
@@ -247,14 +247,13 @@ const StorageKVMVPS = () => {
           <div className="text-center max-w-4xl mx-auto">
             <Badge variant="secondary" className="mb-4 text-blue-600 bg-blue-100">
               <Storage className="h-4 w-4 mr-2" />
-              Storage KVM VPS
+              {t('storageKVMVPS.badge')}
             </Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Storage-Optimized KVM VPS — Powered by RAID10 Stability & Redundancy
+              {t('storageKVMVPS.heroTitle')}
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Designed with enterprise-grade RAID10 storage for high performance and reliability, 
-              this VPS tier is ideal for disk-heavy applications. Perfect if you need reliable storage rather than NVMe speed.
+              {t('storageKVMVPS.heroSubtitle')}
             </p>
             
             {/* Stats */}
@@ -274,10 +273,10 @@ const StorageKVMVPS = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                Order Now
+                {t('storageKVMVPS.buttons.orderNow')}
               </Button>
               <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3">
-                View All Plans
+                {t('storageKVMVPS.buttons.viewAllPlans')}
               </Button>
             </div>
           </div>
@@ -289,10 +288,10 @@ const StorageKVMVPS = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Storage VPS Plans & Pricing
+              {t('storageKVMVPS.plans.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Choose from our range of storage-optimized KVM VPS plans with RAID10 reliability and enterprise-grade features
+              {t('storageKVMVPS.plans.subtitle')}
             </p>
           </div>
           

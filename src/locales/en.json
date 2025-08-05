@@ -240,6 +240,185 @@
       "contactUs": "Contact Us"
     }
   },
+  "storageKVMVPS": {
+    "heroTitle": "Storage-Optimized KVM VPS — Powered by RAID10 Stability & Redundancy",
+    "heroSubtitle": "Designed with enterprise-grade RAID10 storage for high performance and reliability, this VPS tier is ideal for disk-heavy applications. Perfect if you need reliable storage rather than NVMe speed.",
+    "badge": "Storage KVM VPS",
+    "stats": {
+      "raid10": "RAID10",
+      "storage": "Storage",
+      "trueKVM": "True KVM",
+      "virtualization": "Virtualization",
+      "instant": "Instant",
+      "deployment": "Deployment",
+      "support": "Support"
+    },
+    "buttons": {
+      "orderNow": "Order Now",
+      "viewAllPlans": "View All Plans",
+      "learnMore": "Learn More"
+    },
+    "plans": {
+      "title": "Storage VPS Plans & Pricing",
+      "subtitle": "Choose from our range of storage-optimized KVM VPS plans with RAID10 reliability and enterprise-grade features",
+      "miniSailor": "Mini Sailor",
+      "sailor": "Sailor",
+      "seaman": "Seaman",
+      "lieutenant": "Lieutenant",
+      "captain": "Captain",
+      "mostPopular": "Most Popular",
+      "storage": "Storage",
+      "ram": "RAM",
+      "cpuCores": "CPU Cores",
+      "bandwidth": "Bandwidth",
+      "features": "Features",
+      "raid10Storage": "RAID10 Storage",
+      "trueKVMVirtualization": "True KVM Virtualization",
+      "fullRootAccess": "Full Root Access",
+      "ddosProtection": "DDoS Protection",
+      "support247": "24/7 Support",
+      "instantDeployment": "Instant Deployment"
+    },
+    "note": "Note: These tiers suit users focusing on stable storage over throughput-intensive environments. Unlike NVMe-based VPS, backups are not automatically included for Storage VPS tiers.",
+    "benefits": {
+      "title": "What Sets Storage KVM VPS Apart",
+      "subtitle": "Everything you need for storage-optimized virtual private servers with maximum reliability",
+      "raid10Architecture": {
+        "title": "RAID10 Storage Architecture",
+        "description": "Offers strong redundancy and consistent performance, balancing safety and affordability."
+      },
+      "trueKVMVirtualization": {
+        "title": "True KVM Virtualization",
+        "description": "Each VPS runs its own kernel and reserved RAM, ensuring isolation from neighboring nodes."
+      },
+      "multipleOSSupport": {
+        "title": "Multiple OS Support",
+        "description": "Install Linux, Windows, BSD, Solaris, or custom ISOs with full flexibility."
+      },
+      "highUpgradeFlexibility": {
+        "title": "High Upgrade Flexibility",
+        "description": "Scalable resource options as your requirements grow with easy upgrades."
+      },
+      "instantAvailability": {
+        "title": "Instant Availability",
+        "description": "Your server goes live immediately after payment confirmation with zero delays."
+      },
+      "enterpriseReliability": {
+        "title": "Enterprise Reliability",
+        "description": "Designed for stable long-term hosting with enterprise-grade infrastructure."
+      }
+    },
+    "useCases": {
+      "title": "Ideal Use Cases",
+      "subtitle": "Perfect for storage-heavy applications and long-term hosting solutions",
+      "dataIntensive": {
+        "title": "Data-Intensive Applications",
+        "description": "Perfect for hosting backups, media, or storage-backed services."
+      },
+      "virtualization": {
+        "title": "Virtualization & Low-cost Nodes",
+        "description": "Great for setting up multiple lightweight virtual machines."
+      },
+      "stableHosting": {
+        "title": "Stable Long-term Hosting",
+        "description": "For customers prioritizing reliability over raw speed."
+      },
+      "storageHeavy": {
+        "title": "Storage-Heavy Workloads",
+        "description": "Ideal for applications requiring large storage capacity."
+      }
+    },
+    "comparison": {
+      "title": "Storage VPS vs NVMe VPS",
+      "subtitle": "Choose the right VPS type for your specific needs",
+      "feature": "Feature",
+      "storageVPS": "Storage VPS",
+      "nvmeVPS": "NVMe VPS",
+      "description": "Description",
+      "storageType": {
+        "feature": "Storage Type",
+        "storage": "HDD RAID10",
+        "nvme": "NVMe SSD",
+        "description": "Storage VPS uses HDD with RAID10 for reliability, while NVMe VPS uses high-speed SSDs"
+      },
+      "performance": {
+        "feature": "Performance",
+        "storage": "Consistent",
+        "nvme": "High Speed",
+        "description": "Storage VPS offers consistent performance, NVMe VPS provides maximum speed"
+      },
+      "cost": {
+        "feature": "Cost",
+        "storage": "Affordable",
+        "nvme": "Premium",
+        "description": "Storage VPS is more cost-effective for large storage needs"
+      },
+      "useCase": {
+        "feature": "Use Case",
+        "storage": "Data Storage",
+        "nvme": "High Performance",
+        "description": "Storage VPS for data-heavy apps, NVMe VPS for speed-critical applications"
+      }
+    },
+    "addons": {
+      "title": "Add-Ons & Licenses",
+      "subtitle": "Enhance your Storage VPS with additional services and control panels",
+      "controlPanels": "Control Panels",
+      "automationExtras": "Automation & Extras",
+      "backupSolutions": "Backup Solutions",
+      "cpanelWHM": "cPanel/WHM",
+      "webuzo": "Webuzo",
+      "ispmanagerLite": "ISPmanager Lite",
+      "ispmanagerBusiness": "ISPmanager Business",
+      "vmmanager": "VMmanager",
+      "softaculous": "Softaculous",
+      "cloudLinux": "CloudLinux",
+      "whmcsLicense": "WHMCS License",
+      "additionalIPv4": "Additional IPv4",
+      "extraBandwidth512GB": "Extra Bandwidth (512GB)",
+      "extraBandwidth1TB": "Extra Bandwidth (1TB)",
+      "manualBackup": "Manual Backup",
+      "automatedBackup": "Automated Backup",
+      "backupPlugin": "Backup Plugin",
+      "cloudBackup": "Cloud Backup"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about Storage KVM VPS hosting",
+      "backupsIncluded": {
+        "question": "Are backups included with Storage VPS?",
+        "answer": "Unlike NVMe-based VPS, backups are not automatically included for Storage VPS tiers. We offer manual backup options and automated backup solutions as add-ons."
+      },
+      "operatingSystems": {
+        "question": "What operating systems are supported?",
+        "description": "Storage VPS supports Linux, Windows, BSD, Solaris, and custom ISO installs. You have full flexibility to choose your preferred operating system."
+      },
+      "upgradeResources": {
+        "question": "Can I upgrade my Storage VPS resources?",
+        "description": "Yes, Storage VPS offers high upgrade flexibility. You can easily scale your resources as your requirements grow with our upgrade options."
+      },
+      "raid10Storage": {
+        "question": "How does RAID10 storage work?",
+        "description": "RAID10 combines mirroring and striping to provide both redundancy and performance. Your data is mirrored across multiple drives for safety while maintaining good read/write speeds."
+      }
+    },
+    "contact": {
+      "title": "Need Help Choosing?",
+      "subtitle": "Contact our sales team for custom configurations or technical support",
+      "callUs": "Call Us",
+      "phoneNumber": "+1-646-518-9099",
+      "technicalSupport": "24/7 Technical Support",
+      "liveChat": "Live Chat",
+      "getInstantSupport": "Get instant support",
+      "startChat": "Start Chat"
+    },
+    "cta": {
+      "title": "Ready to Deploy Your Storage VPS?",
+      "subtitle": "Get instant deployment upon payment confirmation. Choose your plan and start building your storage infrastructure with enterprise-grade RAID10 reliability and 24/7 support.",
+      "orderNow": "Order Now",
+      "viewNVMePlans": "View NVMe VPS Plans"
+    }
+  },
   "errors": {
     "invalidCredentials": "Invalid email or password",
     "loginError": "An error occurred during login",
