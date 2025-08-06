@@ -119,7 +119,7 @@ const VPSHosting = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/vps-hosting-bg.svg')",
+                          backgroundImage: "url('/hostsailor/vps-hosting-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
@@ -153,7 +153,7 @@ const VPSHosting = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/vps-hosting.svg" 
+                src="/hostsailor/service-images/vps-hosting.svg" 
                 alt="VPS Hosting" 
                 className="w-80 h-60 object-contain"
               />

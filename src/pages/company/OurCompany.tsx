@@ -158,7 +158,7 @@ const OurCompany = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/about-us-bg.svg')",
+                          backgroundImage: "url('/hostsailor/about-us-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>
@@ -204,7 +204,7 @@ const OurCompany = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/about-us.svg" 
+                src="/hostsailor/service-images/about-us.svg" 
                 alt="Our Company" 
                 className="w-80 h-60 object-contain"
               />

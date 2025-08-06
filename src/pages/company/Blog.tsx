@@ -198,7 +198,7 @@ const Blog = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/blog-bg.svg')",
+                          backgroundImage: "url('/hostsailor/blog-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>

@@ -177,7 +177,7 @@ const FAQs = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/faqs.svg"
+                src="/hostsailor/service-images/faqs.svg"
                 alt="FAQs"
                 className="w-80 h-60 object-contain"
               />

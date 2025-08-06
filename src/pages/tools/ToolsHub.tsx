@@ -164,7 +164,7 @@ const ToolsHub = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/tools-hub.svg"
+                src="/hostsailor/service-images/tools-hub.svg"
                 alt="Tools Hub"
                 className="w-80 h-60 object-contain"
               />

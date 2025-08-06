@@ -227,7 +227,7 @@ const OpenVZVPSSSD = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/openvz-vps-ssd.svg"
+                src="/hostsailor/service-images/openvz-vps-ssd.svg"
                 alt="OpenVZ VPS SSD"
                 className="w-80 h-60 object-contain"
               />

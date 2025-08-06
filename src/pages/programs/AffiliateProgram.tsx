@@ -115,7 +115,7 @@ const AffiliateProgram = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/affiliate-bg.svg')",
+                          backgroundImage: "url('/hostsailor/affiliate-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
@@ -161,7 +161,7 @@ const AffiliateProgram = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/affiliate-program.svg" 
+                src="/hostsailor/service-images/affiliate-program.svg" 
                 alt="Affiliate Program" 
                 className="w-80 h-60 object-contain"
               />

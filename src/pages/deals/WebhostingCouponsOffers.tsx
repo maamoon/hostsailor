@@ -187,7 +187,7 @@ const WebhostingCouponsOffers = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/coupons-bg.svg')",
+                          backgroundImage: "url('/hostsailor/coupons-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 opacity-5"></div>
@@ -233,7 +233,7 @@ const WebhostingCouponsOffers = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/coupons-offers.svg" 
+                src="/hostsailor/service-images/coupons-offers.svg" 
                 alt="Coupons & Offers" 
                 className="w-80 h-60 object-contain"
               />

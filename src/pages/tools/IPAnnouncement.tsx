@@ -126,7 +126,7 @@ const IPAnnouncement = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/ip-announcement.svg"
+                src="/hostsailor/service-images/ip-announcement.svg"
                 alt="IP Announcement"
                 className="w-80 h-60 object-contain"
               />

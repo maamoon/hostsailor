@@ -93,7 +93,7 @@ const DomainRegistration = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/domain-registration.svg"
+                src="/hostsailor/service-images/domain-registration.svg"
                 alt="Domain Registration"
                 className="w-80 h-60 object-contain"
               />

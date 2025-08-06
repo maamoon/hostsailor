@@ -149,7 +149,7 @@ const KnowledgeBase = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/knowledge-base.svg"
+                src="/hostsailor/service-images/knowledge-base.svg"
                 alt="Knowledge Base"
                 className="w-80 h-60 object-contain"
               />

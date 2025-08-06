@@ -137,7 +137,7 @@ const VLANNetwork = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/vlan-network.svg"
+                src="/hostsailor/service-images/vlan-network.svg"
                 alt="VLAN Network"
                 className="w-80 h-60 object-contain"
               />

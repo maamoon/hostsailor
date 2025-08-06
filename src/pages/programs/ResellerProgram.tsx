@@ -201,7 +201,7 @@ const ResellerProgram = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/reseller-hosting-bg.svg')",
+                          backgroundImage: "url('/hostsailor/reseller-hosting-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>
@@ -247,7 +247,7 @@ const ResellerProgram = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/reseller-hosting.svg" 
+                src="/hostsailor/service-images/reseller-hosting.svg" 
                 alt="Reseller Program" 
                 className="w-80 h-60 object-contain"
               />

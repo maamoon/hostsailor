@@ -239,7 +239,7 @@ const StorageKVMVPS = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/storage-vps-bg.svg')",
+                          backgroundImage: "url('/hostsailor/storage-vps-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-5"></div>
@@ -283,7 +283,7 @@ const StorageKVMVPS = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/storage-vps.svg" 
+                src="/hostsailor/service-images/storage-vps.svg" 
                 alt="Storage KVM VPS" 
                 className="w-80 h-60 object-contain"
               />

@@ -142,7 +142,7 @@ const KVMVPSNVMe = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/kvm-vps-nvme.svg"
+                src="/hostsailor/service-images/kvm-vps-nvme.svg"
                 alt="KVM VPS NVMe"
                 className="w-80 h-60 object-contain"
               />

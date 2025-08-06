@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-          <img src="/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
+          <img src="/hostsailor/logo.svg" alt="HOSTSAILOR" className="h-8 w-auto" />
         </div>
             <p className="text-white/80 mb-4">
               Premium web hosting solutions for businesses of all sizes.

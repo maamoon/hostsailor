@@ -175,7 +175,7 @@ const Colocation = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/service-images/colocation.svg"
+                src="/hostsailor/service-images/colocation.svg"
                 alt="Colocation Services"
                 className="w-80 h-60 object-contain"
               />

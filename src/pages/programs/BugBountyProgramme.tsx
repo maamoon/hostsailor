@@ -187,7 +187,7 @@ const BugBountyProgramme = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('/bug-bounty-bg.svg')",
+                          backgroundImage: "url('/hostsailor/bug-bounty-bg.svg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-5"></div>
@@ -233,7 +233,7 @@ const BugBountyProgramme = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <img 
-                src="/service-images/bug-bounty.svg" 
+                src="/hostsailor/service-images/bug-bounty.svg" 
                 alt="Bug Bounty Programme" 
                 className="w-80 h-60 object-contain"
               />
