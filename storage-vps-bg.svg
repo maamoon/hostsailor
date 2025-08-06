@@ -1,0 +1,178 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="indigoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.05" />
+    </linearGradient>
+    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#blueGradient)"/>
+  
+  <!-- Large circles -->
+  <circle cx="200" cy="150" r="120" fill="url(#circleGradient)" opacity="0.3"/>
+  <circle cx="1000" cy="650" r="150" fill="url(#circleGradient)" opacity="0.2"/>
+  <circle cx="900" cy="200" r="80" fill="url(#circleGradient)" opacity="0.4"/>
+  
+  <!-- Storage drives -->
+  <rect x="50" y="300" width="120" height="80" fill="#3B82F6" opacity="0.1" rx="8"/>
+  <rect x="60" y="310" width="100" height="20" fill="#4F46E5" opacity="0.2"/>
+  <rect x="60" y="340" width="100" height="20" fill="#4F46E5" opacity="0.2"/>
+  <rect x="60" y="370" width="100" height="20" fill="#4F46E5" opacity="0.2"/>
+  
+  <rect x="1030" y="200" width="120" height="80" fill="#4F46E5" opacity="0.1" rx="8"/>
+  <rect x="1040" y="210" width="100" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1040" y="240" width="100" height="20" fill="#3B82F6" opacity="0.2"/>
+  <rect x="1040" y="270" width="100" height="20" fill="#3B82F6" opacity="0.2"/>
+  
+  <!-- RAID10 Configuration -->
+  <g opacity="0.15">
+    <!-- RAID10 diagram -->
+    <rect x="300" y="100" width="200" height="120" fill="#3B82F6" opacity="0.1" rx="10"/>
+    
+    <!-- Drive pairs -->
+    <rect x="320" y="120" width="30" height="20" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="360" y="120" width="30" height="20" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="400" y="120" width="30" height="20" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="440" y="120" width="30" height="20" fill="#4F46E5" opacity="0.3" rx="2"/>
+    
+    <!-- Mirror connections -->
+    <line x1="335" y1="130" x2="375" y2="130" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="415" y1="130" x2="455" y2="130" stroke="#3B82F6" stroke-width="2"/>
+    
+    <!-- Stripe connections -->
+    <line x1="355" y1="140" x2="415" y2="140" stroke="#4F46E5" stroke-width="2"/>
+    
+    <!-- RAID10 label -->
+    <text x="400" y="180" text-anchor="middle" fill="#3B82F6" font-size="12" font-weight="bold">RAID10</text>
+  </g>
+  
+  <!-- Storage arrays -->
+  <g opacity="0.2">
+    <!-- Storage rack -->
+    <rect x="600" y="150" width="80" height="200" fill="#3B82F6" opacity="0.1" rx="5"/>
+    
+    <!-- Multiple drives -->
+    <rect x="610" y="160" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="180" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="200" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="220" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="240" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="260" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="280" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="300" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="320" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="610" y="340" width="60" height="15" fill="#4F46E5" opacity="0.3" rx="2"/>
+  </g>
+  
+  <!-- KVM Virtualization elements -->
+  <g opacity="0.15">
+    <!-- Hypervisor layer -->
+    <rect x="800" y="100" width="150" height="100" fill="#4F46E5" opacity="0.1" rx="8"/>
+    <circle cx="875" cy="150" r="20" fill="#3B82F6" opacity="0.2"/>
+    <circle cx="875" cy="150" r="12" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="875" cy="150" r="6" fill="#3B82F6" opacity="0.4"/>
+    
+    <!-- Virtual machines -->
+    <rect x="820" y="170" width="40" height="20" fill="#3B82F6" opacity="0.2" rx="3"/>
+    <rect x="870" y="170" width="40" height="20" fill="#4F46E5" opacity="0.2" rx="3"/>
+    <rect x="920" y="170" width="40" height="20" fill="#3B82F6" opacity="0.2" rx="3"/>
+  </g>
+  
+  <!-- Data flow lines -->
+  <g opacity="0.1">
+    <line x1="400" y1="160" x2="600" y2="200" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="400" y1="160" x2="800" y2="150" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="680" y1="250" x2="800" y2="200" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="875" y1="150" x2="875" y2="300" stroke="#4F46E5" stroke-width="2"/>
+  </g>
+  
+  <!-- Storage indicators -->
+  <g opacity="0.2">
+    <!-- Storage icon -->
+    <rect x="150" y="600" width="60" height="40" fill="#3B82F6" opacity="0.3" rx="5"/>
+    <rect x="155" y="605" width="50" height="30" fill="#4F46E5" opacity="0.4"/>
+    
+    <!-- Performance bars -->
+    <rect x="950" y="650" width="8" height="40" fill="#3B82F6" opacity="0.4"/>
+    <rect x="965" y="660" width="8" height="30" fill="#4F46E5" opacity="0.4"/>
+    <rect x="980" y="645" width="8" height="45" fill="#3B82F6" opacity="0.4"/>
+    <rect x="995" y="655" width="8" height="35" fill="#4F46E5" opacity="0.4"/>
+    <rect x="1010" y="650" width="8" height="40" fill="#3B82F6" opacity="0.4"/>
+  </g>
+  
+  <!-- Storage KVM text -->
+  <g opacity="0.2">
+    <text x="150" y="680" fill="#3B82F6" font-size="20" font-weight="bold">Storage</text>
+    <text x="150" y="700" fill="#4F46E5" font-size="14">KVM VPS</text>
+  </g>
+  
+  <!-- Floating storage elements -->
+  <g opacity="0.15">
+    <!-- HDD icon -->
+    <rect x="300" y="500" width="40" height="30" fill="#3B82F6" opacity="0.3" rx="3"/>
+    <rect x="305" y="505" width="30" height="20" fill="#4F46E5" opacity="0.4"/>
+    
+    <!-- SSD icon -->
+    <rect x="800" y="400" width="35" height="25" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="805" y="405" width="25" height="15" fill="#3B82F6" opacity="0.4"/>
+    
+    <!-- Backup icon -->
+    <circle cx="1000" y="550" r="15" fill="#3B82F6" opacity="0.3"/>
+    <circle cx="1000" y="550" r="10" fill="#4F46E5" opacity="0.4"/>
+    <circle cx="1000" y="550" r="5" fill="#3B82F6" opacity="0.5"/>
+  </g>
+  
+  <!-- Small decorative dots -->
+  <circle cx="500" cy="150" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="700" cy="250" r="3" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="400" cy="450" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="900" cy="550" r="3" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="600" cy="700" r="3" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="1100" cy="350" r="3" fill="#4F46E5" opacity="0.4"/>
+  
+  <!-- Network pattern -->
+  <g opacity="0.1">
+    <circle cx="200" cy="200" r="2" fill="#3B82F6"/>
+    <circle cx="300" cy="250" r="2" fill="#4F46E5"/>
+    <circle cx="400" cy="200" r="2" fill="#3B82F6"/>
+    <circle cx="500" cy="250" r="2" fill="#4F46E5"/>
+    <circle cx="600" cy="200" r="2" fill="#3B82F6"/>
+    <circle cx="700" cy="250" r="2" fill="#4F46E5"/>
+    <circle cx="800" cy="200" r="2" fill="#3B82F6"/>
+    <circle cx="900" cy="250" r="2" fill="#4F46E5"/>
+    <circle cx="1000" cy="200" r="2" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Data transfer lines -->
+  <g opacity="0.1">
+    <line x1="200" y1="300" x2="250" y2="280" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="250" y1="280" x2="300" y2="260" stroke="#4F46E5" stroke-width="1"/>
+    <line x1="300" y1="260" x2="350" y2="240" stroke="#3B82F6" stroke-width="1"/>
+    
+    <line x1="900" y1="300" x2="950" y2="280" stroke="#4F46E5" stroke-width="1"/>
+    <line x1="950" y1="280" x2="1000" y2="260" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="1000" y1="260" x2="1050" y2="240" stroke="#4F46E5" stroke-width="1"/>
+  </g>
+  
+  <!-- Reliability indicators -->
+  <g opacity="0.2">
+    <!-- Uptime indicator -->
+    <circle cx="1000" y="200" r="12" fill="#3B82F6" opacity="0.3"/>
+    <circle cx="1000" y="200" r="8" fill="#4F46E5" opacity="0.4"/>
+    <circle cx="1000" y="200" r="4" fill="#3B82F6" opacity="0.5"/>
+    
+    <!-- Redundancy symbol -->
+    <rect x="200" y="400" width="30" height="20" fill="#4F46E5" opacity="0.3" rx="2"/>
+    <rect x="240" y="400" width="30" height="20" fill="#3B82F6" opacity="0.3" rx="2"/>
+    <line x1="215" y1="410" x2="255" y2="410" stroke="#4F46E5" stroke-width="2"/>
+  </g>
+</svg> 

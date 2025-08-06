@@ -1,0 +1,67 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Main Server -->
+  <rect x="150" y="80" width="100" height="120" fill="#1e293b" rx="8"/>
+  <rect x="160" y="90" width="80" height="100" fill="#3b82f6" rx="4"/>
+  
+  <!-- Website Blocks -->
+  <rect x="170" y="100" width="60" height="15" fill="white" rx="2"/>
+  <rect x="170" y="120" width="60" height="15" fill="white" rx="2"/>
+  <rect x="170" y="140" width="60" height="15" fill="white" rx="2"/>
+  <rect x="170" y="160" width="60" height="15" fill="white" rx="2"/>
+  <rect x="170" y="180" width="60" height="15" fill="white" rx="2"/>
+  
+  <!-- Multiple Users -->
+  <circle cx="80" cy="100" r="15" fill="#10b981"/>
+  <circle cx="80" cy="130" r="15" fill="#f59e0b"/>
+  <circle cx="80" cy="160" r="15" fill="#ef4444"/>
+  <circle cx="80" cy="190" r="15" fill="#8b5cf6"/>
+  
+  <!-- User Icons -->
+  <circle cx="80" cy="95" r="5" fill="white"/>
+  <rect x="75" y="100" width="10" height="8" fill="white" rx="2"/>
+  
+  <circle cx="80" cy="125" r="5" fill="white"/>
+  <rect x="75" y="130" width="10" height="8" fill="white" rx="2"/>
+  
+  <circle cx="80" cy="155" r="5" fill="white"/>
+  <rect x="75" y="160" width="10" height="8" fill="white" rx="2"/>
+  
+  <circle cx="80" cy="185" r="5" fill="white"/>
+  <rect x="75" y="190" width="10" height="8" fill="white" rx="2"/>
+  
+  <!-- Connection Lines -->
+  <path d="M95 100 L150 100" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M95 130 L150 130" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M95 160 L150 160" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M95 190 L150 190" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Database -->
+  <rect x="320" y="100" width="60" height="80" fill="#059669" rx="4"/>
+  <rect x="330" y="110" width="40" height="60" fill="#10b981" rx="2"/>
+  <rect x="335" y="115" width="30" height="8" fill="white" rx="2"/>
+  <rect x="335" y="130" width="30" height="8" fill="white" rx="2"/>
+  <rect x="335" y="145" width="30" height="8" fill="white" rx="2"/>
+  <rect x="335" y="160" width="30" height="8" fill="white" rx="2"/>
+  
+  <!-- Connection to Database -->
+  <path d="M250 140 L320 140" stroke="#059669" stroke-width="2"/>
+  
+  <!-- Control Panel -->
+  <rect x="50" y="240" width="300" height="40" fill="#e2e8f0" rx="4"/>
+  <rect x="60" y="250" width="80" height="20" fill="#3b82f6" rx="2"/>
+  <rect x="150" y="250" width="80" height="20" fill="#10b981" rx="2"/>
+  <rect x="240" y="250" width="80" height="20" fill="#f59e0b" rx="2"/>
+  
+  <!-- Labels -->
+  <text x="100" y="265" fill="white" font-size="10" text-anchor="middle">cPanel</text>
+  <text x="190" y="265" fill="white" font-size="10" text-anchor="middle">FTP</text>
+  <text x="280" y="265" fill="white" font-size="10" text-anchor="middle">Email</text>
+  
+  <!-- Status Indicators -->
+  <circle cx="350" cy="40" r="8" fill="#10b981"/>
+  <circle cx="370" cy="40" r="8" fill="#10b981"/>
+  <circle cx="390" cy="40" r="8" fill="#10b981"/>
+</svg> 

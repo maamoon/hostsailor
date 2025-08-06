@@ -1,0 +1,178 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="indigoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:0.05" />
+    </linearGradient>
+    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4F46E5;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#indigoGradient)"/>
+  
+  <!-- Large circles -->
+  <circle cx="200" cy="150" r="120" fill="url(#circleGradient)" opacity="0.3"/>
+  <circle cx="1000" cy="650" r="150" fill="url(#circleGradient)" opacity="0.2"/>
+  <circle cx="900" cy="200" r="80" fill="url(#circleGradient)" opacity="0.4"/>
+  
+  <!-- VPS Container shapes -->
+  <rect x="50" y="300" width="100" height="80" fill="#4F46E5" opacity="0.1" rx="8"/>
+  <rect x="60" y="310" width="80" height="20" fill="#7C3AED" opacity="0.2"/>
+  <rect x="60" y="340" width="80" height="20" fill="#7C3AED" opacity="0.2"/>
+  <rect x="60" y="370" width="80" height="20" fill="#7C3AED" opacity="0.2"/>
+  
+  <rect x="1050" y="200" width="100" height="80" fill="#7C3AED" opacity="0.1" rx="8"/>
+  <rect x="1060" y="210" width="80" height="20" fill="#4F46E5" opacity="0.2"/>
+  <rect x="1060" y="240" width="80" height="20" fill="#4F46E5" opacity="0.2"/>
+  <rect x="1060" y="270" width="80" height="20" fill="#4F46E5" opacity="0.2"/>
+  
+  <!-- KVM Virtualization elements -->
+  <g opacity="0.1">
+    <!-- Hypervisor layer -->
+    <rect x="300" y="100" width="200" height="120" fill="#4F46E5" opacity="0.1" rx="10"/>
+    <circle cx="400" cy="160" r="25" fill="#7C3AED" opacity="0.2"/>
+    <circle cx="400" cy="160" r="15" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="400" cy="160" r="8" fill="#7C3AED" opacity="0.4"/>
+    
+    <!-- Virtual machines -->
+    <rect x="320" y="180" width="60" height="30" fill="#7C3AED" opacity="0.2" rx="4"/>
+    <rect x="390" y="180" width="60" height="30" fill="#4F46E5" opacity="0.2" rx="4"/>
+    <rect x="355" y="220" width="60" height="30" fill="#7C3AED" opacity="0.2" rx="4"/>
+  </g>
+  
+  <!-- NVMe Storage elements -->
+  <g opacity="0.15">
+    <!-- NVMe drives -->
+    <rect x="600" cy="150" width="40" height="25" fill="#4F46E5" rx="3"/>
+    <rect x="605" cy="155" width="30" height="15" fill="#7C3AED" opacity="0.3"/>
+    
+    <rect x="650" cy="150" width="40" height="25" fill="#7C3AED" rx="3"/>
+    <rect x="655" cy="155" width="30" height="15" fill="#4F46E5" opacity="0.3"/>
+    
+    <rect x="700" cy="150" width="40" height="25" fill="#4F46E5" rx="3"/>
+    <rect x="705" cy="155" width="30" height="15" fill="#7C3AED" opacity="0.3"/>
+    
+    <!-- RAID10 configuration -->
+    <line x1="620" y1="175" x2="680" y2="175" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="620" y1="175" x2="620" y2="200" stroke="#7C3AED" stroke-width="2"/>
+    <line x1="680" y1="175" x2="680" y2="200" stroke="#7C3AED" stroke-width="2"/>
+  </g>
+  
+  <!-- AMD EPYC CPU elements -->
+  <g opacity="0.2">
+    <!-- CPU die -->
+    <rect x="500" y="350" width="80" height="80" fill="#4F46E5" opacity="0.3" rx="8"/>
+    <rect x="510" y="360" width="60" height="60" fill="#7C3AED" opacity="0.4"/>
+    
+    <!-- CPU cores -->
+    <circle cx="520" cy="380" r="3" fill="#4F46E5"/>
+    <circle cx="540" cy="380" r="3" fill="#7C3AED"/>
+    <circle cx="560" cy="380" r="3" fill="#4F46E5"/>
+    <circle cx="520" cy="400" r="3" fill="#7C3AED"/>
+    <circle cx="540" cy="400" r="3" fill="#4F46E5"/>
+    <circle cx="560" cy="400" r="3" fill="#7C3AED"/>
+    <circle cx="520" cy="420" r="3" fill="#4F46E5"/>
+    <circle cx="540" cy="420" r="3" fill="#7C3AED"/>
+    <circle cx="560" cy="420" r="3" fill="#4F46E5"/>
+  </g>
+  
+  <!-- DDR5 Memory elements -->
+  <g opacity="0.15">
+    <!-- Memory modules -->
+    <rect x="800" y="400" width="50" height="20" fill="#7C3AED" rx="2"/>
+    <rect x="805" y="405" width="40" height="10" fill="#4F46E5" opacity="0.3"/>
+    
+    <rect x="860" y="400" width="50" height="20" fill="#4F46E5" rx="2"/>
+    <rect x="865" y="405" width="40" height="10" fill="#7C3AED" opacity="0.3"/>
+    
+    <rect x="920" y="400" width="50" height="20" fill="#7C3AED" rx="2"/>
+    <rect x="925" y="405" width="40" height="10" fill="#4F46E5" opacity="0.3"/>
+    
+    <rect x="980" y="400" width="50" height="20" fill="#4F46E5" rx="2"/>
+    <rect x="985" y="405" width="40" height="10" fill="#7C3AED" opacity="0.3"/>
+  </g>
+  
+  <!-- KVM Logo elements -->
+  <g opacity="0.2">
+    <!-- KVM text -->
+    <text x="150" y="600" fill="#4F46E5" font-size="24" font-weight="bold">KVM</text>
+    <text x="150" y="620" fill="#7C3AED" font-size="12">VPS</text>
+    
+    <!-- Virtualization indicators -->
+    <rect x="950" y="100" width="45" height="35" fill="#4F46E5" opacity="0.3" rx="4"/>
+    <rect x="955" y="105" width="35" height="25" fill="#7C3AED" opacity="0.4"/>
+    
+    <!-- Performance bars -->
+    <rect x="950" y="650" width="8" height="40" fill="#4F46E5" opacity="0.4"/>
+    <rect x="965" y="660" width="8" height="30" fill="#7C3AED" opacity="0.4"/>
+    <rect x="980" y="645" width="8" height="45" fill="#4F46E5" opacity="0.4"/>
+    <rect x="995" y="655" width="8" height="35" fill="#7C3AED" opacity="0.4"/>
+    <rect x="1010" y="650" width="8" height="40" fill="#4F46E5" opacity="0.4"/>
+  </g>
+  
+  <!-- Floating tech elements -->
+  <g opacity="0.15">
+    <!-- Linux icon -->
+    <circle cx="300" y="500" r="20" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="300" y="500" r="15" fill="#7C3AED" opacity="0.4"/>
+    <circle cx="300" y="500" r="10" fill="#4F46E5" opacity="0.5"/>
+    
+    <!-- Windows icon -->
+    <rect x="800" y="400" width="35" height="35" fill="#7C3AED" opacity="0.3" rx="3"/>
+    <rect x="805" y="405" width="25" height="25" fill="#4F46E5" opacity="0.4"/>
+    
+    <!-- Network icon -->
+    <circle cx="1000" y="550" r="18" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="1000" y="550" r="12" fill="#7C3AED" opacity="0.4"/>
+    <circle cx="1000" y="550" r="6" fill="#4F46E5" opacity="0.5"/>
+  </g>
+  
+  <!-- Small decorative dots -->
+  <circle cx="500" cy="150" r="3" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="700" cy="250" r="3" fill="#7C3AED" opacity="0.4"/>
+  <circle cx="400" cy="450" r="3" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="900" cy="550" r="3" fill="#7C3AED" opacity="0.4"/>
+  <circle cx="600" cy="700" r="3" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="1100" cy="350" r="3" fill="#7C3AED" opacity="0.4"/>
+  
+  <!-- Network pattern -->
+  <g opacity="0.1">
+    <circle cx="200" cy="200" r="2" fill="#4F46E5"/>
+    <circle cx="300" cy="250" r="2" fill="#7C3AED"/>
+    <circle cx="400" cy="200" r="2" fill="#4F46E5"/>
+    <circle cx="500" cy="250" r="2" fill="#7C3AED"/>
+    <circle cx="600" cy="200" r="2" fill="#4F46E5"/>
+    <circle cx="700" cy="250" r="2" fill="#7C3AED"/>
+    <circle cx="800" cy="200" r="2" fill="#4F46E5"/>
+    <circle cx="900" cy="250" r="2" fill="#7C3AED"/>
+    <circle cx="1000" cy="200" r="2" fill="#4F46E5"/>
+  </g>
+  
+  <!-- Virtualization connections -->
+  <g opacity="0.1">
+    <line x1="400" y1="160" x2="500" y2="200" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="400" y1="160" x2="300" y2="200" stroke="#7C3AED" stroke-width="2"/>
+    <line x1="400" y1="160" x2="400" y2="300" stroke="#4F46E5" stroke-width="2"/>
+    <line x1="400" y1="160" x2="600" y2="150" stroke="#7C3AED" stroke-width="2"/>
+  </g>
+  
+  <!-- Performance indicators -->
+  <g opacity="0.2">
+    <!-- Speed lines -->
+    <line x1="200" y1="300" x2="250" y2="280" stroke="#4F46E5" stroke-width="1"/>
+    <line x1="250" y1="280" x2="300" y2="260" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="300" y1="260" x2="350" y2="240" stroke="#4F46E5" stroke-width="1"/>
+    
+    <!-- Uptime indicator -->
+    <circle cx="1000" cy="200" r="15" fill="#4F46E5" opacity="0.3"/>
+    <circle cx="1000" cy="200" r="10" fill="#7C3AED" opacity="0.4"/>
+    <circle cx="1000" cy="200" r="5" fill="#4F46E5" opacity="0.5"/>
+  </g>
+</svg> 

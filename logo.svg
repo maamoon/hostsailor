@@ -1,0 +1,17 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- HOST -->
+  <text x="10" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#dc2626">HOST</text>
+  
+  <!-- SAILOR with custom A -->
+  <text x="70" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2563eb">S</text>
+  
+  <!-- Custom A as sailboat -->
+  <g transform="translate(85, 12)">
+    <!-- Hull (blue triangle) -->
+    <path d="M0 20 L8 20 L4 30 Z" fill="#2563eb"/>
+    <!-- Sail (red triangle) -->
+    <path d="M4 5 L12 20 L4 20 Z" fill="#dc2626"/>
+  </g>
+  
+  <text x="105" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2563eb">ILOR</text>
+</svg> 

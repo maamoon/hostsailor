@@ -1,0 +1,184 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#vlan-bg)" rx="16"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="vlan-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E0F2FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BAE6FD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="switch-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vlan1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vlan2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vlan3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vlan4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Network Switch -->
+  <rect x="120" y="80" width="80" height="60" fill="url(#switch-gradient)" rx="8" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Switch Ports -->
+  <rect x="125" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="85" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="95" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="105" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="115" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="125" width="6" height="6" fill="white" rx="1"/>
+  
+  <!-- Switch Status LED -->
+  <circle cx="190" cy="95" r="3" fill="#10B981"/>
+  
+  <!-- VLAN Segments -->
+  <!-- VLAN 100 - Production (Green) -->
+  <g opacity="0.8">
+    <rect x="40" y="40" width="50" height="25" fill="url(#vlan1-gradient)" rx="4" stroke="#059669" stroke-width="1"/>
+    <text x="65" y="52" font-family="Arial" font-size="8" text-anchor="middle" fill="white">VLAN 100</text>
+    <text x="65" y="62" font-family="Arial" font-size="6" text-anchor="middle" fill="white">Production</text>
+    
+    <!-- VLAN 200 - Development (Orange) -->
+    <rect x="230" y="40" width="50" height="25" fill="url(#vlan2-gradient)" rx="4" stroke="#D97706" stroke-width="1"/>
+    <text x="255" y="52" font-family="Arial" font-size="8" text-anchor="middle" fill="white">VLAN 200</text>
+    <text x="255" y="62" font-family="Arial" font-size="6" text-anchor="middle" fill="white">Development</text>
+    
+    <!-- VLAN 300 - DMZ (Red) -->
+    <rect x="40" y="175" width="50" height="25" fill="url(#vlan3-gradient)" rx="4" stroke="#DC2626" stroke-width="1"/>
+    <text x="65" y="187" font-family="Arial" font-size="8" text-anchor="middle" fill="white">VLAN 300</text>
+    <text x="65" y="197" font-family="Arial" font-size="6" text-anchor="middle" fill="white">DMZ</text>
+    
+    <!-- VLAN 400 - Management (Purple) -->
+    <rect x="230" y="175" width="50" height="25" fill="url(#vlan4-gradient)" rx="4" stroke="#7C3AED" stroke-width="1"/>
+    <text x="255" y="187" font-family="Arial" font-size="8" text-anchor="middle" fill="white">VLAN 400</text>
+    <text x="255" y="197" font-family="Arial" font-size="6" text-anchor="middle" fill="white">Management</text>
+  </g>
+  
+  <!-- Network Connections -->
+  <!-- VLAN 100 connections -->
+  <line x1="90" y1="52" x2="120" y2="85" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="52" x2="120" y2="95" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="52" x2="120" y2="105" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- VLAN 200 connections -->
+  <line x1="230" y1="52" x2="200" y2="85" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="230" y1="52" x2="200" y2="95" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="230" y1="52" x2="200" y2="105" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- VLAN 300 connections -->
+  <line x1="90" y1="187" x2="120" y2="115" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="187" x2="120" y2="125" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="187" x2="120" y2="135" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- VLAN 400 connections -->
+  <line x1="230" y1="187" x2="200" y2="115" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="230" y1="187" x2="200" y2="125" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="230" y1="187" x2="200" y2="135" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Connection Points -->
+  <circle cx="90" cy="52" r="3" fill="#10B981" stroke="#059669" stroke-width="1"/>
+  <circle cx="230" cy="52" r="3" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+  <circle cx="90" cy="187" r="3" fill="#EF4444" stroke="#DC2626" stroke-width="1"/>
+  <circle cx="230" cy="187" r="3" fill="#8B5CF6" stroke="#7C3AED" stroke-width="1"/>
+  
+  <!-- Data Packets -->
+  <g opacity="0.7">
+    <!-- VLAN 100 packets -->
+    <circle cx="105" cy="68" r="2" fill="#10B981">
+      <animate attributeName="cx" values="90;120" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="52;85" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="78" r="2" fill="#10B981">
+      <animate attributeName="cx" values="90;120" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="52;95" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- VLAN 200 packets -->
+    <circle cx="215" cy="68" r="2" fill="#F59E0B">
+      <animate attributeName="cx" values="230;200" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="52;85" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="215" cy="78" r="2" fill="#F59E0B">
+      <animate attributeName="cx" values="230;200" dur="1.9s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="52;95" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- VLAN 300 packets -->
+    <circle cx="105" cy="203" r="2" fill="#EF4444">
+      <animate attributeName="cx" values="90;120" dur="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="187;115" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- VLAN 400 packets -->
+    <circle cx="215" cy="203" r="2" fill="#8B5CF6">
+      <animate attributeName="cx" values="230;200" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="187;115" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- VLAN Isolation Indicators -->
+  <g opacity="0.6">
+    <!-- VLAN boundaries -->
+    <rect x="30" y="30" width="70" height="45" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="5,5" rx="4"/>
+    <rect x="220" y="30" width="70" height="45" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="5,5" rx="4"/>
+    <rect x="30" y="165" width="70" height="45" fill="none" stroke="#EF4444" stroke-width="1" stroke-dasharray="5,5" rx="4"/>
+    <rect x="220" y="165" width="70" height="45" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="5,5" rx="4"/>
+  </g>
+  
+  <!-- Status Indicators -->
+  <rect x="50" y="200" width="8" height="8" fill="#10B981" rx="2"/>
+  <text x="65" y="208" font-family="Arial" font-size="10" fill="#37474F">Segmented</text>
+  
+  <rect x="120" y="200" width="8" height="8" fill="#3B82F6" rx="2"/>
+  <text x="135" y="208" font-family="Arial" font-size="10" fill="#37474F">Isolated</text>
+  
+  <rect x="190" y="200" width="8" height="8" fill="#F59E0B" rx="2"/>
+  <text x="205" y="208" font-family="Arial" font-size="10" fill="#37474F">Secure</text>
+  
+  <!-- VLAN Network Text -->
+  <text x="160" y="220" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    VLAN Network
+  </text>
+</svg> 

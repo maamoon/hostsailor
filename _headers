@@ -1,0 +1,23 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/index.html
+  Cache-Control: no-cache
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/hostsailor/sw.js
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=0, must-revalidate
+
+/hostsailor/manifest.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/hostsailor/service-worker.js
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=0, must-revalidate 

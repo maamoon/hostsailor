@@ -1,0 +1,51 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#domain-bg)" rx="12"/>
+  
+  <!-- Globe Base -->
+  <circle cx="160" cy="120" r="60" fill="url(#globe-gradient)" stroke="#3B82F6" stroke-width="2"/>
+  
+  <!-- Globe Lines -->
+  <path d="M100 120 Q160 80 220 120" stroke="#1E40AF" stroke-width="1.5" fill="none"/>
+  <path d="M100 120 Q160 160 220 120" stroke="#1E40AF" stroke-width="1.5" fill="none"/>
+  <line x1="100" y1="120" x2="220" y2="120" stroke="#1E40AF" stroke-width="1.5"/>
+  
+  <!-- Domain Names -->
+  <text x="160" y="85" text-anchor="middle" fill="#1F2937" font-family="monospace" font-size="8" font-weight="bold">example.com</text>
+  <text x="160" y="100" text-anchor="middle" fill="#1F2937" font-family="monospace" font-size="8" font-weight="bold">mydomain.net</text>
+  <text x="160" y="115" text-anchor="middle" fill="#1F2937" font-family="monospace" font-size="8" font-weight="bold">website.org</text>
+  <text x="160" y="130" text-anchor="middle" fill="#1F2937" font-family="monospace" font-size="8" font-weight="bold">business.io</text>
+  <text x="160" y="145" text-anchor="middle" fill="#1F2937" font-family="monospace" font-size="8" font-weight="bold">startup.co</text>
+  
+  <!-- Connection Lines -->
+  <line x1="160" y1="60" x2="160" y2="80" stroke="#10B981" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="160" y1="160" x2="160" y2="180" stroke="#10B981" stroke-width="2" stroke-dasharray="4"/>
+  
+  <!-- DNS Servers -->
+  <circle cx="160" cy="50" r="8" fill="#10B981"/>
+  <text x="160" y="54" text-anchor="middle" fill="white" font-family="monospace" font-size="6" font-weight="bold">DNS</text>
+  
+  <circle cx="160" cy="190" r="8" fill="#10B981"/>
+  <text x="160" y="194" text-anchor="middle" fill="white" font-family="monospace" font-size="6" font-weight="bold">DNS</text>
+  
+  <!-- WHOIS Protection Icon -->
+  <circle cx="240" cy="80" r="15" fill="#F59E0B" opacity="0.8"/>
+  <path d="M240 75 L242 77 L245 74" stroke="white" stroke-width="2" fill="none"/>
+  <text x="240" y="95" text-anchor="middle" fill="#92400E" font-family="sans-serif" font-size="6" font-weight="bold">WHOIS</text>
+  
+  <!-- SSL Certificate -->
+  <rect x="240" y="110" width="20" height="12" rx="2" fill="#8B5CF6"/>
+  <text x="250" y="118" text-anchor="middle" fill="white" font-family="monospace" font-size="6" font-weight="bold">SSL</text>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="domain-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E7FF;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="globe-gradient" cx="40%" cy="40%">
+      <stop offset="0%" style="stop-color:#EBF8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DBEAFE;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+</svg> 

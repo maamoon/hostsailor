@@ -1,0 +1,92 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#kb-bg)" rx="16"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="kb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F4FD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D1E7FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8D9F7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="page-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Book -->
+  <rect x="80" y="60" width="160" height="120" fill="url(#book-gradient)" rx="8"/>
+  
+  <!-- Book Spine -->
+  <rect x="80" y="60" width="8" height="120" fill="#1E40AF"/>
+  
+  <!-- Pages -->
+  <rect x="88" y="65" width="145" height="110" fill="url(#page-gradient)" rx="4"/>
+  
+  <!-- Text Lines -->
+  <rect x="100" y="80" width="80" height="2" fill="#6B7280" rx="1"/>
+  <rect x="100" y="90" width="60" height="2" fill="#9CA3AF" rx="1"/>
+  <rect x="100" y="100" width="70" height="2" fill="#9CA3AF" rx="1"/>
+  <rect x="100" y="110" width="50" height="2" fill="#9CA3AF" rx="1"/>
+  
+  <rect x="100" y="125" width="75" height="2" fill="#6B7280" rx="1"/>
+  <rect x="100" y="135" width="65" height="2" fill="#9CA3AF" rx="1"/>
+  <rect x="100" y="145" width="55" height="2" fill="#9CA3AF" rx="1"/>
+  
+  <!-- Search Icon -->
+  <circle cx="200" cy="100" r="15" fill="#10B981" stroke="#059669" stroke-width="2"/>
+  <circle cx="200" cy="100" r="8" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="207" y1="107" x2="212" y2="112" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Floating Icons -->
+  <g opacity="0.8">
+    <!-- Document Icon -->
+    <rect x="40" y="40" width="20" height="25" fill="#F59E0B" rx="2"/>
+    <rect x="43" y="43" width="14" height="2" fill="white" rx="1"/>
+    <rect x="43" y="48" width="10" height="2" fill="white" rx="1"/>
+    <rect x="43" y="53" width="12" height="2" fill="white" rx="1"/>
+    <rect x="43" y="58" width="8" height="2" fill="white" rx="1"/>
+    
+    <!-- Video Icon -->
+    <rect x="260" y="50" width="24" height="16" fill="#EF4444" rx="2"/>
+    <polygon points="268,58 268,66 276,62" fill="white"/>
+    
+    <!-- Settings Icon -->
+    <circle cx="50" cy="180" r="12" fill="#8B5CF6"/>
+    <circle cx="50" cy="180" r="6" fill="white"/>
+    <circle cx="50" cy="180" r="2" fill="#8B5CF6"/>
+    <line x1="50" y1="168" x2="50" y2="172" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="50" y1="188" x2="50" y2="192" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="38" y1="180" x2="42" y2="180" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="58" y1="180" x2="62" y2="180" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Help Icon -->
+    <circle cx="270" cy="180" r="12" fill="#06B6D4"/>
+    <circle cx="270" cy="175" r="2" fill="white"/>
+    <path d="M 270 180 Q 270 185 265 185 Q 260 185 260 180 Q 260 175 265 175" stroke="white" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Animated Elements -->
+  <g opacity="0.6">
+    <!-- Floating dots -->
+    <circle cx="60" cy="120" r="2" fill="#3B82F6">
+      <animate attributeName="cy" values="120;110;120" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="140" r="2" fill="#10B981">
+      <animate attributeName="cy" values="140;130;140" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="100" r="2" fill="#F59E0B">
+      <animate attributeName="cy" values="100;90;100" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Knowledge Base Text -->
+  <text x="160" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    Knowledge Base
+  </text>
+</svg> 

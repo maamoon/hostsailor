@@ -1,0 +1,118 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vpsGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="vpsGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.1" />
+    </linearGradient>
+    <radialGradient id="vpsGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#vpsGradient1)"/>
+  
+  <!-- Floating VPS Servers -->
+  <g opacity="0.6">
+    <!-- Server 1 -->
+    <rect x="100" y="150" width="80" height="120" rx="8" fill="#667eea" opacity="0.2"/>
+    <rect x="110" y="160" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="175" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="190" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="205" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="220" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="235" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    <rect x="110" y="250" width="60" height="8" rx="2" fill="#667eea" opacity="0.4"/>
+    
+    <!-- Server 2 -->
+    <rect x="300" y="200" width="80" height="120" rx="8" fill="#764ba2" opacity="0.2"/>
+    <rect x="310" y="210" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="225" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="240" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="255" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="270" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="285" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    <rect x="310" y="300" width="60" height="8" rx="2" fill="#764ba2" opacity="0.4"/>
+    
+    <!-- Server 3 -->
+    <rect x="500" y="180" width="80" height="120" rx="8" fill="#f093fb" opacity="0.2"/>
+    <rect x="510" y="190" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="205" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="220" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="235" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="250" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="265" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+    <rect x="510" y="280" width="60" height="8" rx="2" fill="#f093fb" opacity="0.4"/>
+  </g>
+  
+  <!-- Network Connections -->
+  <g opacity="0.4">
+    <line x1="180" y1="210" x2="300" y2="260" stroke="#667eea" stroke-width="2"/>
+    <line x1="380" y1="260" x2="500" y2="240" stroke="#764ba2" stroke-width="2"/>
+    <line x1="580" y1="240" x2="700" y2="280" stroke="#f093fb" stroke-width="2"/>
+  </g>
+  
+  <!-- Data Flow Particles -->
+  <g opacity="0.6">
+    <circle cx="240" cy="235" r="3" fill="#667eea">
+      <animate attributeName="cx" values="180;300;180" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="210;260;210" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="440" cy="250" r="3" fill="#764ba2">
+      <animate attributeName="cx" values="380;500;380" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;240;260" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="260" r="3" fill="#f093fb">
+      <animate attributeName="cx" values="580;700;580" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="240;280;240" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Performance Indicators -->
+  <g opacity="0.3">
+    <!-- CPU Usage Bars -->
+    <rect x="800" y="150" width="20" height="60" rx="2" fill="#667eea"/>
+    <rect x="830" y="150" width="20" height="80" rx="2" fill="#764ba2"/>
+    <rect x="860" y="150" width="20" height="40" rx="2" fill="#f093fb"/>
+    <rect x="890" y="150" width="20" height="70" rx="2" fill="#667eea"/>
+    
+    <!-- Memory Usage -->
+    <rect x="800" y="250" width="120" height="20" rx="10" fill="#764ba2" opacity="0.3"/>
+    <rect x="800" y="250" width="85" height="20" rx="10" fill="#764ba2"/>
+    
+    <!-- Network Speed -->
+    <rect x="800" y="290" width="120" height="20" rx="10" fill="#f093fb" opacity="0.3"/>
+    <rect x="800" y="290" width="95" height="20" rx="10" fill="#f093fb"/>
+  </g>
+  
+  <!-- Floating Icons -->
+  <g opacity="0.4">
+    <!-- CPU Icon -->
+    <rect x="950" y="200" width="40" height="40" rx="8" fill="#667eea"/>
+    <rect x="955" y="205" width="30" height="8" rx="2" fill="white"/>
+    <rect x="955" y="218" width="30" height="8" rx="2" fill="white"/>
+    <rect x="955" y="231" width="30" height="8" rx="2" fill="white"/>
+    
+    <!-- Storage Icon -->
+    <rect x="1050" y="200" width="40" height="40" rx="8" fill="#764ba2"/>
+    <rect x="1055" y="205" width="30" height="30" rx="4" fill="white"/>
+    <rect x="1060" y="210" width="20" height="20" rx="2" fill="#764ba2"/>
+    
+    <!-- Network Icon -->
+    <circle cx="1070" cy="320" r="20" fill="#f093fb"/>
+    <circle cx="1060" cy="310" r="3" fill="white"/>
+    <circle cx="1080" cy="310" r="3" fill="white"/>
+    <circle cx="1060" cy="330" r="3" fill="white"/>
+    <circle cx="1080" cy="330" r="3" fill="white"/>
+  </g>
+  
+  <!-- Glow Effects -->
+  <circle cx="600" cy="400" r="200" fill="url(#vpsGlow)"/>
+  <circle cx="200" cy="300" r="150" fill="url(#vpsGlow)"/>
+  <circle cx="1000" cy="250" r="120" fill="url(#vpsGlow)"/>
+</svg> 
