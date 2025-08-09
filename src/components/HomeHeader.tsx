@@ -103,16 +103,16 @@ const HomeHeader = () => {
           items: [
                          { key: 'ssdHosting', label: t('navigation.products.sharedHosting.ssdHosting'), href: '#/hosting/ssd-shared-hosting' },
              { key: 'resellerHosting', label: t('navigation.products.sharedHosting.resellerHosting'), href: '#/hosting/reseller-hosting' },
-             {
-               key: 'vpsResellerProgram',
-               label: 'VPS Reseller Program',
-               href: '#/vps/reseller-program'
-             }
-          ]
-        },
-        {
-          key: 'dedicatedServers',
-          label: t('navigation.products.dedicatedServers.title'),
+            {
+              key: 'vpsResellerProgram',
+              label: t('navigation.products.sharedHosting.vpsResellerProgram'),
+              href: '#/vps/reseller-program'
+            }
+        ]
+      },
+      {
+        key: 'dedicatedServers',
+        label: t('navigation.products.dedicatedServers.title'),
                      href: '#/dedicated/servers',
            items: [
              { key: 'supermicroRo', label: t('navigation.products.dedicatedServers.supermicroRo'), href: '#/dedicated/supermicro-romania' },
@@ -120,28 +120,28 @@ const HomeHeader = () => {
              { key: 'fujitsuNl', label: t('navigation.products.dedicatedServers.fujitsuNl'), href: '#/dedicated/hp-netherlands' }
           ]
         },
-                 {
-           key: 'colocation',
-           label: 'Colocation',
-           href: '#/services/colocation'
-         },
-         {
-           key: 'hotDeals',
-           label: 'Hot Deals',
-           href: '#/deals/hot-deals'
-         },
-        {
-          key: 'vps',
-          label: t('navigation.products.vps.title'),
-                     href: '#/vps/hosting',
-           items: [
-             { key: 'openvzHdd', label: 'OpenVZ VPS HDD', href: '#/vps/openvz-vps-hdd' },
-             { key: 'openvzSsd', label: 'OpenVZ VPS SSD', href: '#/vps/openvz-vps-ssd' },
-             { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '#/vps/kvm-vps-nvme' },
-             { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '#/vps/kvm-vps' },
-             { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '#/vps/storage-kvm-vps' }
-          ]
-        }
+      {
+        key: 'colocation',
+        label: t('navigation.products.colocation'),
+        href: '#/services/colocation'
+      },
+      {
+        key: 'hotDeals',
+        label: t('navigation.products.hotDeals'),
+        href: '#/deals/hot-deals'
+      },
+      {
+        key: 'vps',
+        label: t('navigation.products.vps.title'),
+        href: '#/vps/hosting',
+        items: [
+          { key: 'openvzHdd', label: t('navigation.products.vps.openvzHdd'), href: '#/vps/openvz-vps-hdd' },
+          { key: 'openvzSsd', label: t('navigation.products.vps.openvzSsd'), href: '#/vps/openvz-vps-ssd' },
+          { key: 'kvmNvme', label: t('navigation.products.vps.kvmNvme'), href: '#/vps/kvm-vps-nvme' },
+          { key: 'kvmSsd', label: t('navigation.products.vps.kvmSsd'), href: '#/vps/kvm-vps' },
+          { key: 'storageVps', label: t('navigation.products.vps.storageVps'), href: '#/vps/storage-kvm-vps' }
+        ]
+      }
       ]
     },
     {
