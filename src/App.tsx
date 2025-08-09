@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Main pages
 import Index from "./pages/main/Index";
@@ -77,247 +77,131 @@ import HotDeals from "./pages/deals/HotDeals";
 import WebhostingCouponsOffers from "./pages/deals/WebhostingCouponsOffers";
 
 const queryClient = new QueryClient();
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {import.meta.env.PROD ? (
-        <HashRouter>
-          <Routes>
-            {/* Main Routes */}
-            <Route path="/" element={<Index />} />
-            <Route path="/main/home" element={<Index />} />
-            <Route path="/main/services" element={<Services />} />
-            <Route path="/main/dashboard" element={<Dashboard />} />
-            
-            {/* Auth Routes */}
-            <Route path="/auth/login" element={<Login />} />
-            <Route path="/auth/register" element={<Register />} />
-            <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-            <Route path="/auth/reset-password" element={<ResetPassword />} />
-            
-            {/* Hosting Routes */}
-            <Route path="/hosting/ssd-shared-hosting" element={<SSDSharedHosting />} />
-            <Route path="/hosting/reseller-hosting" element={<ResellerHosting />} />
-            
-            {/* VPS Routes */}
-            <Route path="/vps/hosting" element={<VPSHosting />} />
-            <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
-            <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
-            <Route path="/vps/openvz-vps-hdd" element={<OpenVZVPSHDD />} />
-            <Route path="/vps/openvz-vps-ssd" element={<OpenVZVPSSSD />} />
-            <Route path="/vps/kvm-vps-nvme" element={<KVMVPSNVMe />} />
-            <Route path="/vps/reseller-program" element={<VPSResellerProgram />} />
-            
-            {/* Dedicated Routes */}
-            <Route path="/dedicated/servers" element={<DedicatedServers />} />
-            <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
-            <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
-            
-            {/* Data Centers Routes */}
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
-            <Route path="/datacenters/romania" element={<DataCenterRomania />} />
-            
-            {/* Services Routes */}
-            <Route path="/services/ssl-certificates" element={<SSLCertificates />} />
-            <Route path="/services/domain-registration" element={<DomainRegistration />} />
-            <Route path="/services/colocation" element={<Colocation />} />
-            <Route path="/services/vlan-network" element={<VLANNetwork />} />
-            
-            {/* Tools Routes */}
-            <Route path="/tools/hub" element={<ToolsHub />} />
-            <Route path="/tools/network-status" element={<NetworkStatus />} />
-            <Route path="/tools/looking-glass" element={<LookingGlass />} />
-            <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
-            
-            {/* Support Routes */}
-            <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
-            <Route path="/support/faqs" element={<FAQs />} />
-            <Route path="/support/contact" element={<Contact />} />
-            
-            {/* Company Routes */}
-            <Route path="/company/about-us" element={<AboutUs />} />
-            <Route path="/company/our-company" element={<OurCompany />} />
-            <Route path="/company/blog" element={<Blog />} />
-            
-            {/* Legal Routes */}
-            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
-            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
-            <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
-            
-            {/* Programs Routes */}
-            <Route path="/programs/affiliate" element={<AffiliateProgram />} />
-            <Route path="/programs/reseller" element={<ResellerProgram />} />
-            <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
-            
-            {/* Deals Routes */}
-            <Route path="/deals/hot-deals" element={<HotDeals />} />
-            <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
-            
-            {/* Legacy Routes for backward compatibility */}
-            <Route path="/ssd-shared-hosting" element={<SSDSharedHosting />} />
-            <Route path="/reseller-hosting" element={<ResellerHosting />} />
-            <Route path="/dedicated-servers" element={<DedicatedServers />} />
-            <Route path="/vps/hosting" element={<VPSHosting />} />
-            <Route path="/ssl-certificates" element={<SSLCertificates />} />
-            <Route path="/vlan-network" element={<VLANNetwork />} />
-            <Route path="/our-company" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/affiliate-program" element={<AffiliateProgram />} />
-            <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
-            <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
-            <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
-            <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
-            <Route path="/services/domain-registration" element={<DomainRegistration />} />
-            <Route path="/services/colocation" element={<Colocation />} />
-            <Route path="/services/vlan-network" element={<VLANNetwork />} />
-            <Route path="/deals/hot-deals" element={<HotDeals />} />
-            <Route path="/tools/network-status" element={<NetworkStatus />} />
-            <Route path="/tools/looking-glass" element={<LookingGlass />} />
-            <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
-            <Route path="/support/faqs" element={<FAQs />} />
-            <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
-            <Route path="/programs/reseller" element={<ResellerProgram />} />
-            <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
-            <Route path="/company/blog" element={<Blog />} />
-            <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
-            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
-            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
-            <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
-            <Route path="/sla" element={<ServiceLevelAgreement />} />
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
-            <Route path="/datacenters/romania" element={<DataCenterRomania />} />
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            
-            {/* Catch-all route */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </HashRouter>
-      ) : (
-        <BrowserRouter>
-          <Routes>
-            {/* Main Routes */}
-            <Route path="/" element={<Index />} />
-            <Route path="/main/home" element={<Index />} />
-            <Route path="/main/services" element={<Services />} />
-            <Route path="/main/dashboard" element={<Dashboard />} />
-            
-            {/* Auth Routes */}
-            <Route path="/auth/login" element={<Login />} />
-            <Route path="/auth/register" element={<Register />} />
-            <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-            <Route path="/auth/reset-password" element={<ResetPassword />} />
-            
-            {/* Hosting Routes */}
-            <Route path="/hosting/ssd-shared-hosting" element={<SSDSharedHosting />} />
-            <Route path="/hosting/reseller-hosting" element={<ResellerHosting />} />
-            
-            {/* VPS Routes */}
-            <Route path="/vps/hosting" element={<VPSHosting />} />
-            <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
-            <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
-            <Route path="/vps/openvz-vps-hdd" element={<OpenVZVPSHDD />} />
-            <Route path="/vps/openvz-vps-ssd" element={<OpenVZVPSSSD />} />
-            <Route path="/vps/kvm-vps-nvme" element={<KVMVPSNVMe />} />
-            <Route path="/vps/reseller-program" element={<VPSResellerProgram />} />
-            
-            {/* Dedicated Routes */}
-            <Route path="/dedicated/servers" element={<DedicatedServers />} />
-            <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
-            <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
-            
-            {/* Data Centers Routes */}
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
-            <Route path="/datacenters/romania" element={<DataCenterRomania />} />
-            
-            {/* Services Routes */}
-            <Route path="/services/ssl-certificates" element={<SSLCertificates />} />
-            <Route path="/services/domain-registration" element={<DomainRegistration />} />
-            <Route path="/services/colocation" element={<Colocation />} />
-            <Route path="/services/vlan-network" element={<VLANNetwork />} />
-            
-            {/* Tools Routes */}
-            <Route path="/tools/hub" element={<ToolsHub />} />
-            <Route path="/tools/network-status" element={<NetworkStatus />} />
-            <Route path="/tools/looking-glass" element={<LookingGlass />} />
-            <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
-            
-            {/* Support Routes */}
-            <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
-            <Route path="/support/faqs" element={<FAQs />} />
-            <Route path="/support/contact" element={<Contact />} />
-            
-            {/* Company Routes */}
-            <Route path="/company/about-us" element={<AboutUs />} />
-            <Route path="/company/our-company" element={<OurCompany />} />
-            <Route path="/company/blog" element={<Blog />} />
-            
-            {/* Legal Routes */}
-            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
-            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
-            <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
-            
-            {/* Programs Routes */}
-            <Route path="/programs/affiliate" element={<AffiliateProgram />} />
-            <Route path="/programs/reseller" element={<ResellerProgram />} />
-            <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
-            
-            {/* Deals Routes */}
-            <Route path="/deals/hot-deals" element={<HotDeals />} />
-            <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
-            
-            {/* Legacy Routes for backward compatibility */}
-            <Route path="/ssd-shared-hosting" element={<SSDSharedHosting />} />
-            <Route path="/reseller-hosting" element={<ResellerHosting />} />
-            <Route path="/dedicated-servers" element={<DedicatedServers />} />
-            <Route path="/vps/hosting" element={<VPSHosting />} />
-            <Route path="/ssl-certificates" element={<SSLCertificates />} />
-            <Route path="/vlan-network" element={<VLANNetwork />} />
-            <Route path="/our-company" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/affiliate-program" element={<AffiliateProgram />} />
-            <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
-            <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
-            <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
-            <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
-            <Route path="/services/domain-registration" element={<DomainRegistration />} />
-            <Route path="/services/colocation" element={<Colocation />} />
-            <Route path="/services/vlan-network" element={<VLANNetwork />} />
-            <Route path="/deals/hot-deals" element={<HotDeals />} />
-            <Route path="/tools/network-status" element={<NetworkStatus />} />
-            <Route path="/tools/looking-glass" element={<LookingGlass />} />
-            <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
-            <Route path="/support/faqs" element={<FAQs />} />
-            <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
-            <Route path="/programs/reseller" element={<ResellerProgram />} />
-            <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
-            <Route path="/company/blog" element={<Blog />} />
-            <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
-            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
-            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
-            <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
-            <Route path="/sla" element={<ServiceLevelAgreement />} />
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
-            <Route path="/datacenters/romania" element={<DataCenterRomania />} />
-            <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
-            
-            {/* Catch-all route */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      )}
+      <BrowserRouter basename={basename}>
+        <Routes>
+          {/* Main Routes */}
+          <Route path="/" element={<Index />} />
+          <Route path="/main/home" element={<Index />} />
+          <Route path="/main/services" element={<Services />} />
+          <Route path="/main/dashboard" element={<Dashboard />} />
+
+          {/* Auth Routes */}
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/register" element={<Register />} />
+          <Route path="/auth/forgot-password" element={<ForgotPassword />} />
+          <Route path="/auth/reset-password" element={<ResetPassword />} />
+
+          {/* Hosting Routes */}
+          <Route path="/hosting/ssd-shared-hosting" element={<SSDSharedHosting />} />
+          <Route path="/hosting/reseller-hosting" element={<ResellerHosting />} />
+
+          {/* VPS Routes */}
+          <Route path="/vps/hosting" element={<VPSHosting />} />
+          <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
+          <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
+          <Route path="/vps/openvz-vps-hdd" element={<OpenVZVPSHDD />} />
+          <Route path="/vps/openvz-vps-ssd" element={<OpenVZVPSSSD />} />
+          <Route path="/vps/kvm-vps-nvme" element={<KVMVPSNVMe />} />
+          <Route path="/vps/reseller-program" element={<VPSResellerProgram />} />
+
+          {/* Dedicated Routes */}
+          <Route path="/dedicated/servers" element={<DedicatedServers />} />
+          <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
+          <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
+
+          {/* Data Centers Routes */}
+          <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
+          <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
+          <Route path="/datacenters/romania" element={<DataCenterRomania />} />
+
+          {/* Services Routes */}
+          <Route path="/services/ssl-certificates" element={<SSLCertificates />} />
+          <Route path="/services/domain-registration" element={<DomainRegistration />} />
+          <Route path="/services/colocation" element={<Colocation />} />
+          <Route path="/services/vlan-network" element={<VLANNetwork />} />
+
+          {/* Tools Routes */}
+          <Route path="/tools/hub" element={<ToolsHub />} />
+          <Route path="/tools/network-status" element={<NetworkStatus />} />
+          <Route path="/tools/looking-glass" element={<LookingGlass />} />
+          <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
+
+          {/* Support Routes */}
+          <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/support/faqs" element={<FAQs />} />
+          <Route path="/support/contact" element={<Contact />} />
+
+          {/* Company Routes */}
+          <Route path="/company/about-us" element={<AboutUs />} />
+          <Route path="/company/our-company" element={<OurCompany />} />
+          <Route path="/company/blog" element={<Blog />} />
+
+          {/* Legal Routes */}
+          <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+          <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
+          <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
+
+          {/* Programs Routes */}
+          <Route path="/programs/affiliate" element={<AffiliateProgram />} />
+          <Route path="/programs/reseller" element={<ResellerProgram />} />
+          <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
+
+          {/* Deals Routes */}
+          <Route path="/deals/hot-deals" element={<HotDeals />} />
+          <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
+
+          {/* Legacy Routes for backward compatibility */}
+          <Route path="/ssd-shared-hosting" element={<SSDSharedHosting />} />
+          <Route path="/reseller-hosting" element={<ResellerHosting />} />
+          <Route path="/dedicated-servers" element={<DedicatedServers />} />
+          <Route path="/vps/hosting" element={<VPSHosting />} />
+          <Route path="/ssl-certificates" element={<SSLCertificates />} />
+          <Route path="/vlan-network" element={<VLANNetwork />} />
+          <Route path="/our-company" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/affiliate-program" element={<AffiliateProgram />} />
+          <Route path="/dedicated/supermicro-romania" element={<SupermicroRomaniaServers />} />
+          <Route path="/dedicated/hp-netherlands" element={<HPNetherlandsServers />} />
+          <Route path="/vps/kvm-vps" element={<KVMVPSHosting />} />
+          <Route path="/vps/storage-kvm-vps" element={<StorageKVMVPS />} />
+          <Route path="/services/domain-registration" element={<DomainRegistration />} />
+          <Route path="/services/colocation" element={<Colocation />} />
+          <Route path="/services/vlan-network" element={<VLANNetwork />} />
+          <Route path="/deals/hot-deals" element={<HotDeals />} />
+          <Route path="/tools/network-status" element={<NetworkStatus />} />
+          <Route path="/tools/looking-glass" element={<LookingGlass />} />
+          <Route path="/support/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/support/faqs" element={<FAQs />} />
+          <Route path="/tools/ip-announcement" element={<IPAnnouncement />} />
+          <Route path="/programs/reseller" element={<ResellerProgram />} />
+          <Route path="/programs/bug-bounty" element={<BugBountyProgramme />} />
+          <Route path="/company/blog" element={<Blog />} />
+          <Route path="/deals/coupons-offers" element={<WebhostingCouponsOffers />} />
+          <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+          <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/legal/acceptable-use-policy" element={<AcceptableUsePolicy />} />
+          <Route path="/legal/service-level-agreement" element={<ServiceLevelAgreement />} />
+          <Route path="/sla" element={<ServiceLevelAgreement />} />
+          <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
+          <Route path="/datacenters/netherlands" element={<DataCenterNetherlands />} />
+          <Route path="/datacenters/romania" element={<DataCenterRomania />} />
+          <Route path="/datacenters/los-angeles" element={<DataCenterLosAngeles />} />
+
+          {/* Catch-all route */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
 
 export default App;
+
