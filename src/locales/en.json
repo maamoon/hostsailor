@@ -242,7 +242,8 @@
       "sharedHosting": {
         "title": "Shared Hosting",
         "ssdHosting": "SSD Hosting",
-        "resellerHosting": "SSD Reseller Hosting"
+        "resellerHosting": "SSD Reseller Hosting",
+        "vpsResellerProgram": "VPS Reseller Program"
       },
       "dedicatedServers": {
         "title": "Dedicated Servers",
@@ -250,8 +251,12 @@
         "hpNl": "HP (NL)",
         "fujitsuNl": "Fujitsu (NL)"
       },
+      "colocation": "Colocation",
+      "hotDeals": "Hot Deals",
       "vps": {
         "title": "VPS",
+        "openvzHdd": "OpenVZ VPS HDD",
+        "openvzSsd": "OpenVZ VPS SSD",
         "kvmNvme": "KVM VPS NVMe",
         "kvmSsd": "KVM VPS SSD",
         "storageVps": "KVM VPS Storage"
@@ -348,6 +353,152 @@
     "technicalSupportAnswer": "Yes, we provide comprehensive technical support for all our hosting services 24/7.",
     "scheduleCall": "Can I schedule a call?",
     "scheduleCallAnswer": "Absolutely! You can schedule a consultation call with our sales team at your convenience."
+  },
+  "vpsResellerProgram": {
+    "badge": "VPS Reseller Program",
+    "heroTitle": "Start Your Hosting Business Today",
+    "heroDescription": "Launch your own VPS hosting business with our comprehensive reseller program. White-label solutions, automated provisioning, and 24/7 infrastructure support.",
+    "buttons": {
+      "getStarted": "Get Started",
+      "viewPlans": "View Plans",
+      "startReselling": "Start Reselling"
+    },
+    "stats": {
+      "profitMargin": "Profit Margin",
+      "setupTime": "Setup Time",
+      "uptimeSla": "Uptime SLA",
+      "support": "Support"
+    },
+    "plans": {
+      "title": "Reseller Plans",
+      "subtitle": "Choose the perfect plan to start your hosting business",
+      "period": "month",
+      "mostPopular": "Most Popular",
+      "labels": {
+        "vpsInstances": "VPS Instances",
+        "totalStorage": "Total Storage",
+        "totalBandwidth": "Total Bandwidth",
+        "supportLevel": "Support Level"
+      },
+      "starter": {
+        "name": "Starter Reseller",
+        "specs": {
+          "vps": "10 VPS Instances",
+          "storage": "500 GB Total",
+          "bandwidth": "10 TB Total",
+          "support": "Email Support"
+        },
+        "features": [
+          "White-label Control Panel",
+          "Custom Branding",
+          "Automated Provisioning",
+          "24/7 Infrastructure Support",
+          "API Access"
+        ]
+      },
+      "professional": {
+        "name": "Professional Reseller",
+        "specs": {
+          "vps": "25 VPS Instances",
+          "storage": "1.5 TB Total",
+          "bandwidth": "25 TB Total",
+          "support": "Priority Support"
+        },
+        "features": [
+          "White-label Control Panel",
+          "Custom Branding",
+          "Automated Provisioning",
+          "24/7 Infrastructure Support",
+          "API Access",
+          "Dedicated Account Manager",
+          "Custom Pricing"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise Reseller",
+        "specs": {
+          "vps": "50 VPS Instances",
+          "storage": "3 TB Total",
+          "bandwidth": "50 TB Total",
+          "support": "24/7 Phone Support"
+        },
+        "features": [
+          "White-label Control Panel",
+          "Custom Branding",
+          "Automated Provisioning",
+          "24/7 Infrastructure Support",
+          "API Access",
+          "Dedicated Account Manager",
+          "Custom Pricing",
+          "Custom SLA",
+          "Advanced Analytics"
+        ]
+      }
+    },
+    "featureSection": {
+      "title": "Program Features",
+      "subtitle": "Everything you need to build a successful hosting business",
+      "whiteLabel": {
+        "title": "White-Label Solution",
+        "description": "Brand the entire platform with your company name and logo"
+      },
+      "instantProvisioning": {
+        "title": "Instant Provisioning",
+        "description": "VPS instances are deployed automatically within minutes"
+      },
+      "security": {
+        "title": "Infrastructure Security",
+        "description": "Enterprise-grade security with DDoS protection included"
+      },
+      "management": {
+        "title": "Customer Management",
+        "description": "Full control over your customers and their resources"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock infrastructure support for your business"
+      },
+      "scalable": {
+        "title": "Scalable Growth",
+        "description": "Easily scale your reseller business as you grow"
+      }
+    },
+    "benefits": {
+      "title": "Why Join Our Reseller Program?",
+      "subtitle": "Maximize your profits and grow your hosting business",
+      "highProfit": {
+        "title": "High Profit Margins",
+        "description": "Earn significant profits with competitive wholesale pricing and retail markups"
+      },
+      "noInfrastructure": {
+        "title": "No Infrastructure Costs",
+        "description": "Focus on sales and marketing while we handle all technical infrastructure"
+      },
+      "fullControl": {
+        "title": "Full Control",
+        "description": "Complete control over pricing, customer management, and service delivery"
+      },
+      "brandRecognition": {
+        "title": "Brand Recognition",
+        "description": "Build your own brand in the hosting industry with white-label solutions"
+      }
+    },
+    "metrics": {
+      "title": "Success Metrics",
+      "subtitle": "Proven results from our successful reseller partners",
+      "items": [
+        { "label": "Average Profit Margin", "value": "40-60%" },
+        { "label": "Setup Time", "value": "< 24 hours" },
+        { "label": "Uptime SLA", "value": "99.9%" },
+        { "label": "Support Response", "value": "< 2 hours" }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your Hosting Business?",
+      "subtitle": "Join successful resellers who trust HostSailor for their infrastructure needs",
+      "getStarted": "Get Started",
+      "contactSales": "Contact Sales"
+    }
   },
   "storageKVMVPS": {
     "heroTitle": "Storage-Optimized KVM VPS — Powered by RAID10 Stability & Redundancy",

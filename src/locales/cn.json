@@ -242,7 +242,8 @@
       "sharedHosting": {
         "title": "共享托管",
         "ssdHosting": "SSD 托管",
-        "resellerHosting": "SSD 经销商托管"
+        "resellerHosting": "SSD 经销商托管",
+        "vpsResellerProgram": "VPS 经销商计划"
       },
       "dedicatedServers": {
         "title": "专用服务器",
@@ -250,8 +251,12 @@
         "hpNl": "HP (荷兰)",
         "fujitsuNl": "Fujitsu (荷兰)"
       },
+      "colocation": "机柜托管",
+      "hotDeals": "热门优惠",
       "vps": {
         "title": "VPS",
+        "openvzHdd": "OpenVZ VPS HDD",
+        "openvzSsd": "OpenVZ VPS SSD",
         "kvmNvme": "KVM VPS NVMe",
         "kvmSsd": "KVM VPS SSD",
         "storageVps": "KVM VPS 存储"
@@ -348,6 +353,152 @@
     "technicalSupportAnswer": "是的，我们为所有托管服务提供全面的技术支持24/7。",
     "scheduleCall": "我可以安排通话吗？",
     "scheduleCallAnswer": "当然！您可以在方便时安排与销售团队的咨询通话。"
+  },
+  "vpsResellerProgram": {
+    "badge": "VPS 经销商计划",
+    "heroTitle": "立即开启您的托管业务",
+    "heroDescription": "通过我们全面的经销商计划，开启自己的 VPS 托管业务。白标方案、自动化部署以及 24/7 基础设施支持。",
+    "buttons": {
+      "getStarted": "开始使用",
+      "viewPlans": "查看套餐",
+      "startReselling": "开始转售"
+    },
+    "stats": {
+      "profitMargin": "利润率",
+      "setupTime": "部署时间",
+      "uptimeSla": "正常运行 SLA",
+      "support": "支持"
+    },
+    "plans": {
+      "title": "经销商套餐",
+      "subtitle": "选择适合的套餐开启您的托管业务",
+      "period": "月",
+      "mostPopular": "最受欢迎",
+      "labels": {
+        "vpsInstances": "VPS 数量",
+        "totalStorage": "总存储",
+        "totalBandwidth": "总带宽",
+        "supportLevel": "支持级别"
+      },
+      "starter": {
+        "name": "初级经销商",
+        "specs": {
+          "vps": "10 个 VPS 实例",
+          "storage": "总计 500 GB",
+          "bandwidth": "总计 10 TB",
+          "support": "电子邮件支持"
+        },
+        "features": [
+          "白标控制面板",
+          "自定义品牌",
+          "自动化部署",
+          "全天候基础设施支持",
+          "API 访问"
+        ]
+      },
+      "professional": {
+        "name": "专业经销商",
+        "specs": {
+          "vps": "25 个 VPS 实例",
+          "storage": "总计 1.5 TB",
+          "bandwidth": "总计 25 TB",
+          "support": "优先级支持"
+        },
+        "features": [
+          "白标控制面板",
+          "自定义品牌",
+          "自动化部署",
+          "全天候基础设施支持",
+          "API 访问",
+          "专属客户经理",
+          "自定义定价"
+        ]
+      },
+      "enterprise": {
+        "name": "企业经销商",
+        "specs": {
+          "vps": "50 个 VPS 实例",
+          "storage": "总计 3 TB",
+          "bandwidth": "总计 50 TB",
+          "support": "24/7 电话支持"
+        },
+        "features": [
+          "白标控制面板",
+          "自定义品牌",
+          "自动化部署",
+          "全天候基础设施支持",
+          "API 访问",
+          "专属客户经理",
+          "自定义定价",
+          "自定义 SLA",
+          "高级分析"
+        ]
+      }
+    },
+    "featureSection": {
+      "title": "计划特色",
+      "subtitle": "构建成功托管业务所需的一切",
+      "whiteLabel": {
+        "title": "白标方案",
+        "description": "使用您的公司名称和标识自定义整个平台"
+      },
+      "instantProvisioning": {
+        "title": "即时部署",
+        "description": "VPS 实例在几分钟内自动部署"
+      },
+      "security": {
+        "title": "基础设施安全",
+        "description": "企业级安全，内置 DDoS 保护"
+      },
+      "management": {
+        "title": "客户管理",
+        "description": "全面掌控您的客户及其资源"
+      },
+      "support": {
+        "title": "全天候支持",
+        "description": "为您的业务提供全天候基础设施支持"
+      },
+      "scalable": {
+        "title": "可扩展增长",
+        "description": "随着业务增长轻松扩展经销商规模"
+      }
+    },
+    "benefits": {
+      "title": "为什么加入我们的经销商计划？",
+      "subtitle": "最大化利润并发展您的托管业务",
+      "highProfit": {
+        "title": "高利润率",
+        "description": "通过具有竞争力的批发价格和零售加价获得可观利润"
+      },
+      "noInfrastructure": {
+        "title": "无需基础设施成本",
+        "description": "专注于销售和营销，我们负责所有技术基础设施"
+      },
+      "fullControl": {
+        "title": "完全掌控",
+        "description": "完全掌控定价、客户管理和服务交付"
+      },
+      "brandRecognition": {
+        "title": "品牌知名度",
+        "description": "通过白标方案在托管行业建立自己的品牌"
+      }
+    },
+    "metrics": {
+      "title": "成功指标",
+      "subtitle": "来自成功经销商伙伴的验证成果",
+      "items": [
+        { "label": "平均利润率", "value": "40-60%" },
+        { "label": "部署时间", "value": "< 24 小时" },
+        { "label": "正常运行 SLA", "value": "99.9%" },
+        { "label": "支持响应", "value": "< 2 小时" }
+      ]
+    },
+    "cta": {
+      "title": "准备开始您的托管业务了吗？",
+      "subtitle": "加入信任 HostSailor 的成功经销商",
+      "getStarted": "开始使用",
+      "contactSales": "联系销售"
+    }
   },
   "storageKVMVPS": {
     "heroTitle": "存储优化 KVM VPS — 由 RAID10 稳定性和冗余提供支持",
