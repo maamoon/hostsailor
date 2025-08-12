@@ -1,44 +1,30 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import HttpBackend from "i18next-http-backend";
 
-// Import translations
-import ar from './locales/ar.json';
-import en from './locales/en.json';
-import cn from './locales/cn.json';
-import ru from './locales/ru.json';
-
-const resources = {
-  ar: {
-    translation: ar
-  },
-  en: {
-    translation: en
-  },
-  cn: {
-    translation: cn
-  },
-  ru: {
-    translation: ru
-  }
-};
+const API_BASE = import.meta.env.VITE_ORCHARD_API_URL ?? "http://localhost:8080";
 
 i18n
+  .use(HttpBackend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources,
-    fallbackLng: 'ar',
+    fallbackLng: "ar",
     debug: false,
 
+    backend: {
+      loadPath: `${API_BASE}/api/i18n/{{lng}}`,
+    },
+
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false,
     },
 
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage'],
+      order: ["localStorage", "navigator", "htmlTag"],
+      caches: ["localStorage"],
     },
   });
 
-export default i18n; 
+export default i18n;

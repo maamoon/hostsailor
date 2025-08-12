@@ -14,7 +14,9 @@ const LookingGlass = () => {
   const { t } = useTranslation();
   const [selectedLocation, setSelectedLocation] = useState("la");
   const [targetHost, setTargetHost] = useState("");
-  const [testResults, setTestResults] = useState<any>(null);
+  const [testResults, setTestResults] = useState<Record<string, unknown> | null>(
+    null
+  );
   const [isLoading, setIsLoading] = useState(false);
 
   const locations = [

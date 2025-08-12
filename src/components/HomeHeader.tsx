@@ -92,7 +92,15 @@ const HomeHeader = () => {
     }, 200);
   };
 
-  const navigationItems = [
+  interface NavItem {
+    key: string;
+    label: string;
+    href?: string;
+    external?: boolean;
+    items?: NavItem[];
+  }
+
+  const navigationItems: NavItem[] = [
     {
       key: 'products',
       label: t('navigation.products.title'),
@@ -211,7 +219,7 @@ const HomeHeader = () => {
     }
   ];
 
-  const renderMenuItem = (item: any, level: number = 0) => {
+  const renderMenuItem = (item: NavItem, level = 0) => {
     const hasSubItems = item.items && item.items.length > 0;
     const isOpen = openSubMenu === item.key;
     const isExternal = item.external;
@@ -245,7 +253,7 @@ const HomeHeader = () => {
             onMouseEnter={() => handleSubMenuEnter(item.key)}
             onMouseLeave={handleSubMenuLeave}
           >
-            {item.items.map((subItem: any) => renderMenuItem(subItem, level + 1))}
+            {item.items?.map((subItem) => renderMenuItem(subItem, level + 1))}
           </ul>
         )}
       </li>
@@ -328,7 +336,7 @@ const HomeHeader = () => {
                         onMouseLeave={handleDropdownMenuLeave}
                       >
                         <ul className="py-2">
-                          {item.items.map((subItem: any) => renderMenuItem(subItem))}
+                          {item.items?.map((subItem) => renderMenuItem(subItem))}
                         </ul>
                       </div>
                     )}
