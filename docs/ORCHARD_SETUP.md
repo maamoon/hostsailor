@@ -46,3 +46,14 @@ Once Orchard Core is running:
 3. Manage SEO options in **Configuration → Settings → SEO**.
 4. The front‑end in this repository can fetch rendered pages or use Orchard's APIs for dynamic content.
 
+## Front-end Integration
+
+Utilities for interacting with Orchard's Content API live in `src/lib/orchard.ts` with React Query hooks in `src/hooks/useOrchardPage.ts`.
+Set the `VITE_ORCHARD_API_URL` environment variable to the base URL of your Orchard instance (e.g. `http://localhost:8080`).
+
+```ts
+import { useOrchardPage } from "@/hooks/useOrchardPage"
+
+const { data } = useOrchardPage("home")
+```
+
