@@ -1,0 +1,24 @@
+# MIME Types
+AddType application/javascript .js
+AddType application/json .json
+AddType image/svg+xml .svg
+AddType application/manifest+json .webmanifest
+
+# Security Headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# SPA Routing
+RewriteEngine On
+RewriteBase /hostsailor/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /hostsailor/index.html [L]
+
+# Cache Control
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+</FilesMatch> 

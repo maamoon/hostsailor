@@ -1,0 +1,82 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#glass-bg)" rx="16"/>
+  
+  <!-- Glass effect -->
+  <defs>
+    <linearGradient id="glass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#BBDEFB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90CAF9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glass-surface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="network-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#64B5F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glass surface -->
+  <rect x="40" y="60" width="240" height="120" fill="url(#glass-surface)" rx="12" stroke="#E3F2FD" stroke-width="2"/>
+  
+  <!-- Network nodes -->
+  <circle cx="80" cy="100" r="8" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+  <circle cx="160" cy="80" r="8" fill="#4CAF50" stroke="#388E3C" stroke-width="2"/>
+  <circle cx="240" cy="100" r="8" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <circle cx="160" cy="140" r="8" fill="#9C27B0" stroke="#7B1FA2" stroke-width="2"/>
+  
+  <!-- Connection lines -->
+  <line x1="88" y1="100" x2="152" y2="80" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="152" y1="88" x2="232" y2="100" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="152" y1="132" x2="232" y2="100" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="88" y1="100" x2="152" y2="132" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Data packets -->
+  <circle cx="120" cy="90" r="3" fill="#FF5722">
+    <animate attributeName="cx" values="88;152" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;80" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="85" r="3" fill="#FF5722">
+    <animate attributeName="cx" values="152;232" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="88;100" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="190" cy="115" r="3" fill="#FF5722">
+    <animate attributeName="cx" values="152;232" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="132;100" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Ping indicators -->
+  <g opacity="0.7">
+    <circle cx="80" cy="100" r="12" fill="none" stroke="#2196F3" stroke-width="1">
+      <animate attributeName="r" values="12;20;12" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="80" r="12" fill="none" stroke="#4CAF50" stroke-width="1">
+      <animate attributeName="r" values="12;20;12" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="240" cy="100" r="12" fill="none" stroke="#FF9800" stroke-width="1">
+      <animate attributeName="r" values="12;20;12" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- Status indicators -->
+  <rect x="50" y="200" width="8" height="8" fill="#4CAF50" rx="2"/>
+  <text x="65" y="208" font-family="Arial" font-size="12" fill="#37474F">Online</text>
+  
+  <rect x="120" y="200" width="8" height="8" fill="#FF9800" rx="2"/>
+  <text x="135" y="208" font-family="Arial" font-size="12" fill="#37474F">Testing</text>
+  
+  <rect x="190" y="200" width="8" height="8" fill="#2196F3" rx="2"/>
+  <text x="205" y="208" font-family="Arial" font-size="12" fill="#37474F">Connected</text>
+  
+  <!-- Glass reflection -->
+  <rect x="45" y="65" width="20" height="15" fill="url(#glass-surface)" rx="4" opacity="0.6"/>
+  <rect x="255" y="110" width="15" height="12" fill="url(#glass-surface)" rx="3" opacity="0.4"/>
+</svg> 

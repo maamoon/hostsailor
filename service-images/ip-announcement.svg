@@ -1,0 +1,146 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#ip-bg)" rx="16"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="ip-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E0F2FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BAE6FD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="router-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ip-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="network-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Router -->
+  <rect x="120" y="80" width="80" height="60" fill="url(#router-gradient)" rx="8" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Router Ports -->
+  <rect x="125" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="85" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="85" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="95" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="95" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="105" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="105" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="115" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="115" width="6" height="6" fill="white" rx="1"/>
+  
+  <rect x="125" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="135" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="145" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="155" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="165" y="125" width="6" height="6" fill="white" rx="1"/>
+  <rect x="175" y="125" width="6" height="6" fill="white" rx="1"/>
+  
+  <!-- Router Status LED -->
+  <circle cx="190" cy="95" r="3" fill="#10B981"/>
+  
+  <!-- Network Connections -->
+  <line x1="80" y1="110" x2="120" y2="110" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="110" x2="240" y2="110" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="80" x2="160" y2="60" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="140" x2="160" y2="160" stroke="url(#network-line)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- IP Address Blocks -->
+  <g opacity="0.8">
+    <!-- IPv4 Block 1 -->
+    <rect x="40" y="40" width="60" height="30" fill="url(#ip-gradient)" rx="4" stroke="#059669" stroke-width="1"/>
+    <text x="70" y="55" font-family="monospace" font-size="8" text-anchor="middle" fill="white">185.199.108.0/22</text>
+    <text x="70" y="65" font-family="Arial" font-size="6" text-anchor="middle" fill="white">Netherlands</text>
+    
+    <!-- IPv4 Block 2 -->
+    <rect x="220" y="40" width="60" height="30" fill="url(#ip-gradient)" rx="4" stroke="#059669" stroke-width="1"/>
+    <text x="250" y="55" font-family="monospace" font-size="8" text-anchor="middle" fill="white">185.199.112.0/22</text>
+    <text x="250" y="65" font-family="Arial" font-size="6" text-anchor="middle" fill="white">United States</text>
+    
+    <!-- IPv6 Block 1 -->
+    <rect x="40" y="170" width="60" height="30" fill="url(#router-gradient)" rx="4" stroke="#1E40AF" stroke-width="1"/>
+    <text x="70" y="185" font-family="monospace" font-size="8" text-anchor="middle" fill="white">2a01:4f8::/32</text>
+    <text x="70" y="195" font-family="Arial" font-size="6" text-anchor="middle" fill="white">Netherlands</text>
+    
+    <!-- IPv6 Block 2 -->
+    <rect x="220" y="170" width="60" height="30" fill="url(#router-gradient)" rx="4" stroke="#1E40AF" stroke-width="1"/>
+    <text x="250" y="185" font-family="monospace" font-size="8" text-anchor="middle" fill="white">2a01:4f9::/32</text>
+    <text x="250" y="195" font-family="Arial" font-size="6" text-anchor="middle" fill="white">United States</text>
+  </g>
+  
+  <!-- Connection Points -->
+  <circle cx="80" cy="110" r="4" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="240" cy="110" r="4" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="160" cy="60" r="4" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="160" cy="160" r="4" fill="#3B82F6" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Data Packets -->
+  <g opacity="0.7">
+    <circle cx="100" cy="110" r="2" fill="#F59E0B">
+      <animate attributeName="cx" values="80;120" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="110" r="2" fill="#F59E0B">
+      <animate attributeName="cx" values="200;240" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="80" r="2" fill="#F59E0B">
+      <animate attributeName="cy" values="60;80" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="140" r="2" fill="#F59E0B">
+      <animate attributeName="cy" values="160;140" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- BGP Announcement Indicators -->
+  <g opacity="0.6">
+    <circle cx="80" cy="110" r="8" fill="none" stroke="#10B981" stroke-width="1">
+      <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="110" r="8" fill="none" stroke="#10B981" stroke-width="1">
+      <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+  
+  <!-- Status Indicators -->
+  <rect x="50" y="200" width="8" height="8" fill="#10B981" rx="2"/>
+  <text x="65" y="208" font-family="Arial" font-size="10" fill="#37474F">Active</text>
+  
+  <rect x="120" y="200" width="8" height="8" fill="#3B82F6" rx="2"/>
+  <text x="135" y="208" font-family="Arial" font-size="10" fill="#37474F">BGP</text>
+  
+  <rect x="190" y="200" width="8" height="8" fill="#F59E0B" rx="2"/>
+  <text x="205" y="208" font-family="Arial" font-size="10" fill="#37474F">Routing</text>
+  
+  <!-- IP Announcement Text -->
+  <text x="160" y="220" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    IP Announcement
+  </text>
+</svg> 

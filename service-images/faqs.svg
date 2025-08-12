@@ -1,0 +1,92 @@
+<svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="320" height="240" fill="url(#faq-bg)" rx="16"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="faq-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E0F2FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BAE6FD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="question-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="help-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Question Mark -->
+  <g transform="translate(160, 120)">
+    <!-- Question mark circle -->
+    <circle cx="0" cy="0" r="40" fill="url(#question-gradient)" stroke="#1E40AF" stroke-width="3"/>
+    
+    <!-- Question mark -->
+    <path d="M -15 -10 Q -15 -5 -10 -5 Q -5 -5 -5 -10 Q -5 -15 -10 -15 Q -15 -15 -15 -10 Z" fill="white"/>
+    <path d="M -10 -5 Q -5 -5 -5 0 Q -5 5 -10 5 Q -15 5 -15 0 Q -15 -5 -10 -5 Z" fill="white"/>
+    <circle cx="-10" cy="15" r="3" fill="white"/>
+  </g>
+  
+  <!-- Floating Question Marks -->
+  <g opacity="0.7">
+    <!-- Small question mark 1 -->
+    <circle cx="60" cy="60" r="15" fill="url(#help-gradient)" stroke="#059669" stroke-width="2"/>
+    <path d="M 55 50 Q 55 53 58 53 Q 61 53 61 50 Q 61 47 58 47 Q 55 47 55 50 Z" fill="white"/>
+    <path d="M 58 53 Q 61 53 61 56 Q 61 59 58 59 Q 55 59 55 56 Q 55 53 58 53 Z" fill="white"/>
+    <circle cx="58" cy="65" r="2" fill="white"/>
+    
+    <!-- Small question mark 2 -->
+    <circle cx="260" cy="80" r="12" fill="url(#question-gradient)" stroke="#1E40AF" stroke-width="2"/>
+    <path d="M 256 72 Q 256 74 258 74 Q 260 74 260 72 Q 260 70 258 70 Q 256 70 256 72 Z" fill="white"/>
+    <path d="M 258 74 Q 260 74 260 76 Q 260 78 258 78 Q 256 78 256 76 Q 256 74 258 74 Z" fill="white"/>
+    <circle cx="258" cy="82" r="1.5" fill="white"/>
+    
+    <!-- Small question mark 3 -->
+    <circle cx="80" cy="180" r="10" fill="url(#help-gradient)" stroke="#059669" stroke-width="1.5"/>
+    <path d="M 77 174 Q 77 176 78.5 176 Q 80 176 80 174 Q 80 172 78.5 172 Q 77 172 77 174 Z" fill="white"/>
+    <path d="M 78.5 176 Q 80 176 80 178 Q 80 180 78.5 180 Q 77 180 77 178 Q 77 176 78.5 176 Z" fill="white"/>
+    <circle cx="78.5" cy="183" r="1" fill="white"/>
+  </g>
+  
+  <!-- Help Icons -->
+  <g opacity="0.8">
+    <!-- Help circle 1 -->
+    <circle cx="240" cy="160" r="18" fill="url(#help-gradient)" stroke="#059669" stroke-width="2"/>
+    <circle cx="240" cy="155" r="2" fill="white"/>
+    <path d="M 240 160 Q 240 165 235 165 Q 230 165 230 160 Q 230 155 235 155 Q 240 155 240 160" stroke="white" stroke-width="2" fill="none"/>
+    
+    <!-- Help circle 2 -->
+    <circle cx="120" cy="200" r="14" fill="url(#question-gradient)" stroke="#1E40AF" stroke-width="1.5"/>
+    <circle cx="120" cy="196" r="1.5" fill="white"/>
+    <path d="M 120 200 Q 120 204 117 204 Q 114 204 114 200 Q 114 196 117 196 Q 120 196 120 200" stroke="white" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Animated Elements -->
+  <g opacity="0.6">
+    <!-- Floating dots -->
+    <circle cx="40" cy="120" r="2" fill="#3B82F6">
+      <animate attributeName="cy" values="120;110;120" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="140" r="2" fill="#10B981">
+      <animate attributeName="cy" values="140;130;140" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="60" r="2" fill="#F59E0B">
+      <animate attributeName="cy" values="60;50;60" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Search Icon -->
+  <g transform="translate(200, 40)">
+    <circle cx="0" cy="0" r="12" fill="url(#help-gradient)" stroke="#059669" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="6" y1="6" x2="10" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- FAQs Text -->
+  <text x="160" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    Frequently Asked Questions
+  </text>
+</svg> 

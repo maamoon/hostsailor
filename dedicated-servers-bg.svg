@@ -1,0 +1,171 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6" />
+      <stop offset="100%" style="stop-color:#7C3AED" />
+    </linearGradient>
+    <linearGradient id="cpuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6" />
+      <stop offset="100%" style="stop-color:#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="ramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4" />
+      <stop offset="100%" style="stop-color:#0891B2" />
+    </linearGradient>
+    <linearGradient id="storageGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981" />
+      <stop offset="100%" style="stop-color:#059669" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Large dedicated server -->
+  <g opacity="0.4">
+    <!-- Main server chassis -->
+    <rect x="200" y="80" width="120" height="200" rx="8" fill="url(#serverGradient)"/>
+    
+    <!-- CPU section -->
+    <rect x="210" y="100" width="100" height="30" rx="4" fill="url(#cpuGradient)"/>
+    <rect x="220" y="110" width="80" height="10" rx="2" fill="white" opacity="0.8"/>
+    <rect x="220" y="125" width="60" height="4" rx="2" fill="white" opacity="0.6"/>
+    
+    <!-- RAM modules -->
+    <rect x="210" y="150" width="100" height="20" rx="3" fill="url(#ramGradient)"/>
+    <rect x="220" y="155" width="80" height="10" rx="2" fill="white" opacity="0.8"/>
+    
+    <!-- Storage bays -->
+    <rect x="210" y="190" width="100" height="40" rx="4" fill="url(#storageGradient)"/>
+    <rect x="220" y="200" width="80" height="8" rx="2" fill="white" opacity="0.8"/>
+    <rect x="220" y="212" width="80" height="8" rx="2" fill="white" opacity="0.7"/>
+    <rect x="220" y="224" width="80" height="8" rx="2" fill="white" opacity="0.6"/>
+    
+    <!-- Network ports -->
+    <rect x="210" y="250" width="100" height="20" rx="3" fill="#374151"/>
+    <rect x="220" y="255" width="8" height="10" rx="1" fill="#10B981"/>
+    <rect x="235" y="255" width="8" height="10" rx="1" fill="#3B82F6"/>
+    <rect x="250" y="255" width="8" height="10" rx="1" fill="#8B5CF6"/>
+    <rect x="265" y="255" width="8" height="10" rx="1" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Secondary servers -->
+  <g opacity="0.3">
+    <!-- Server 1 -->
+    <rect x="400" y="120" width="80" height="140" rx="6" fill="url(#serverGradient)"/>
+    <rect x="410" y="130" width="60" height="15" rx="2" fill="url(#cpuGradient)"/>
+    <rect x="410" y="155" width="60" height="12" rx="2" fill="url(#ramGradient)"/>
+    <rect x="410" y="175" width="60" height="25" rx="2" fill="url(#storageGradient)"/>
+    <rect x="410" y="210" width="60" height="15" rx="2" fill="#374151"/>
+    
+    <!-- Server 2 -->
+    <rect x="520" y="100" width="80" height="160" rx="6" fill="url(#serverGradient)"/>
+    <rect x="530" y="110" width="60" height="15" rx="2" fill="url(#cpuGradient)"/>
+    <rect x="530" y="135" width="60" height="12" rx="2" fill="url(#ramGradient)"/>
+    <rect x="530" y="155" width="60" height="25" rx="2" fill="url(#storageGradient)"/>
+    <rect x="530" y="190" width="60" height="15" rx="2" fill="#374151"/>
+    <rect x="530" y="215" width="60" height="12" rx="2" fill="#6B7280"/>
+    
+    <!-- Server 3 -->
+    <rect x="640" y="140" width="80" height="120" rx="6" fill="url(#serverGradient)"/>
+    <rect x="650" y="150" width="60" height="15" rx="2" fill="url(#cpuGradient)"/>
+    <rect x="650" y="175" width="60" height="12" rx="2" fill="url(#ramGradient)"/>
+    <rect x="650" y="195" width="60" height="25" rx="2" fill="url(#storageGradient)"/>
+    <rect x="650" y="230" width="60" height="15" rx="2" fill="#374151"/>
+  </g>
+  
+  <!-- Performance indicators -->
+  <g opacity="0.4">
+    <!-- CPU usage bars -->
+    <rect x="800" y="100" width="8" height="60" rx="4" fill="#374151"/>
+    <rect x="800" y="140" width="8" height="20" rx="4" fill="#3B82F6">
+      <animate attributeName="height" values="20;40;20" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="820" y="100" width="8" height="60" rx="4" fill="#374151"/>
+    <rect x="820" y="130" width="8" height="30" rx="4" fill="#8B5CF6">
+      <animate attributeName="height" values="30;50;30" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="840" y="100" width="8" height="60" rx="4" fill="#374151"/>
+    <rect x="840" y="135" width="8" height="25" rx="4" fill="#06B6D4">
+      <animate attributeName="height" values="25;45;25" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Memory usage -->
+    <rect x="880" y="100" width="8" height="60" rx="4" fill="#374151"/>
+    <rect x="880" y="125" width="8" height="35" rx="4" fill="#10B981">
+      <animate attributeName="height" values="35;55;35" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Storage usage -->
+    <rect x="900" y="100" width="8" height="60" rx="4" fill="#374151"/>
+    <rect x="900" y="120" width="8" height="40" rx="4" fill="#F59E0B">
+      <animate attributeName="height" values="40;60;40" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Network connections -->
+  <g stroke="#8B5CF6" stroke-width="2" opacity="0.3">
+    <line x1="320" y1="180" x2="400" y2="190"/>
+    <line x1="480" y1="190" x2="520" y2="180"/>
+    <line x1="600" y1="200" x2="640" y2="200"/>
+    <line x1="720" y1="200" x2="800" y2="130"/>
+    <line x1="800" y1="130" x2="880" y2="130"/>
+    <line x1="880" y1="130" x2="900" y2="130"/>
+  </g>
+  
+  <!-- Data flow particles -->
+  <g opacity="0.6">
+    <circle cx="360" cy="185" r="3" fill="#8B5CF6">
+      <animate attributeName="cx" values="360;400;360" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="185" r="2.5" fill="#3B82F6">
+      <animate attributeName="cx" values="500;520;500" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="200" r="3" fill="#06B6D4">
+      <animate attributeName="cx" values="620;640;620" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="165" r="2" fill="#10B981">
+      <animate attributeName="cx" values="760;800;760" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="130" r="2.5" fill="#F59E0B">
+      <animate attributeName="cx" values="840;880;840" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Performance metrics -->
+  <g opacity="0.4">
+    <text x="950" y="120" fill="#8B5CF6" font-family="Arial" font-size="12" font-weight="bold">CPU</text>
+    <text x="950" y="140" fill="#3B82F6" font-family="Arial" font-size="12" font-weight="bold">RAM</text>
+    <text x="950" y="160" fill="#06B6D4" font-family="Arial" font-size="12" font-weight="bold">SSD</text>
+    <text x="950" y="180" fill="#10B981" font-family="Arial" font-size="12" font-weight="bold">NET</text>
+  </g>
+  
+  <!-- Status indicators -->
+  <g opacity="0.6">
+    <circle cx="1050" cy="120" r="6" fill="#10B981"/>
+    <circle cx="1050" cy="140" r="6" fill="#10B981"/>
+    <circle cx="1050" cy="160" r="6" fill="#10B981"/>
+    <circle cx="1050" cy="180" r="6" fill="#10B981"/>
+    
+    <!-- Blinking effect -->
+    <circle cx="1050" cy="120" r="6" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="140" r="6" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="160" r="6" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="180" r="6" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg> 
