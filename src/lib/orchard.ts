@@ -24,8 +24,9 @@ export function listPages() {
   return request("/api/content?contentType=Page")
 }
 
-export function getPage(id: string) {
-  return request(`/api/content/${id}`)
+export function getPage(id: string, culture?: string) {
+  const query = culture ? `?culture=${culture}` : ""
+  return request(`/api/content/${id}${query}`)
 }
 
 export function createPage(page: OrchardPage) {

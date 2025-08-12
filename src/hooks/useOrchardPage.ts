@@ -1,4 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { useTranslation } from "react-i18next"
 import {
   createPage,
   deletePage,
@@ -11,12 +12,15 @@ import {
 export const useOrchardPages = () =>
   useQuery({ queryKey: ["orchard", "pages"], queryFn: listPages })
 
-export const useOrchardPage = (id: string) =>
-  useQuery({
-    queryKey: ["orchard", "page", id],
-    queryFn: () => getPage(id),
+export const useOrchardPage = (id: string) => {
+  const { i18n } = useTranslation()
+
+  return useQuery({
+    queryKey: ["orchard", "page", id, i18n.language],
+    queryFn: () => getPage(id, i18n.language),
     enabled: !!id,
   })
+}
 
 export const useCreateOrchardPage = () => {
   const qc = useQueryClient()
